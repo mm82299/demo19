@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sav_record_user,access.sav.record.user,model_sav_record,ics_sav_management.group_sav_salesman,1,1,1,0
+access_sav_record_user,access.sav.record.user,model_sav_record,ics_sav_management.group_sav_salesman_all,1,1,1,0
+access_sav_record_manager,access.sav.record.manager,model_sav_record,ics_sav_management.group_sav_manager,1,1,1,1
+access_sav_lifecycle_rule_user,access.sav.lifecycle.rule.user,model_sav_lifecycle_rule,ics_sav_management.group_sav_salesman,1,1,1,0
+access_sav_lifecycle_rule_user,access.sav.lifecycle.rule.user,model_sav_lifecycle_rule,ics_sav_management.group_sav_salesman_all,1,1,1,0
+access_sav_lifecycle_rule_manager,access.sav.lifecycle.rule.manager,model_sav_lifecycle_rule,ics_sav_management.group_sav_manager,1,1,1,1
+access_product_lifecycle_rule_user,access.product.lifecycle.rule.user,model_product_lifecycle_rule,ics_sav_management.group_sav_salesman,1,1,1,0
+access_product_lifecycle_rule_user,access.product.lifecycle.rule.user,model_product_lifecycle_rule,ics_sav_management.group_sav_salesman_all,1,1,1,0
+access_product_lifecycle_rule_manager,access.product.lifecycle.rule.manager,model_product_lifecycle_rule,ics_sav_management.group_sav_manager,1,1,1,1
+access_warranty_type_user,access.warranty.type.user,model_warranty_type,ics_sav_management.group_sav_salesman,1,1,1,0
+access_warranty_type_user,access.warranty.type.user,model_warranty_type,ics_sav_management.group_sav_salesman_all,1,1,1,0
+access_warranty_type_manager,access.warranty.type.manager,model_warranty_type,ics_sav_management.group_sav_manager,1,1,1,1

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Top Level Menu -->
+    <menuitem id="menu_iso_root" name="ISO 9001 (SMQ)" sequence="10" web_icon="mphe_iso_9001,static/description/icon.png"/>
+
+    <!-- SMQ Management Group (NC, Audits, Complaints) -->
+    <menuitem id="menu_iso_mgmt" name="Quality Operations" parent="menu_iso_root" sequence="10"/>
+    <menuitem id="menu_iso_action" name="Improvements &amp; NC" parent="menu_iso_mgmt" action="action_iso_action" sequence="10"/>
+    <menuitem id="menu_iso_complaint" name="Customer Complaints" parent="menu_iso_mgmt" action="action_iso_complaint" sequence="20"/>
+    <menuitem id="menu_iso_audit" name="Audits Internal/External" parent="menu_iso_mgmt" action="action_iso_audit" sequence="30"/>
+    <menuitem id="menu_iso_indicator" name="Performance (KPI)" parent="menu_iso_mgmt" action="action_iso_indicator" sequence="40"/>
+
+    <!-- SMQ System Group (Processes, Documents, Risks) -->
+    <menuitem id="menu_iso_system" name="SMQ Framework" parent="menu_iso_root" sequence="20"/>
+    <menuitem id="menu_iso_process" name="Process Map" parent="menu_iso_system" action="action_iso_process" sequence="10"/>
+    <menuitem id="menu_iso_document" name="Controlled Documents" parent="menu_iso_system" action="action_iso_document" sequence="20"/>
+    <menuitem id="menu_iso_risk" name="Risk Assessment" parent="menu_iso_system" action="action_iso_risk" sequence="30"/>
+    <menuitem id="menu_iso_regulation" name="Regulatory Watch" parent="menu_iso_system" action="action_iso_regulation" sequence="35"/>
+    <menuitem id="menu_iso_party" name="Interested Parties" parent="menu_iso_system" action="action_iso_interested_party" sequence="40"/>
+
+    <!-- Resources Group (Personnel, Training, Assets) -->
+    <menuitem id="menu_iso_resources" name="Resources" parent="menu_iso_root" sequence="30"/>
+    <menuitem id="menu_iso_hr" name="Competencies Matrix" parent="menu_iso_resources" action="action_iso_employee" sequence="10"/>
+
+    <!-- Purchase & Sales Group (Vendors, Satisfaction) -->
+    <menuitem id="menu_iso_partners" name="External Relations" parent="menu_iso_root" sequence="40"/>
+    <menuitem id="menu_iso_vendor" name="Qualified Vendors" parent="menu_iso_partners" action="action_iso_vendor" sequence="10"/>
+</odoo>

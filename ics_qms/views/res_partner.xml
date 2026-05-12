@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_partner_supplier_evaluation_form" model="ir.ui.view">
+            <field name="name">res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Évaluation des fournisseurs" name="supplier_evaluations">
+                        <field name="supplier_evaluation_ids">
+                            <list editable="bottom">
+                                <field name="date"/>
+                                <field name="product_conformity"/>
+                                <field name="price_respect"/>
+                                <field name="delivery_delay_respect"/>
+                                <field name="delivery_mode_respect"/>
+                                <field name="payment_respect"/>
+                                <field name="score"/>
+                            </list>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+    </record>
+</odoo>

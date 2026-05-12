@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ══════════════════════════════════════════════════════════════
+         Generate Grouped Deferred Expense Entries — Wizard
+    ══════════════════════════════════════════════════════════════ -->
+    <record id="view_account_deferred_generate_wizard_form" model="ir.ui.view">
+        <field name="name">account.deferred.generate.wizard.form</field>
+        <field name="model">account.deferred.generate.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Generate Grouped Deferred Expense Entries">
+                <group>
+                    <field name="company_id" readonly="1"/>
+                    <field name="date_end" string="End of Period (Last Day of Month)" required="1"/>
+                </group>
+                <div class="alert alert-info" role="alert">
+                    Two grouped journal entries will be created for the period ending on the selected date:
+                    <ul>
+                        <li>A <b>deferral entry</b> dated on the last day of the period.</li>
+                        <li>A <b>reversal entry</b> dated on the first day of the next month.</li>
+                    </ul>
+                    All posted vendor bills with deferred dates overlapping this period will be included.
+                </div>
+                <footer>
+                    <button name="action_generate_entries"
+                            string="Generate Entries"
+                            type="object"
+                            class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action to open the wizard -->
+    <record id="action_account_deferred_generate_wizard" model="ir.actions.act_window">
+        <field name="name">Generate Grouped Deferred Expense Entries</field>
+        <field name="res_model">account.deferred.generate.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

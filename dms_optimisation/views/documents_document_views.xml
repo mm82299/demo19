@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Inherit documents.document list view to show sinistre dossier -->
+    <record id="view_documents_document_list_inherit" model="ir.ui.view">
+        <field name="name">documents.document.list.dms_optimisation</field>
+        <field name="model">documents.document</field>
+        <field name="inherit_id" ref="documents.documents_view_list_main"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="sinistre_dossier_id" optional="show"/>
+                <field name="dms_document_type_id" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record id="seq_account_withholding_in" model="ir.sequence">
+            <field name="name">Account Withholding In</field>
+            <field name="code">account.withholding.in</field>
+            <field name="prefix">RS-FRS-/</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field eval="False" name="company_id"/>
+            <field name="padding">3</field>
+        </record>
+
+        <record id="seq_account_withholding_out" model="ir.sequence">
+            <field name="name">Account withholding Out</field>
+            <field name="code">account.withholding.out</field>
+            <field name="prefix">RS-Client-/</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field eval="False" name="company_id"/>
+            <field name="padding">3</field>
+        </record>
+
+    </data>
+</odoo>

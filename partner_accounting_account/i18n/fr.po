@@ -1,0 +1,95 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* partner_accounting_account
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-06 15:47+0000\n"
+"PO-Revision-Date: 2024-12-06 15:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: partner_accounting_account
+#: model:ir.model.fields,field_description:partner_accounting_account.field_res_company__partner_account_configuration
+#: model:ir.model.fields,field_description:partner_accounting_account.field_res_config_settings__partner_account_configuration
+#: model_terms:ir.ui.view,arch_db:partner_accounting_account.res_config_settings_view_form_inherited
+msgid "Auto Partner Account Configuration"
+msgstr "Configuration de compte partenaire automatique"
+
+#. module: partner_accounting_account
+#: model:ir.model,name:partner_accounting_account.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: partner_accounting_account
+#: model:ir.model,name:partner_accounting_account.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: partner_accounting_account
+#: model:ir.model,name:partner_accounting_account.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: partner_accounting_account
+#: model_terms:ir.ui.view,arch_db:partner_accounting_account.ics_partner_accounting_account_form_inherit
+msgid "Create Customer Accounting Account"
+msgstr "Ajouter le compte comptable Client"
+
+#. module: partner_accounting_account
+#: model_terms:ir.ui.view,arch_db:partner_accounting_account.ics_partner_accounting_account_form_inherit
+msgid "Create Vendor Accounting Account"
+msgstr "Ajouter le compte comptable Fournisseur"
+
+#. module: partner_accounting_account
+#: model:ir.model.fields.selection,name:partner_accounting_account.selection__res_partner__supplier_location__foreign
+msgid "Foreign"
+msgstr "Étranger"
+
+#. module: partner_accounting_account
+#: model:ir.model.fields,field_description:partner_accounting_account.field_res_partner__is_customer
+#: model:ir.model.fields,field_description:partner_accounting_account.field_res_users__is_customer
+msgid "Is Customer"
+msgstr "Client"
+
+#. module: partner_accounting_account
+#: model:ir.model.fields,field_description:partner_accounting_account.field_res_partner__is_supplier
+#: model:ir.model.fields,field_description:partner_accounting_account.field_res_users__is_supplier
+msgid "Is Supplier"
+msgstr "Fournisseur"
+
+#. module: partner_accounting_account
+#: model:ir.model.fields.selection,name:partner_accounting_account.selection__res_partner__supplier_location__local
+msgid "Local"
+msgstr ""
+
+#. module: partner_accounting_account
+#: model:ir.model.fields,field_description:partner_accounting_account.field_res_partner__supplier_location
+#: model:ir.model.fields,field_description:partner_accounting_account.field_res_users__supplier_location
+msgid "Supplier Location"
+msgstr "Localisation du fournisseur"
+
+#. module: partner_accounting_account
+#: model:ir.model.fields,help:partner_accounting_account.field_res_company__partner_account_configuration
+#: model:ir.model.fields,help:partner_accounting_account.field_res_config_settings__partner_account_configuration
+msgid ""
+"This field controls the automatic configuration of partner accounts. When "
+"enabled, the system will automatically set up partner accounts based on "
+"predefined rules or templates, simplifying the account creation process and "
+"ensuring consistency across partner accounts. Make sure to review the "
+"configuration settings to ensure they align with your business requirements "
+"before enabling this option."
+msgstr ""
+"Ce champ contrôle la configuration automatique des comptes partenaires. "
+"Lorsqu'il est activé, le système configure automatiquement les comptes "
+"partenaires en fonction de règles ou de modèles prédéfinis, simplifiant "
+"ainsi le processus de création de compte et garantissant la cohérence entre "
+"les comptes partenaires. Assurez-vous de vérifier les paramètres de "
+"configuration pour vous assurer qu'ils correspondent aux exigences de votre "
+"entreprise avant d'activer cette option."

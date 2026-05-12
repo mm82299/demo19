@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="withholding_declaration_view_form" model="ir.ui.view">
+            <field name="name">withholding.declaration.form</field>
+            <field name="model">withholding.declaration</field>
+            <field name="arch" type="xml">
+                <form string="Withholding Declaration">
+                    <header>
+                        <field name="state" widget="statusbar"/>
+                        <button name="generate_declaration_line_data" string="Genrate Declaration Data" type="object" class="oe_highlight" invisible="state != 'draft'"/>
+                        <button name="create_xml_file" string="Genrate Xml File" type="object" class="oe_highlight"/>
+                        <button name="action_validate" string="Validate" type="object" class="oe_highlight" invisible="state != 'to_validate'"/>
+                        <button name="action_cancel"  string="Cancel" type="object" class="btn btn-secondary" invisible="state != 'to_validate'" />
+                        <button name="action_reset_to_draft" string="Reset To Draft" type="object" class="btn btn-secondary"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name"/>
+                            <h1>
+                                <field name="name" placeholder="Name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="date" readonly="state != 'draft'"/>
+                                <field name="user_id"  readonly="1" />
+                                <field name="company_id"  readonly="1" />
+                                <field name="category_type" readonly="state != 'draft'" />
+                            </group>
+                            <group>
+                                <field name="period"  readonly="state != 'draft'" />
+                                <field name="generation_type"  readonly="state != 'draft'"/>
+                                <field name="date_start"  readonly="state != 'draft'" required="generation_type == 'period'" invisible="generation_type != 'period'" />
+                                <field name="date_end"  readonly="state != 'draft'" invisible="generation_type != 'period'" />
+                                <field name="year"  readonly="state != 'draft'" />
+                                <field name="act_depot"  readonly="state != 'draft'" />
+                                <field name="declaration_file" filename="declaration_file_name"  readonly="1"/>
+                                <field name="declaration_file_name" invisible="1"/>
+                                <field name="declaration_to_modify"  invisible="act_depot != 'rectificatif'"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Declaration Line">
+                                <field name="declaration_line_ids">
+                                 <list string="Withholding Declaration line" editable="bottom">
+                                    <field name="name"/>
+                                    <field name="partner_id" optional="hide"/>
+                                    <field name="operation_type_category"/>
+                                    <field name="operation_type"/>
+                                    <field name="tax_id_type"/>
+                                    <field name="tax_id"/>
+                                    <field name="birth_date"/>
+                                    <field name="category_type"/>
+                                    <field name="country_id"/>
+                                    <field name="partner_tunisian"/>
+                                    <field name="partner_full_name"/>
+                                    <field name="partner_address"/>
+                                    <field name="partner_activity"/>
+                                    <field name="partner_mail"/>
+                                    <field name="partner_phone"/>
+                                    <field name="payment_date"/>
+                                    <field name="ref_certificate"/>
+                                    <field name="total_amount_ht"/>
+                                    <field name="total_amount_tva"/>
+                                    <field name="total_amount_ttc"/>
+                                    <field name="total_amount_rs"/>
+                                    <field name="total_taxes" optional="hide"/>
+                                    <field name="total_amount_amount_servi"/>
+                                    <field name="total_amount_devise" optional="hide"/>
+                                    <field name="total_amount_devise_rs" optional="hide"/>
+                                    <field name="total_amount_devise_ttc" optional="hide"/>
+                                    <field name="total_amount_devise_servi" optional="hide"/>
+                                </list>
+                                </field>
+                            </page>
+                            <page string="Declaration Line To Modify." invisible="act_depot != 'rectificatif'">
+                                <field name="declaration_line_ids_edit"/>
+                            </page>
+                            <page string="Declaration Line To Delete." invisible="act_depot != 'rectificatif'">
+                                <field name="declaration_line_ids_delete"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="withholding_declaration_tree_view" model="ir.ui.view">
+            <field name="name">withholding.declaration.tree</field>
+            <field name="model">withholding.declaration</field>
+            <field name="arch" type="xml">
+                <list string="Withholding Declaration">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="user_id"/>
+                    <field name="category_type"/>
+                    <field name="period"/>
+                    <field name="year"/>
+                </list>
+            </field>
+        </record>
+
+<!--        <record id="withholding_declaration_search_view" model="ir.ui.view">-->
+<!--            <field name="name">withholding.declaration.search</field>-->
+<!--            <field name="model">withholding.declaration</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <search string="ModelTitle">-->
+<!--                    <group expand="1" string="Group By">-->
+<!--                        <filter string="Example Field" name="example_field" domain="[]"-->
+<!--                                context="{'group_by':'example_field'}"/>-->
+<!--                    </group>-->
+<!--                </search>-->
+<!--            </field>-->
+<!--        </record>-->
+
+        <record id="withholding_declaration_act_window" model="ir.actions.act_window">
+            <field name="name">Withholding Declaration</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">withholding.declaration</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+
+    </data>
+</odoo>

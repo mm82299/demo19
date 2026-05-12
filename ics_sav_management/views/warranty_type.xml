@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Form View -->
+    <record id="warranty_type_view_form" model="ir.ui.view">
+        <field name="name">warranty.type.view.form</field>
+        <field name="model">warranty.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="warranty_value"/>
+                        <!-- Add your fields here -->
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+    <!-- List View -->
+    <record id="warranty_type_view_list" model="ir.ui.view">
+        <field name="name">warranty.type.view.list</field>
+        <field name="model">warranty.type</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="name"/>
+                <field name="warranty_value"/>
+                <!-- Add your fields here -->
+            </list>
+        </field>
+    </record>
+
+
+
+
+</odoo>

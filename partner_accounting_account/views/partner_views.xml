@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="ics_partner_accounting_account_form_inherit" model="ir.ui.view">
+            <field name="name">ics.partner.accounting.account.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="account.view_partner_property_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//span[@name='address_name']" position="before">
+                    <field name="is_customer"  readonly="parent_id"/>
+                    <field name="is_supplier"  readonly="parent_id"/>
+                    <field name="supplier_location" invisible="not is_supplier" readonly="parent_id"/>
+
+                </xpath>
+                <xpath expr="//field[@name='property_account_payable_id']" position="after">
+                    <group>
+                          <button name="create_customer_accounting_account" string="Create Customer Accounting Account" type="object"/><br/>
+                    <button name="create_vendor_accounting_account" string="Create Vendor Accounting Account" type="object"/>
+                    </group>
+
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

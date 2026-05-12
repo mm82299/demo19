@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="account_withholding_form_inherit" model="ir.ui.view">
+            <field name="name">account.withholding.form</field>
+            <field name="model">account.withholding</field>
+            <field name="inherit_id" ref="l10n_tn_ras.account_withholding_customer_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='amount_total_rs']" position="after">
+                    <field name="stamp_tax" readonly="state != 'draft'"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="account_withholding_form_inherit_vendor" model="ir.ui.view">
+            <field name="name">account.withholding.form</field>
+            <field name="model">account.withholding</field>
+            <field name="inherit_id" ref="l10n_tn_ras.account_withholding_vendor_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='amount_total_rs']" position="after">
+                    <field name="stamp_tax" readonly="state != 'draft'"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

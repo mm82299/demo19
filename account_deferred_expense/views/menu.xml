@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Accounting → Reporting → Deferred Expenses
+         Parent: account.menu_finance_reports (exists in Community) -->
+    <menuitem id="menu_account_deferred_expense_report"
+              name="Deferred Expenses"
+              parent="account.menu_finance_reports"
+              action="action_account_deferred_expense_report"
+              sequence="25"
+              groups="account.group_account_readonly"/>
+</odoo>

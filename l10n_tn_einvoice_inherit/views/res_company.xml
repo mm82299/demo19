@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Inherit Form View -->
+    <record id="res_company_view_form_inherit" model="ir.ui.view">
+        <field name="name">res.company.view.form.inherit.module</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="l10n_tn_einvoice.view_company_form_teif"/>
+        <field name="arch" type="xml">
+            <!-- Add after a specific field -->
+            <xpath expr="//field[@name='company_short_name']" position="after">
+                <field name="ttn_vat_number_type"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

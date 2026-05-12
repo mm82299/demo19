@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="iso_process_commercial" model="iso.process">
+            <field name="name">Commercial Process</field>
+            <field name="description">Includes Tenders, Customer Satisfaction, and Complaints management.</field>
+        </record>
+        <record id="iso_process_mqa" model="iso.process">
+            <field name="name">Quality &amp; Improvement (MQA)</field>
+            <field name="description">SMQ Management, Document Control, Audits, and Improvement Actions.</field>
+        </record>
+        <record id="iso_process_technique" model="iso.process">
+            <field name="name">Technical Process</field>
+            <field name="description">Project planning and technical follow-up.</field>
+        </record>
+        <record id="iso_process_achat" model="iso.process">
+            <field name="name">Purchasing Process</field>
+            <field name="description">Supplier evaluation and selection, Internal purchase requests.</field>
+        </record>
+        <record id="iso_process_direction" model="iso.process">
+            <field name="name">Management Process (Direction)</field>
+            <field name="description">Strategy, Policy, Risk Management, and Management Reviews.</field>
+        </record>
+        <record id="iso_process_ressource" model="iso.process">
+            <field name="name">Resource Management (HR)</field>
+            <field name="description">Competency, Skills matrix, Training and HR management.</field>
+        </record>
+    </data>
+</odoo>

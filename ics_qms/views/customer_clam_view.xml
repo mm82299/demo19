@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- List View -->
+    <record id="view_customer_clam_list" model="ir.ui.view">
+        <field name="name">customer.clam.list</field>
+        <field name="model">customer.clam</field>
+        <field name="arch" type="xml">
+            <list string="Réclamations Clients" decoration-info="state == 'new'" decoration-warning="state == 'in_progress'" decoration-success="state == 'closed'" decoration-danger="state == 'rejected'">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="partner_id"/>
+                <field name="responsible_id" widget="many2one_avatar_user"/>
+                <field name="date_limit"/>
+                <field name="state" widget="badge" decoration-info="state == 'new'" decoration-warning="state == 'in_progress'" decoration-success="state == 'closed'" decoration-danger="state == 'rejected'"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_customer_clam_form" model="ir.ui.view">
+        <field name="name">customer.clam.form</field>
+        <field name="model">customer.clam</field>
+        <field name="arch" type="xml">
+            <form string="Réclamation Client">
+                <header>
+                    <button name="action_in_progress" string="Commencer" type="object" class="oe_highlight" invisible="state != 'new'"/>
+                    <button name="action_closed" string="Clôturer" type="object" class="oe_highlight" invisible="state != 'in_progress'"/>
+                    <button name="action_rejected" string="Rejeter" type="object" invisible="state not in ['new', 'in_progress']"/>
+                    <button name="action_draft" string="Remettre en Brouillon" type="object" invisible="state not in ['closed', 'rejected']"/>
+                    <field name="state" widget="statusbar" statusbar_visible="new,in_progress,closed"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="partner_id"/>
+                            <field name="date"/>
+                            <field name="date_limit"/>
+                        </group>
+                        <group>
+                            <field name="responsible_id" widget="many2one_avatar_user"/>
+                            <field name="num_nc_file"/>
+                            <field name="date_close" invisible="state != 'closed'"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Détails" name="details">
+                            <group>
+                                <field name="description" placeholder="Description de la réclamation..."/>
+                                <field name="action" placeholder="Action corrective/préventive..."/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View -->
+<!--    <record id="view_customer_clam_search" model="ir.ui.view">-->
+<!--        <field name="name">customer.clam.search</field>-->
+<!--        <field name="model">customer.clam</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <search>-->
+<!--                <field name="name"/>-->
+<!--                <field name="partner_id"/>-->
+<!--                <field name="responsible_id"/>-->
+<!--                <filter string="Nouveau" name="filter_new" domain="[('state', '=', 'new')]"/>-->
+<!--                <filter string="En cours" name="filter_in_progress" domain="[('state', '=', 'in_progress')]"/>-->
+<!--                <filter string="Clôturé" name="filter_closed" domain="[('state', '=', 'closed')]"/>-->
+<!--                <group string="Grouper par">-->
+<!--                    <filter string="Client" name="group_by_partner" context="{'group_by': 'partner_id'}"/>-->
+<!--                    <filter string="Responsable" name="group_by_responsible" context="{'group_by': 'responsible_id'}"/>-->
+<!--                    <filter string="État" name="group_by_state" context="{'group_by': 'state'}"/>-->
+<!--                    <filter string="Date" name="group_by_date" context="{'group_by': 'date'}"/>-->
+<!--                </group>-->
+<!--            </search>-->
+<!--        </field>-->
+<!--    </record>-->
+
+    <!-- Action -->
+    <record id="action_customer_clam" model="ir.actions.act_window">
+        <field name="name">Réclamations Clients</field>
+        <field name="res_model">customer.clam</field>
+        <field name="view_mode">list,form</field>
+<!--        <field name="search_view_id" ref="view_customer_clam_search"/>-->
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Créez une nouvelle réclamation client.
+            </p>
+        </field>
+    </record>
+
+    <!-- Menus -->
+    <menuitem id="menu_customer_clam" name="Réclamations Clients" parent="sale.sale_order_menu" action="action_customer_clam" sequence="99"/>
+
+</odoo>

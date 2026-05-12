@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_supplier_evaluation,supplier.evaluation,model_supplier_evaluation,base.group_user,1,1,1,1
+access_customer_clam,customer.clam,model_customer_clam,base.group_user,1,1,1,1
+access_customer_clam_report_wizard,customer.clam.report.wizard,model_customer_clam_report_wizard,base.group_user,1,1,1,1

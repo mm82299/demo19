@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <!-- FORM VIEW                                                    -->
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <record id="view_sinistre_dossier_form" model="ir.ui.view">
+        <field name="name">dms.sinistre.dossier.form</field>
+        <field name="model">dms.sinistre.dossier</field>
+        <field name="arch" type="xml">
+            <form string="Dossier Sinistre">
+                <header>
+                    <button name="action_receive" string="Réceptionner" type="object" class="btn-primary" invisible="state not in ('brouillon',)" />
+                    <button name="action_assign" string="Pôle Assistance" type="object" class="btn-primary" invisible="state not in ('reception',)" />
+                    <button name="action_process" string="Assigner Gestionnaire" type="object" class="btn-primary" invisible="state not in ('reception', 'en_cours')" />
+                    <button name="action_request_approval" string="Demander Approbation" type="object" class="btn-warning" invisible="state not in ('en_cours',) or approval_level == 'none'" />
+                    <button name="action_approve" string="Approuver" type="object" class="btn-success" invisible="state != 'approbation'" groups="dms_optimisation.group_dms_chef_pole" />
+                    <button name="action_transfer_convention" string="Pôle Convention" type="object" invisible="state not in ('en_cours',)" />
+                    <button name="action_archive_dossier" string="Archiver" type="object" invisible="state in ('brouillon', 'archive')" />
+                    <button name="action_close" string="Clôturer" type="object" class="btn-danger" invisible="state in ('brouillon', 'archive')" />
+                    <button name="action_reset_draft" string="Remettre en brouillon" type="object" invisible="state == 'brouillon'" />
+                    <field name="stage_id" widget="statusbar" options="{'clickable': '1'}" />
+                </header>
+                <sheet>
+                    <div name="button_box" class="oe_button_box">
+                        <button name="action_view_documents" type="object" class="oe_stat_button" icon="fa-file-text-o">
+                            <field name="document_count" string="Documents" widget="statinfo" />
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Informations Générales">
+                            <field name="type_sinistre" />
+                            <field name="workflow_model" />
+                            <field name="is_identified" />
+                            <field name="nature_fonds_perdus" invisible="workflow_model not in ('C', 'D')" />
+                            <field name="partner_id" />
+                            <field name="company_adverse_id" invisible="workflow_model not in ('A', 'B', 'D', 'E')" />
+                            <field name="company_id" groups="base.group_multi_company" />
+                        </group>
+                        <group string="Assignation &amp; Dates">
+                            <field name="gestionnaire_id" />
+                            <field name="chef_pole_id" invisible="approval_level == 'none'" />
+                            <field name="date_reception" />
+                            <field name="date_creation" />
+                            <field name="date_cloture" />
+                        </group>
+                    </group>
+                    <group string="Montant &amp; Approbation">
+                        <group>
+                            <field name="amount" />
+                            <field name="currency_id" invisible="1" />
+                            <field name="approval_level" />
+                        </group>
+                        <group>
+                            <field name="is_approved" />
+                            <field name="approved_by_id" invisible="not is_approved" />
+                            <field name="approval_date" invisible="not is_approved" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="documents" string="Documents Reçus">
+                            <group>
+                                <field name="reception_folder_id" invisible="1"/>
+                                <field name="document_type_ids" widget="many2many_tags" />
+                            </group>
+                            <field name="document_ids" context="{'default_folder_id': reception_folder_id, 'default_type': 'binary'}">
+                                <list editable="bottom">
+                                    <field name="datas" filename="name" widget="binary" string="Fichier" />
+                                    <field name="name" />
+                                    <field name="folder_id" string="Espace de travail" />
+                                    <field name="dms_document_type_id" />
+                                    <field name="mimetype" readonly="1" optional="show" />
+                                    <field name="create_date" readonly="1" optional="hide" />
+                                    <field name="owner_id" readonly="1" optional="hide" />
+                                </list>
+                            </field>
+                        </page>
+                        <page name="archive" string="Archive">
+                            <group>
+                                <field name="archive_number" />
+                                <field name="box_number" />
+                                <field name="state" />
+                            </group>
+                        </page>
+                        <page name="notes" string="Notes">
+                            <field name="notes" placeholder="Notes internes..." />
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <!-- TREE VIEW                                                    -->
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <record id="view_sinistre_dossier_tree" model="ir.ui.view">
+        <field name="name">dms.sinistre.dossier.tree</field>
+        <field name="model">dms.sinistre.dossier</field>
+        <field name="arch" type="xml">
+            <list string="Dossiers Sinistre" decoration-danger="state == 'approbation'" decoration-success="state == 'termine'" decoration-muted="state == 'archive'">
+                <field name="name" />
+                <field name="type_sinistre" />
+                <field name="workflow_model" />
+                <field name="partner_id" />
+                <field name="company_adverse_id" optional="show" />
+                <field name="gestionnaire_id" />
+                <field name="amount" sum="Total" />
+                <field name="approval_level" />
+                <field name="date_reception" />
+                <field name="stage_id" />
+                <field name="state" widget="badge" decoration-info="state == 'en_cours'" decoration-danger="state == 'approbation'" decoration-success="state == 'termine'" decoration-warning="state == 'reception'" decoration-muted="state == 'archive'" />
+                <field name="document_count" string="Docs" />
+                <field name="box_number" optional="hide" />
+            </list>
+        </field>
+    </record>
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <!-- KANBAN VIEW                                                  -->
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <record id="view_sinistre_dossier_kanban" model="ir.ui.view">
+        <field name="name">dms.sinistre.dossier.kanban</field>
+        <field name="model">dms.sinistre.dossier</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="stage_id" class="o_kanban_small_column">
+                <field name="name" />
+                <field name="type_sinistre" />
+                <field name="partner_id" />
+                <field name="gestionnaire_id" />
+                <field name="amount" />
+                <field name="approval_level" />
+                <field name="state" />
+                <field name="document_count" />
+                <templates>
+                    <t t-name="card">
+                        <div class="oe_kanban_content">
+                            <div class="o_kanban_record_top">
+                                <div class="o_kanban_record_headings">
+                                    <strong class="o_kanban_record_title">
+                                        <field name="name" />
+                                    </strong>
+                                </div>
+                                <div class="o_kanban_record_top_right">
+                                    <field name="state" widget="label_selection" options="{'classes': {
+                                               'brouillon': 'default',
+                                               'reception': 'warning',
+                                               'en_cours': 'info',
+                                               'approbation': 'danger',
+                                               'termine': 'success',
+                                               'archive': 'secondary'
+                                           }}" />
+                                </div>
+                            </div>
+                            <div class="o_kanban_record_body">
+                                <div>
+                                    <strong>Type:</strong>
+                                    <field name="type_sinistre" />
+                                </div>
+                                <div t-if="record.partner_id.value">
+                                    <strong>Assuré:</strong>
+                                    <field name="partner_id" />
+                                </div>
+                                <div t-if="record.amount.raw_value">
+                                    <strong>Montant:</strong>
+                                    <field name="amount" widget="monetary" />
+                                </div>
+                                <div t-if="record.approval_level.raw_value != 'none'">
+                                    <span class="badge text-bg-danger">
+                                        Approbation:
+                                        <field name="approval_level" />
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="o_kanban_record_bottom">
+                                <div class="oe_kanban_bottom_left">
+                                    <span title="Documents">
+                                        <i class="fa fa-file-text-o" />
+                                        <field name="document_count" />
+                                    </span>
+                                </div>
+                                <div class="oe_kanban_bottom_right">
+                                    <field name="gestionnaire_id" widget="many2one_avatar_user" />
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <!-- SEARCH VIEW                                                  -->
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <record id="view_sinistre_dossier_search" model="ir.ui.view">
+        <field name="name">dms.sinistre.dossier.search</field>
+        <field name="model">dms.sinistre.dossier</field>
+        <field name="arch" type="xml">
+            <search string="Rechercher un dossier">
+                <field name="name" />
+                <field name="partner_id" />
+                <field name="gestionnaire_id" />
+                <field name="company_adverse_id" />
+                <field name="box_number" />
+                <separator />
+                <filter name="brouillon" string="Brouillon" domain="[('state', '=', 'brouillon')]" />
+                <filter name="en_cours" string="En cours" domain="[('state', '=', 'en_cours')]" />
+                <filter name="approbation" string="En approbation" domain="[('state', '=', 'approbation')]" />
+                <filter name="termine" string="Terminé" domain="[('state', '=', 'termine')]" />
+                <filter name="archive" string="Archivé" domain="[('state', '=', 'archive')]" />
+                <separator />
+                <filter name="corporel" string="Corporel" domain="[('type_sinistre', '=', 'corporel')]" />
+                <filter name="materiel" string="Matériel" domain="[('type_sinistre', '=', 'materiel')]" />
+                <separator />
+                <filter name="amount_gt_20k" string="Montant > 20 000 DT" domain="[('amount', '>', 20000)]" />
+                <filter name="amount_gt_100k" string="Montant > 100 000 DT" domain="[('amount', '>', 100000)]" />
+                <separator />
+                <filter name="my_dossiers" string="Mes Dossiers" domain="[('gestionnaire_id', '=', uid)]" />
+                <separator />
+                <group name="group_by">
+                    <filter name="group_stage" string="Étape" context="{'group_by': 'stage_id'}" />
+                    <filter name="group_gestionnaire" string="Gestionnaire" context="{'group_by': 'gestionnaire_id'}" />
+                    <filter name="group_model" string="Modèle Workflow" context="{'group_by': 'workflow_model'}" />
+                    <filter name="group_type" string="Type de Sinistre" context="{'group_by': 'type_sinistre'}" />
+                    <filter name="group_company" string="Compagnie Adverse" context="{'group_by': 'company_adverse_id'}" />
+                    <filter name="group_date" string="Date de Réception" context="{'group_by': 'date_reception'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <!-- ACTION                                                       -->
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <record id="action_sinistre_dossier" model="ir.actions.act_window">
+        <field name="name">Dossiers Sinistre</field>
+        <field name="res_model">dms.sinistre.dossier</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="search_view_id" ref="view_sinistre_dossier_search" />
+        <field name="context">{'search_default_en_cours': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Créer un nouveau dossier sinistre</p>
+            <p>Gérez vos dossiers sinistres avec un workflow complet :
+                réception, traitement, approbation et archivage.</p>
+        </field>
+    </record>
+</odoo>

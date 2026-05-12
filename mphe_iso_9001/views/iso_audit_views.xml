@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_iso_audit_form" model="ir.ui.view">
+        <field name="name">iso.audit.form</field>
+        <field name="model">iso.audit</field>
+        <field name="arch" type="xml">
+            <form string="ISO Audit">
+                <header>
+                    <button name="action_schedule" string="Schedule" type="object" invisible="state != 'draft'" class="oe_highlight"/>
+                    <button name="action_start" string="Start Audit" type="object" invisible="state != 'scheduled'" class="oe_highlight"/>
+                    <button name="action_report" string="Generate Report" type="object" invisible="state != 'in_progress'" class="oe_highlight"/>
+                    <button name="action_close" string="Close Audit" type="object" invisible="state != 'reporting'" class="oe_highlight"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,scheduled,in_progress,reporting,closed"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="audit_program"/>
+                            <field name="audit_type"/>
+                            <field name="planned_start_date"/>
+                            <field name="planned_end_date"/>
+                        </group>
+                        <group>
+                            <field name="lead_auditor_id"/>
+                            <field name="auditor_ids" widget="many2many_tags"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Scope &amp; Summary">
+                            <group>
+                                <field name="scope"/>
+                                <field name="summary"/>
+                            </group>
+                        </page>
+                        <page string="Audit Findings">
+                            <field name="finding_ids">
+                                <tree editable="bottom">
+                                    <field name="finding_type"/>
+                                    <field name="process_id"/>
+                                    <field name="description"/>
+                                    <field name="action_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_iso_audit_tree" model="ir.ui.view">
+        <field name="name">iso.audit.tree</field>
+        <field name="model">iso.audit</field>
+        <field name="arch" type="xml">
+            <tree string="ISO Audits">
+                <field name="name"/>
+                <field name="audit_program"/>
+                <field name="audit_type"/>
+                <field name="planned_start_date"/>
+                <field name="lead_auditor_id"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_iso_audit" model="ir.actions.act_window">
+        <field name="name">Internal &amp; External Audits</field>
+        <field name="res_model">iso.audit</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- ISO Process View -->
+    <record id="view_iso_process_tree" model="ir.ui.view">
+        <field name="name">iso.process.tree</field>
+        <field name="model">iso.process</field>
+        <field name="arch" type="xml">
+            <tree string="Processes" editable="bottom">
+                <field name="name"/>
+                <field name="owner_id"/>
+                <field name="active" widget="boolean_toggle"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_iso_process" model="ir.actions.act_window">
+        <field name="name">SMQ Processes Map</field>
+        <field name="res_model">iso.process</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

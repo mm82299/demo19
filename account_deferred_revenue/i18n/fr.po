@@ -1,0 +1,469 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_deferred_revenue
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-08 09:18+0000\n"
+"PO-Revision-Date: 2026-05-08 09:18+0000\n"
+"Last-Translator: Auto-Translator Script (DeepTranslator)\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_deferred_revenue_generate_wizard_form
+msgid "A <b>deferral entry</b> dated on the last day of the period."
+msgstr "Une <b>entrée de report</b> datée du dernier jour de la période."
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_deferred_revenue_generate_wizard_form
+msgid "A <b>reversal entry</b> dated on the first day of the next month."
+msgstr ""
+"Une <b>écriture de contrepassation</b> datée du premier jour du mois "
+"suivant."
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,help:account_deferred_revenue.field_res_config_settings__deferred_revenue_account_id
+msgid "Account used for deferred revenues."
+msgstr "Compte utilisé pour les revenus reportés."
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_deferred_revenue_generate_wizard_form
+msgid ""
+"All posted customer invoices with deferred dates overlapping this period "
+"will be included."
+msgstr ""
+"Toutes les factures clients publiées avec des dates différées chevauchant "
+"cette période seront incluses."
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.res_config_settings_view_form_deferred_revenue
+msgid "Based on"
+msgstr "Basé sur"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_deferred_revenue_generate_wizard_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: account_deferred_revenue
+#: model:ir.model,name:account_deferred_revenue.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_deferred_revenue_generate_wizard__company_id
+msgid "Company"
+msgstr "Entreprise"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_deferred_revenue_report_search
+msgid "Completed"
+msgstr "Complété"
+
+#. module: account_deferred_revenue
+#: model:ir.model,name:account_deferred_revenue.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_deferred_revenue_generate_wizard__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_deferred_revenue_generate_wizard__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_deferred_revenue_report_search
+msgid "Customer"
+msgstr "Client"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields.selection,name:account_deferred_revenue.selection__res_company__deferred_revenue_amount_computation_method__day
+msgid "Days"
+msgstr "Jours"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_move_form_deferred_revenue
+msgid "Deferral Entries"
+msgstr "Entrées de report"
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/models/account_move.py:0
+msgid "Deferral of %s"
+msgstr "Report de %s"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_move_form_deferred_revenue
+msgid "Deferred Date"
+msgstr "Date de report"
+
+#. module: account_deferred_revenue
+#: model:ir.ui.menu,name:account_deferred_revenue.menu_account_deferred_revenue_report
+msgid "Deferred Revenue"
+msgstr "Produits constatés d'avance"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_res_company__deferred_revenue_account_id
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_res_config_settings__deferred_revenue_account_id
+msgid "Deferred Revenue Account"
+msgstr "Produits constatés d'avance"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_res_company__deferred_revenue_amount_computation_method
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_res_config_settings__deferred_revenue_amount_computation_method
+msgid "Deferred Revenue Based on"
+msgstr "Produits constatés d'avance basés sur"
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/models/account_move.py:0
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_bank_statement_line__deferred_revenue_move_ids
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_move__deferred_revenue_move_ids
+msgid "Deferred Revenue Entries"
+msgstr "Entrées de Produits constatés d'avance"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_res_company__deferred_revenue_journal_id
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_res_config_settings__deferred_revenue_journal_id
+msgid "Deferred Revenue Journal"
+msgstr "Journal"
+
+#. module: account_deferred_revenue
+#: model:ir.actions.act_window,name:account_deferred_revenue.action_account_deferred_revenue_report
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_deferred_revenue_report_search
+msgid "Deferred Revenue Report"
+msgstr "Rapport sur les Produits constatés d'avance"
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/wizard/account_deferred_revenue_generate_wizard.py:0
+msgid "Deferred Revenue – Cancellation"
+msgstr "Revenus reportés – Annulation"
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/wizard/account_deferred_revenue_generate_wizard.py:0
+msgid "Deferred Revenue – Deferred Balance"
+msgstr "Revenus reportés – Solde différé"
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/wizard/account_deferred_revenue_generate_wizard.py:0
+msgid "Deferred Revenue – Recognition"
+msgstr "Revenus reportés – Comptabilisation"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.res_config_settings_view_form_deferred_revenue
+msgid "Deferred revenue account"
+msgstr "Produits constatés d'avance"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.res_config_settings_view_form_deferred_revenue
+msgid "Deferred revenue entries:"
+msgstr "Écritures de revenus reportés:"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_deferred_revenue_generate_wizard__display_name
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_move__display_name
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_res_company__display_name
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_deferred_revenue_report_list
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_deferred_revenue_generate_wizard__date_end
+msgid "End of Period"
+msgstr "Fin de période"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_deferred_revenue_generate_wizard_form
+msgid "End of Period (Last Day of Month)"
+msgstr "Fin de période (dernier jour du mois)"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields.selection,name:account_deferred_revenue.selection__res_company__deferred_revenue_amount_computation_method__full_months
+msgid "Full Months"
+msgstr "Mois complets"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_res_company__generate_deferred_revenue_entries_method
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_res_config_settings__generate_deferred_revenue_entries_method
+msgid "Generate Deferred Revenue Entries"
+msgstr "Générer des entrées de revenus différés"
+
+#. module: account_deferred_revenue
+#: model:ir.actions.server,name:account_deferred_revenue.action_server_deferred_revenue_generate
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.res_config_settings_view_form_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_deferred_revenue_generate_wizard_form
+msgid "Generate Entries"
+msgstr "Générer des entrées"
+
+#. module: account_deferred_revenue
+#: model:ir.actions.act_window,name:account_deferred_revenue.action_account_deferred_revenue_generate_wizard
+#: model:ir.model,name:account_deferred_revenue.model_account_deferred_revenue_generate_wizard
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_deferred_revenue_generate_wizard_form
+msgid "Generate Grouped Deferred Revenue Entries"
+msgstr "Générer des écritures de revenus différés groupés"
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/wizard/account_deferred_revenue_generate_wizard.py:0
+msgid "Generated Deferred Revenue Entries"
+msgstr "Écritures de revenus différés générés"
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/wizard/account_deferred_revenue_generate_wizard.py:0
+msgid "Grouped Deferred Revenues – %s"
+msgstr "Revenus différés groupés – %s"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_move_line__has_deferred_revenue_moves
+msgid "Has Deferred Revenue Moves"
+msgstr "A des mouvements de revenus différés"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_deferred_revenue_generate_wizard__id
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_move__id
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_move_line__id
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_res_company__id
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_res_config_settings__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_deferred_revenue_report_search
+msgid "In Progress"
+msgstr "En cours"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_deferred_revenue_report_search
+msgid "Income Account"
+msgstr "Compte de revenu"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_deferred_revenue_report_search
+msgid "Invoice"
+msgstr "Facture"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_bank_statement_line__is_deferred_revenue_entry
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_move__is_deferred_revenue_entry
+msgid "Is Deferred Revenue Entry"
+msgstr "Est-ce que la saisie des revenus différés"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.res_config_settings_view_form_deferred_revenue
+msgid "Journal"
+msgstr "Journal"
+
+#. module: account_deferred_revenue
+#: model:ir.model,name:account_deferred_revenue.model_account_move
+msgid "Journal Entry"
+msgstr "Écriture comptable"
+
+#. module: account_deferred_revenue
+#: model:ir.model,name:account_deferred_revenue.model_account_move_line
+msgid "Journal Item"
+msgstr "Écriture comptable"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,help:account_deferred_revenue.field_res_config_settings__deferred_revenue_journal_id
+msgid "Journal used for deferred revenue entries."
+msgstr "Journal utilisé pour les écritures de revenus différés."
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_deferred_revenue_generate_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_deferred_revenue_generate_wizard__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields.selection,name:account_deferred_revenue.selection__res_company__generate_deferred_revenue_entries_method__manual
+msgid "Manually & Grouped"
+msgstr "Manuellement et groupé"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,help:account_deferred_revenue.field_res_config_settings__deferred_revenue_amount_computation_method
+msgid "Method used to compute the amount of deferred revenue entries."
+msgstr ""
+"Méthode utilisée pour calculer le montant des écritures de revenus différés."
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,help:account_deferred_revenue.field_res_config_settings__generate_deferred_revenue_entries_method
+msgid "Method used to generate deferred revenue entries."
+msgstr "Méthode utilisée pour générer les écritures de revenus différés."
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields.selection,name:account_deferred_revenue.selection__res_company__deferred_revenue_amount_computation_method__month
+msgid "Months"
+msgstr "Mois"
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/wizard/account_deferred_revenue_generate_wizard.py:0
+msgid "No deferred revenue lines found for the period ending %s."
+msgstr ""
+"Aucune ligne de revenus reportés trouvée pour la période se terminant en %s."
+
+#. module: account_deferred_revenue
+#: model_terms:ir.actions.act_window,help:account_deferred_revenue.action_account_deferred_revenue_report
+msgid "No deferred revenue lines yet!"
+msgstr "Pas encore de lignes de revenus reportés!"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_deferred_revenue_report_search
+msgid "Not Started"
+msgstr "Non démarré"
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/wizard/account_deferred_revenue_generate_wizard.py:0
+msgid "Nothing to process for this period."
+msgstr "Rien à traiter pour cette période."
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields.selection,name:account_deferred_revenue.selection__res_company__generate_deferred_revenue_entries_method__on_validation
+msgid "On invoice validation"
+msgstr "Sur validation de la facture"
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/models/account_move.py:0
+msgid "Original Invoice"
+msgstr "Facture originale"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_bank_statement_line__deferred_revenue_original_move_ids
+#: model:ir.model.fields,field_description:account_deferred_revenue.field_account_move__deferred_revenue_original_move_ids
+msgid "Original Invoices"
+msgstr "Factures originales"
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/wizard/account_deferred_revenue_generate_wizard.py:0
+msgid "Please configure a Deferred Revenue Account in Accounting Settings."
+msgstr ""
+"Veuillez configurer un compte de revenus reportés dans les paramètres "
+"comptables."
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/wizard/account_deferred_revenue_generate_wizard.py:0
+msgid "Please configure a Deferred Revenue Journal in Accounting Settings."
+msgstr ""
+"Veuillez configurer un journal des revenus reportés dans les paramètres "
+"comptables."
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/models/account_move.py:0
+msgid "Please set the Deferred Revenue Account in Accounting Settings."
+msgstr ""
+"Veuillez définir le compte de revenus reportés dans les paramètres "
+"comptables."
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/models/account_move.py:0
+msgid "Please set the Deferred Revenue Journal in Accounting Settings."
+msgstr ""
+"Veuillez définir le journal des revenus reportés dans les paramètres "
+"comptables."
+
+#. module: account_deferred_revenue
+#: model_terms:ir.actions.act_window,help:account_deferred_revenue.action_account_deferred_revenue_report
+msgid ""
+"Post a customer invoice with <b>Deferred Date</b> set on one or more\n"
+"                invoice lines to start seeing deferral schedules here."
+msgstr ""
+"Valider une facture client avec une <b>Date reportés</b> définie sur un ou plusieurs\n"
+"                lignes de facture pour commencer à voir les calendriers de report ici."
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_move_form_deferred_revenue
+msgid "Related Sale(s)"
+msgstr "Vente(s) associée(s)"
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/wizard/account_deferred_revenue_generate_wizard.py:0
+msgid "Reversal – Grouped Deferred Revenues – %s"
+msgstr "Renversement – Revenus reportés groupés – %s"
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_deferred_revenue_report_list
+msgid "Start Date"
+msgstr "Date de début"
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,help:account_deferred_revenue.field_account_bank_statement_line__deferred_revenue_move_ids
+#: model:ir.model.fields,help:account_deferred_revenue.field_account_move__deferred_revenue_move_ids
+msgid "The deferred revenue entries created by this invoice."
+msgstr "Les écritures de revenus différés créées par cette facture."
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,help:account_deferred_revenue.field_account_deferred_revenue_generate_wizard__date_end
+msgid "The last day of the month to generate entries for."
+msgstr "Le dernier jour du mois pour lequel générer des entrées."
+
+#. module: account_deferred_revenue
+#: model:ir.model.fields,help:account_deferred_revenue.field_account_bank_statement_line__deferred_revenue_original_move_ids
+#: model:ir.model.fields,help:account_deferred_revenue.field_account_move__deferred_revenue_original_move_ids
+msgid "The original invoices that created these deferred revenue entries."
+msgstr ""
+"Les factures originales qui ont créé ces écritures de revenus reportés."
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/wizard/account_deferred_revenue_generate_wizard.py:0
+msgid "This wizard is only available in 'Manually & Grouped' mode."
+msgstr ""
+"Cet assistant est uniquement disponible en mode «Manuellement et groupé»."
+
+#. module: account_deferred_revenue
+#: model_terms:ir.ui.view,arch_db:account_deferred_revenue.view_account_deferred_revenue_generate_wizard_form
+msgid ""
+"Two grouped journal entries will be created for the period ending on the "
+"selected date:"
+msgstr ""
+"Deux écritures de journal groupées seront créées pour la période se "
+"terminant à la date sélectionnée :"
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/models/account_move.py:0
+msgid ""
+"You cannot reset to draft an invoice that is grouped in a deferred revenue "
+"entry. Create a credit note instead."
+msgstr ""
+"Vous ne pouvez pas réinitialiser une facture regroupée dans une saisie de "
+"produits différés pour rédiger une facture. Créez plutôt une note de crédit."
+
+#. module: account_deferred_revenue
+#. odoo-python
+#: code:addons/account_deferred_revenue/models/account_move.py:0
+#: code:addons/account_deferred_revenue/wizard/account_deferred_revenue_generate_wizard.py:0
+msgid "id"
+msgstr "id"

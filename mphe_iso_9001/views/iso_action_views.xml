@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_iso_action_form" model="ir.ui.view">
+        <field name="name">iso.action.form</field>
+        <field name="model">iso.action</field>
+        <field name="arch" type="xml">
+            <form string="ISO Action">
+                <header>
+                    <button name="action_confirm" string="Confirm" type="object" invisible="state != 'draft'" class="oe_highlight"/>
+                    <button name="action_start" string="Start Work" type="object" invisible="state != 'analysis'" class="oe_highlight"/>
+                    <button name="action_verify" string="Verify Effectiveness" type="object" invisible="state != 'progress'" class="oe_highlight"/>
+                    <button name="action_close" string="Close" type="object" invisible="state != 'verification'" class="oe_highlight"/>
+                    <button name="action_cancel" string="Cancel" type="object" invisible="state in ('done', 'cancel')"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,analysis,progress,verification,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="type"/>
+                            <field name="origin"/>
+                            <field name="date_detected"/>
+                            <field name="detected_by_id"/>
+                        </group>
+                        <group>
+                            <field name="verification_date"/>
+                            <field name="is_effective"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Description &amp; Root Cause">
+                            <group>
+                                <field name="description"/>
+                                <field name="root_cause"/>
+                            </group>
+                        </page>
+                        <page string="Action Plan">
+                            <field name="action_line_ids">
+                                <tree editable="bottom">
+                                    <field name="description"/>
+                                    <field name="responsible_id"/>
+                                    <field name="target_date"/>
+                                    <field name="completion_date"/>
+                                    <field name="state"/>
+                                    <button name="action_done" string="Done" type="object" icon="fa-check" invisible="state != 'todo'"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Verification">
+                            <field name="verification_comment"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_iso_action_tree" model="ir.ui.view">
+        <field name="name">iso.action.tree</field>
+        <field name="model">iso.action</field>
+        <field name="arch" type="xml">
+            <tree string="ISO Actions" decoration-info="state == 'progress'" decoration-success="state == 'done'" decoration-warning="state == 'verification'">
+                <field name="name"/>
+                <field name="type"/>
+                <field name="origin"/>
+                <field name="date_detected"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_iso_action" model="ir.actions.act_window">
+        <field name="name">Improvements &amp; Non-Conformities</field>
+        <field name="res_model">iso.action</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,61 @@
+.o_main_navbar {
+    --NavBar-backgroundColor: #ffffff !important;
+    --NavBar-color: #212529 !important;
+    --NavBar-entry-color: #212529 !important;
+    --NavBar-entry-color-hover: #000000 !important;
+    
+    border-bottom: 1px solid #dee2e6 !important;
+    background-color: #ffffff !important;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+
+    .o_menu_brand {
+        color: #212529 !important;
+    }
+
+    .o_navbar_apps_menu {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        
+        .dropdown-toggle {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            color: #212529 !important;
+            
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .o_menu_sections, .o_menu_systray {
+        .dropdown-toggle, a, .btn, .nav-link, span {
+            color: #212529 !important;
+        }
+    }
+
+    // Adjustments when apps menu is open
+    &:has(.mk_app_menu.show) {
+        background-color: #ffffff !important;
+        --NavBar-backgroundColor: #ffffff !important;
+        .o_navbar_apps_menu .dropdown-toggle {
+            color: #212529 !important;
+        }
+    }
+    
+    // Systray refinement
+    .o_menu_systray {
+        .o_user_menu {
+            .oe_topbar_avatar {
+                height: 26px;
+                width: 26px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

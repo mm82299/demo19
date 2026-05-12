@@ -1,0 +1,36 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* acount_withholding_stamp_tax
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-08 07:43+0000\n"
+"PO-Revision-Date: 2025-07-08 07:43+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: acount_withholding_stamp_tax
+#: model:ir.model.fields,field_description:acount_withholding_stamp_tax.field_account_withholding__stamp_tax
+msgid "Stamp tax"
+msgstr "Timbre Fiscal"
+
+#. module: acount_withholding_stamp_tax
+#: model:ir.model.fields.selection,name:acount_withholding_stamp_tax.selection__account_withholding__stamp_tax__with_stamp
+msgid "With Stamp tax"
+msgstr "Avec timbre Fiscal"
+
+#. module: acount_withholding_stamp_tax
+#: model:ir.model,name:acount_withholding_stamp_tax.model_account_withholding
+msgid "Withholding tax"
+msgstr "Retenue à la source"
+
+#. module: acount_withholding_stamp_tax
+#: model:ir.model.fields.selection,name:acount_withholding_stamp_tax.selection__account_withholding__stamp_tax__without_stamp
+msgid "Without Stamp tax"
+msgstr "Sans timbre Fiscal"

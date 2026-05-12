@@ -1,0 +1,12 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Sequence for account withholding -->
+        <record id="seq_account_withholding_advance" model="ir.sequence">
+            <field name="name">Retenue d'Avance</field>
+            <field name="code">account.withholding.advance</field>
+            <field name="prefix">RETENUE-ADV/%(year)s/</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>

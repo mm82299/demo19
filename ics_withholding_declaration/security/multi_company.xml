@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="withholding_declaration_multi_company" model="ir.rule">
+            <field name="name">withholding declaration multi-company</field>
+            <field name="model_id" ref="model_withholding_declaration"/>
+            <field name="global" eval="True"/>
+             <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+        <record id="withholding_declaration_line_multi_company" model="ir.rule">
+            <field name="name">Withholding Declaration Line multi-company</field>
+            <field name="model_id" ref="model_withholding_declaration_line"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+        <record id="withholding_declaration_operation_line_multi_company" model="ir.rule">
+            <field name="name">Withholding Declaration Operation Line multi-company</field>
+            <field name="model_id" ref="model_withholding_declaration_operation_line"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+    </data>
+</odoo>

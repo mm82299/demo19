@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_iso_indicator_form" model="ir.ui.view">
+        <field name="name">iso.indicator.form</field>
+        <field name="model">iso.indicator</field>
+        <field name="arch" type="xml">
+            <form string="Quality Indicator">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="KPI Name..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="process_id"/>
+                            <field name="frequency"/>
+                            <field name="active" widget="boolean_toggle"/>
+                        </group>
+                        <group>
+                            <field name="target_operator" style="width: 30%%; display: inline-block;"/>
+                            <field name="target_value" style="width: 30%%; display: inline-block;"/>
+                            <field name="unit" placeholder="Unit"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Calculation &amp; Method">
+                            <field name="calculation_method"/>
+                        </page>
+                        <page string="Measurements">
+                            <field name="measurement_ids">
+                                <tree editable="bottom" decoration-success="achieved == True" decoration-danger="achieved == False">
+                                    <field name="date"/>
+                                    <field name="value"/>
+                                    <field name="target_value" readonly="1"/>
+                                    <field name="achieved" invisible="1"/>
+                                    <field name="comment"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_iso_indicator_tree" model="ir.ui.view">
+        <field name="name">iso.indicator.tree</field>
+        <field name="model">iso.indicator</field>
+        <field name="arch" type="xml">
+            <tree string="KPI indicators">
+                <field name="process_id"/>
+                <field name="name"/>
+                <field name="frequency"/>
+                <field name="target_operator"/>
+                <field name="target_value"/>
+                <field name="unit"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_iso_indicator" model="ir.actions.act_window">
+        <field name="name">Performance Indicators (KPI)</field>
+        <field name="res_model">iso.indicator</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

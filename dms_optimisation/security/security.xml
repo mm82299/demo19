@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Category -->
+    <record id="module_category_dms_ctama" model="ir.module.category">
+        <field name="name">DMS CTAMA</field>
+        <field name="description">Gestion documentaire des sinistres CTAMA</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <!-- Privilege -->
+    <record model="res.groups.privilege" id="res_groups_privilege_dms_ctama">
+        <field name="name">DMS CTAMA</field>
+        <field name="category_id" ref="module_category_dms_ctama"/>
+    </record>
+
+    <!-- Gestionnaire Group -->
+    <record id="group_dms_gestionnaire" model="res.groups">
+        <field name="name">Gestionnaire</field>
+        <field name="privilege_id" ref="res_groups_privilege_dms_ctama"/>
+        <field name="implied_ids" eval="[(4, ref('documents.group_documents_user'))]"/>
+    </record>
+
+    <!-- Chef de Pôle Group -->
+    <record id="group_dms_chef_pole" model="res.groups">
+        <field name="name">Chef de Pôle</field>
+        <field name="privilege_id" ref="res_groups_privilege_dms_ctama"/>
+        <field name="implied_ids" eval="[(4, ref('group_dms_gestionnaire'))]"/>
+    </record>
+
+    <!-- Direction Générale Group -->
+    <record id="group_dms_direction" model="res.groups">
+        <field name="name">Direction Générale</field>
+        <field name="privilege_id" ref="res_groups_privilege_dms_ctama"/>
+        <field name="implied_ids" eval="[(4, ref('group_dms_chef_pole'))]"/>
+    </record>
+
+    <!-- Sequence -->
+    <record id="seq_sinistre_dossier" model="ir.sequence">
+        <field name="name">Dossier Sinistre</field>
+        <field name="code">dms.sinistre.dossier</field>
+        <field name="prefix">SIN/%(year)s/</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+    <record id="seq_sinistre_archive" model="ir.sequence">
+        <field name="name">Archive Sinistre</field>
+        <field name="code">dms.sinistre.archive</field>
+        <field name="prefix">ARCH/%(year)s/</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+    <!-- Record Rules -->
+    <record id="dms_sinistre_dossier_follower_rule" model="ir.rule">
+        <field name="name">Dossiers Sinistre: Visibilité pour les abonnés (Followers) et gestionnaires</field>
+        <field name="model_id" ref="model_dms_sinistre_dossier"/>
+        <field name="domain_force">['|', '|', ('message_partner_ids', 'in', [user.partner_id.id]), ('gestionnaire_id', '=', user.id), ('create_uid', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('dms_optimisation.group_dms_gestionnaire'))]"/>
+    </record>
+
+    <record id="dms_sinistre_dossier_all_rule" model="ir.rule">
+        <field name="name">Dossiers Sinistre: Visibilité totale pour Direction Générale</field>
+        <field name="model_id" ref="model_dms_sinistre_dossier"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('dms_optimisation.group_dms_direction'))]"/>
+    </record>
+
+</odoo>

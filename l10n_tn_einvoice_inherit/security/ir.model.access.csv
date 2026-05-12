@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_l10n_tn_einvoice_inherit_user,access.l10n.tn.einvoice.inherit.user,model_l10n_tn_einvoice_inherit,base.group_user,1,1,1,1

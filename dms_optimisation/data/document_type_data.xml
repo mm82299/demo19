@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="doctype_pv" model="dms.document.type">
+            <field name="name">Procès-verbaux</field>
+            <field name="code">PV</field>
+            <field name="sequence">10</field>
+        </record>
+        <record id="doctype_facture" model="dms.document.type">
+            <field name="name">Factures</field>
+            <field name="code">FACT</field>
+            <field name="sequence">20</field>
+        </record>
+        <record id="doctype_attestation" model="dms.document.type">
+            <field name="name">Attestation Non PV</field>
+            <field name="code">ATT</field>
+            <field name="sequence">30</field>
+        </record>
+        <record id="doctype_procuration" model="dms.document.type">
+            <field name="name">Procurations</field>
+            <field name="code">PROC</field>
+            <field name="sequence">40</field>
+        </record>
+        <record id="doctype_retour_cheque" model="dms.document.type">
+            <field name="name">Retour Chèques</field>
+            <field name="code">RCHQ</field>
+            <field name="sequence">50</field>
+        </record>
+        <record id="doctype_acte_deces" model="dms.document.type">
+            <field name="name">Actes de décès</field>
+            <field name="code">DECES</field>
+            <field name="sequence">60</field>
+        </record>
+        <record id="doctype_quittance" model="dms.document.type">
+            <field name="name">Quittances</field>
+            <field name="code">QUIT</field>
+            <field name="sequence">70</field>
+        </record>
+        <record id="doctype_photo" model="dms.document.type">
+            <field name="name">Photos</field>
+            <field name="code">PHOTO</field>
+            <field name="sequence">80</field>
+        </record>
+        <record id="doctype_rapport" model="dms.document.type">
+            <field name="name">Rapports sans photos</field>
+            <field name="code">RAPP</field>
+            <field name="sequence">90</field>
+        </record>
+        <record id="doctype_devis" model="dms.document.type">
+            <field name="name">Devis de Factures</field>
+            <field name="code">DEVIS</field>
+            <field name="sequence">100</field>
+        </record>
+
+    </data>
+</odoo>

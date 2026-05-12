@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Root app menu -->
+    <menuitem id="menu_dms_ctama_root"
+              name="CTAMA Sinistres"
+              web_icon="dms_optimisation,static/description/icon.png"
+              sequence="20"/>
+
+    <!-- Dossiers Sinistre -->
+    <menuitem id="menu_sinistre_dossier"
+              name="Dossiers Sinistre"
+              parent="menu_dms_ctama_root"
+              action="action_sinistre_dossier"
+              sequence="10"/>
+
+    <!-- Réception de Courrier (Wizard) -->
+    <menuitem id="menu_reception_wizard"
+              name="Réception de Courrier"
+              parent="menu_dms_ctama_root"
+              action="action_dossier_reception_wizard"
+              sequence="15"/>
+
+    <!-- Configuration parent -->
+    <menuitem id="menu_dms_config"
+              name="Configuration"
+              parent="menu_dms_ctama_root"
+              sequence="90"
+              groups="dms_optimisation.group_dms_direction"/>
+
+    <!-- Configuration children -->
+    <menuitem id="menu_config_insurance_company"
+              name="Compagnies d'Assurance"
+              parent="menu_dms_config"
+              action="action_insurance_company"
+              sequence="10"/>
+
+    <menuitem id="menu_config_document_type"
+              name="Types de Documents"
+              parent="menu_dms_config"
+              action="action_document_type"
+              sequence="20"/>
+
+    <!-- Workflow stages action and menu -->
+    <record id="action_workflow_stage" model="ir.actions.act_window">
+        <field name="name">Étapes du Workflow</field>
+        <field name="res_model">dms.workflow.stage</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_config_workflow_stage"
+              name="Étapes du Workflow"
+              parent="menu_dms_config"
+              action="action_workflow_stage"
+              sequence="30"/>
+
+</odoo>

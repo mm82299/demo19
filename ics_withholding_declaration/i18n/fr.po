@@ -1,0 +1,1123 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ics_withholding_declaration
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20221005\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-21 10:59+0000\n"
+"PO-Revision-Date: 2025-08-21 10:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__account_move_id
+msgid "Account Move"
+msgstr "Pièce Comptable"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__act_depot
+msgid "Acte Depot"
+msgstr "Dépôt acte"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration__act_depot
+msgid "Acte de Dépôt (initial ou rectificatif) "
+msgstr "Acte de depôt (initial ou rectificative)"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_needaction
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_needaction
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_needaction
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_needaction
+msgid "Action Needed"
+msgstr "Action nécessaire"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type__active
+msgid "Active"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__activity_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__activity_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__activity_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__activity_ids
+msgid "Activities"
+msgstr "Activités"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__activity_exception_decoration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__activity_exception_decoration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__activity_exception_decoration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Décoration d'exception d'activité"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__activity_state
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__activity_state
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__activity_state
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__activity_state
+msgid "Activity State"
+msgstr "État d'activité"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__amount_ht
+msgid "Amount HT"
+msgstr "Montant ht"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__amount_net_servi
+msgid "Amount Net Servi"
+msgstr "Montant net Servi"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__amount_rs
+msgid "Amount RS"
+msgstr "Montant Rs"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__amount_ttc
+msgid "Amount TTC"
+msgstr "Montant TTC"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__period__04
+msgid "April"
+msgstr "Avril"
+
+#. module: ics_withholding_declaration
+#: code:addons/ics_withholding_declaration/models/withholding_declaration.py:0
+#: code:addons/ics_withholding_declaration/models/withholding_declaration.py:0
+#, python-format
+msgid "At least Provide a Start Date to proceed"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_attachment_count
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_attachment_count
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_attachment_count
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nombre de pièces jointes"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__period__08
+msgid "August"
+msgstr "Août"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_res_partner__date_of_birth
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_res_users__date_of_birth
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__birth_date
+msgid "Birth Date"
+msgstr "Date de naissance"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__generation_type__period
+msgid "By period"
+msgstr "Par date de période"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__res_partner__tax_id_type__cin
+msgid "CIN"
+msgstr "Cin"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__cnpc
+msgid "CNPC"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__state__cancel
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_view_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type__category_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type_category__name
+msgid "Category"
+msgstr "Catégorie"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_res_partner__category_type
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_res_users__category_type
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__category_type
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__category_type
+msgid "Category Type"
+msgstr "Type de catégorie"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__name
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_country__code
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type_category__code
+msgid "Code"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type__code
+msgid "Code TEJ"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__company_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__company_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__company_id
+msgid "Company"
+msgstr "Entreprise"
+
+#. module: ics_withholding_declaration
+#: code:addons/ics_withholding_declaration/models/account_move.py:0
+#: code:addons/ics_withholding_declaration/models/withholding_declaration.py:0
+#, python-format
+msgid "Company VAT ID is wrong"
+msgstr "Veuillez vérifier la M.F. des lignes"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type__complete_name
+msgid "Complete Name"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.ui.menu,name:ics_withholding_declaration.menu_ics_withholding__declaration_config_root
+msgid "Configuration"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__country_id
+#: model:ir.ui.menu,name:ics_withholding_declaration.menu_ics_withholding__declaration_config_country
+msgid "Country"
+msgstr "Pays"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__create_uid
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__create_uid
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_country__create_uid
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__create_uid
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__create_uid
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type__create_uid
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type_category__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__create_date
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__create_date
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_country__create_date
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__create_date
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__create_date
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type__create_date
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type_category__create_date
+msgid "Created on"
+msgstr "Créé sur"
+
+#. module: ics_withholding_declaration
+#: model:ir.ui.menu,name:ics_withholding_declaration.menu_ics_withholding__declaration_data_root
+msgid "Data"
+msgstr "Données"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__date
+msgid "Date"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__period__12
+msgid "December"
+msgstr "Décembre"
+
+#. module: ics_withholding_declaration
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_line_search_view
+msgid "Declaration"
+msgstr "Déclaration"
+
+#. module: ics_withholding_declaration
+#: model:ir.actions.act_window,name:ics_withholding_declaration.withholding_declaration_country_act_window
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_country_form_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_country_tree_view
+msgid "Declaration Country"
+msgstr "Pays de déclaration"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_account_move__declaration_file
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__declaration_file
+msgid "Declaration File"
+msgstr "Fichier XML de déclaration"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_account_move__declaration_file_name
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__declaration_file_name
+msgid "Declaration File Name"
+msgstr "Nom du fichier de déclaration"
+
+#. module: ics_withholding_declaration
+#: model:ir.ui.menu,name:ics_withholding_declaration.menu_ics_withholding__declaration_data_declaration_line
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_operation_line_search_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_view_form
+msgid "Declaration Line"
+msgstr "Ligne de déclaration"
+
+#. module: ics_withholding_declaration
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_view_form
+msgid "Declaration Line To Delete."
+msgstr "Ligne de déclaration à supprimer."
+
+#. module: ics_withholding_declaration
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_view_form
+msgid "Declaration Line To Modify."
+msgstr "Ligne de déclaration à modifier."
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__declaration_line_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__declaration_line_ids_delete
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__declaration_line_ids_edit
+msgid "Declaration Lines"
+msgstr "Lignes de déclaration"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__declaration_to_modify
+msgid "Declaration to modify"
+msgstr "Déclaration de modification"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type__description
+msgid "Description"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__devise_code
+msgid "Devise Code"
+msgstr "Code de conception"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__devise_rs
+msgid "Devise RS"
+msgstr "Concevoir RS"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__devise_rate
+msgid "Devise Rate"
+msgstr "Concevoir le taux"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__devise_servi
+msgid "Devise Servi"
+msgstr "Concevoir Servi"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__devise_ttc
+msgid "Devise TTC"
+msgstr "Concevoir TTC"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__display_name
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__display_name
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_country__display_name
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__display_name
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__display_name
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type__display_name
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type_category__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__state__draft
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__date_end
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__period__02
+msgid "February"
+msgstr "Février"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_follower_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_follower_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_follower_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_follower_ids
+msgid "Followers"
+msgstr "Abonnés"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_channel_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_channel_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_channel_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Abonnés (canaux)"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_partner_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_partner_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_partner_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Abonnés (partenaires)"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__partner_id
+msgid "Fournisseur"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__generation_type
+msgid "Generation Type"
+msgstr "Type de génération"
+
+#. module: ics_withholding_declaration
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_view_form
+msgid "Genrate Declaration Data"
+msgstr "Générer la déclaration"
+
+#. module: ics_withholding_declaration
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.account_move_view_form
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_view_form
+msgid "Genrate Xml File"
+msgstr "Générer le F. XML TEJ"
+
+#. module: ics_withholding_declaration
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_line_search_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_operation_line_search_view
+msgid "Group By"
+msgstr "Se regrouper"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_country__id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type__id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type_category__id
+msgid "ID"
+msgstr "IDENTIFIANT"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__activity_exception_icon
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__activity_exception_icon
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__activity_exception_icon
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__activity_exception_icon
+msgid "Icon"
+msgstr "Icône"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,help:ics_withholding_declaration.field_tax_additional_code__activity_exception_icon
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration__activity_exception_icon
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_line__activity_exception_icon
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_operation_line__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icône pour indiquer une activité d'exception."
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,help:ics_withholding_declaration.field_tax_additional_code__message_needaction
+#: model:ir.model.fields,help:ics_withholding_declaration.field_tax_additional_code__message_unread
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration__message_needaction
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration__message_unread
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_line__message_needaction
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_line__message_unread
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_operation_line__message_needaction
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_operation_line__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "S'il est vérifié, les nouveaux messages nécessitent votre attention."
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,help:ics_withholding_declaration.field_tax_additional_code__message_has_error
+#: model:ir.model.fields,help:ics_withholding_declaration.field_tax_additional_code__message_has_sms_error
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration__message_has_error
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration__message_has_sms_error
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_line__message_has_error
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_line__message_has_sms_error
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_operation_line__message_has_error
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_operation_line__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "S'il est vérifié, certains messages ont une erreur de livraison."
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__act_depot__initial
+msgid "Initial"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: code:addons/ics_withholding_declaration/models/account_move.py:0
+#: code:addons/ics_withholding_declaration/models/withholding_declaration.py:0
+#, python-format
+msgid "Invalid Acte Depot CODE"
+msgstr "Code de dépôt acte non valide"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__invoice_date
+msgid "Invoice Date"
+msgstr "Date de facture"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_is_follower
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_is_follower
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_is_follower
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_is_follower
+msgid "Is Follower"
+msgstr "Est un adepte"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__period__01
+msgid "January"
+msgstr "Janvier"
+
+#. module: ics_withholding_declaration
+#: model:ir.model,name:ics_withholding_declaration.model_account_move
+msgid "Journal Entry"
+msgstr "Pièce comptable"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__period__07
+msgid "July"
+msgstr "Juillet"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__period__06
+msgid "June"
+msgstr "Juin"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code____last_update
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration____last_update
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_country____last_update
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line____last_update
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line____last_update
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type____last_update
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type_category____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__write_uid
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__write_uid
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_country__write_uid
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__write_uid
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__write_uid
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type__write_uid
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type_category__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__write_date
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__write_date
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_country__write_date
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__write_date
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__write_date
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type__write_date
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type_category__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour sur"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_main_attachment_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_main_attachment_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_main_attachment_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Attachement principal"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__period__03
+msgid "March"
+msgstr "Mars"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__period__05
+msgid "May"
+msgstr "Mai"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_has_error
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_has_error
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_has_error
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_has_error
+msgid "Message Delivery error"
+msgstr "Erreur de livraison de messages"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__generation_type__monthly
+msgid "Monthly"
+msgstr "Mensuel"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__name
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_country__name
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__name
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__name
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type__name
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_country_form_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_line_form_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_operation_type_category_form_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_operation_type_form_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_view_form
+msgid "Name"
+msgstr "Nom"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__activity_date_deadline
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__activity_date_deadline
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__activity_date_deadline
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Date limite d'activité suivante"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__activity_summary
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__activity_summary
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__activity_summary
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__activity_summary
+msgid "Next Activity Summary"
+msgstr "Résumé de l'activité suivante"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__activity_type_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__activity_type_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__activity_type_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__activity_type_id
+msgid "Next Activity Type"
+msgstr "Type d'activité suivante"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__period__11
+msgid "November"
+msgstr "Novembre"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_needaction_counter
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_needaction_counter
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_needaction_counter
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Nombre d'actions"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_has_error_counter
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_has_error_counter
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_has_error_counter
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_has_error_counter
+msgid "Number of errors"
+msgstr "Nombre d'erreurs"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,help:ics_withholding_declaration.field_tax_additional_code__message_needaction_counter
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration__message_needaction_counter
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_line__message_needaction_counter
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_operation_line__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Nombre de messages qui nécessitent une action"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,help:ics_withholding_declaration.field_tax_additional_code__message_has_error_counter
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration__message_has_error_counter
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_line__message_has_error_counter
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_operation_line__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Nombre de messages avec erreur de livraison"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,help:ics_withholding_declaration.field_tax_additional_code__message_unread_counter
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration__message_unread_counter
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_line__message_unread_counter
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_operation_line__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Nombre de messages non lus"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__period__10
+msgid "October"
+msgstr "Octobre"
+
+#. module: ics_withholding_declaration
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_operation_line_form_view
+msgid "Operation"
+msgstr "Opération"
+
+#. module: ics_withholding_declaration
+#: model:ir.actions.act_window,name:ics_withholding_declaration.withholding_declaration_operation_line_act_window
+#: model:ir.ui.menu,name:ics_withholding_declaration.menu_ics_withholding__declaration_data_declaration_operation_line
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_line_form_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_operation_line_search_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_operation_line_tree_view
+msgid "Operation Line"
+msgstr "Ligne d'opération"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__operation_line_ids
+msgid "Operation Lines"
+msgstr "Lignes opérationnelles"
+
+#. module: ics_withholding_declaration
+#: model:ir.actions.act_window,name:ics_withholding_declaration.withholding_declaration_operation_type_category_act_window
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_res_partner__operation_type
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_res_users__operation_type
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__operation_type
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__operation_type
+#: model:ir.ui.menu,name:ics_withholding_declaration.menu_ics_withholding__declaration_config_operation_type
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_operation_type_category_form_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_operation_type_category_tree_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_operation_type_form_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_operation_type_tree_view
+msgid "Operation Type"
+msgstr "Type d'opération"
+
+#. module: ics_withholding_declaration
+#: model:ir.actions.act_window,name:ics_withholding_declaration.withholding_declaration_operation_type_act_window
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_res_partner__operation_type_category
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_res_users__operation_type_category
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__operation_type_category
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__operation_type_category
+#: model:ir.ui.menu,name:ics_withholding_declaration.menu_ics_withholding__declaration_config_operation_category
+msgid "Operation Type Category"
+msgstr "Catégorie de type de fonctionnement"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__res_partner__tax_id_type__other
+msgid "Other"
+msgstr "Autre"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__p_charge
+msgid "P Charge"
+msgstr "P."
+
+#. module: ics_withholding_declaration
+#: model:ir.model,name:ics_withholding_declaration.model_res_partner
+msgid "Partner"
+msgstr "Fournisseur"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__partner_activity
+msgid "Partner Activity"
+msgstr "Activité de partenaire"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__partner_address
+msgid "Partner Address"
+msgstr "Adresse du partenaire"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__partner_full_name
+msgid "Partner Full Name"
+msgstr "Nom complet de partenaire"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__partner_mail
+msgid "Partner Mail"
+msgstr "Mail de partenaire"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__partner_phone
+msgid "Partner Phone"
+msgstr "Téléphone de partenaire"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__partner_tunisian
+msgid "Partner Tunisian"
+msgstr "Partenaire tunisien"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__res_partner__tax_id_type__passport
+msgid "Passport"
+msgstr "Passeport"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__payment_date
+msgid "Payment Date"
+msgstr "Date de paiement"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__res_partner__category_type__pm
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__category_type__pm
+msgid "Personne Morale"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__res_partner__category_type__pp
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__category_type__pp
+msgid "Personne Physique"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: code:addons/ics_withholding_declaration/models/withholding_declaration.py:0
+#, python-format
+msgid "Please Provide an Operation Type for %s"
+msgstr "Veuillez fournir un type d'opération pour% s"
+
+#. module: ics_withholding_declaration
+#: code:addons/ics_withholding_declaration/models/account_move.py:0
+#, python-format
+msgid "Please Provide an Operation Type for vendor %s"
+msgstr "Veuillez fournir un type d'opération pour le fournisseur %s"
+
+#. module: ics_withholding_declaration
+#: code:addons/ics_withholding_declaration/models/account_move.py:0
+#: code:addons/ics_withholding_declaration/models/withholding_declaration.py:0
+#, python-format
+msgid "Please enter the Tax ID"
+msgstr "Veuillez saisir l'ID de l'impôt"
+
+#. module: ics_withholding_declaration
+#: code:addons/ics_withholding_declaration/models/account_move.py:0
+#: code:addons/ics_withholding_declaration/models/withholding_declaration.py:0
+#, python-format
+msgid "Please enter the Tax ID Type"
+msgstr "Veuillez saisir le type d'identification de l'impôt"
+
+#. module: ics_withholding_declaration
+#: code:addons/ics_withholding_declaration/models/account_move.py:0
+#: code:addons/ics_withholding_declaration/models/withholding_declaration.py:0
+#, python-format
+msgid "Please enter the VAT number in the company form"
+msgstr "Veuillez saisir le numéro de TVA dans le formulaire de l'entreprise"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__rs_rate
+msgid "RS Rate"
+msgstr "Taux RS"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__rate
+msgid "Rate"
+msgstr "Taux"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_type__rate
+msgid "Rate (%)"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__act_depot__rectificatif
+msgid "Rectificatif"
+msgstr "Rectificaliser"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__ref_certificate
+msgid "Ref of Certificate"
+msgstr "Réf de certificat"
+
+#. module: ics_withholding_declaration
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_view_form
+msgid "Reset To Draft"
+msgstr "Remettre en Brouillon"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__res_partner__tax_id_type__residence
+msgid "Residence"
+msgstr "Résidence"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__activity_user_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__activity_user_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__activity_user_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__activity_user_id
+msgid "Responsible User"
+msgstr "Utilisateur responsable"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_has_sms_error
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_has_sms_error
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_has_sms_error
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Erreur de livraison SMS"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__period__09
+msgid "September"
+msgstr "Septempbre"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__date_start
+msgid "Start Date"
+msgstr "Date début"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__state
+msgid "State"
+msgstr "État"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,help:ics_withholding_declaration.field_tax_additional_code__activity_state
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration__activity_state
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_line__activity_state
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_operation_line__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__tva_amount
+msgid "TVA Amount"
+msgstr "Montant tva"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__tva_rate
+msgid "TVA Rate"
+msgstr "Taux de Tva"
+
+#. module: ics_withholding_declaration
+#: model:ir.model,name:ics_withholding_declaration.model_tax_additional_code
+msgid "Tax Additional Code"
+msgstr "Code TVA supplémentaire"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__tax_id
+msgid "Tax ID"
+msgstr "Taxes"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_res_partner__tax_id_type
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_res_users__tax_id_type
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__tax_id_type
+msgid "Tax ID Type"
+msgstr "Type d'identité d'impôt"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__taxe_additionnelle_code
+msgid "Taxe Additionnelle"
+msgstr "Taxe Additionnel"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__taxe_additionnelle_rate
+msgid "Taxe Additionnelle Rate"
+msgstr "Taux de Taxe Additionnel"
+
+#. module: ics_withholding_declaration
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.res_partner_view_form
+msgid "Tej Declaration"
+msgstr "Déclaration TEJ"
+
+#. module: ics_withholding_declaration
+#: code:addons/ics_withholding_declaration/models/account_move.py:0
+#, python-format
+msgid ""
+"This Invoice has no withholding Tax Applied, Please add one and regenerate "
+"!!!"
+msgstr ""
+
+#. module: ics_withholding_declaration
+#: model:res.groups,comment:ics_withholding_declaration.group_withholding_declaration_manager
+msgid "This group is for withholding declaration managers"
+msgstr "Ce groupe est destiné aux gestionnaires de déclaration de refus"
+
+#. module: ics_withholding_declaration
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_operation_line_form_view
+msgid "Title"
+msgstr "Titre"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__state__to_validate
+msgid "To Validate"
+msgstr "Pour valider"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__total_amount_devise
+msgid "Total Amount Devise"
+msgstr "Le montant total est conçu"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__total_amount_devise_servi
+msgid "Total Amount Devise HT"
+msgstr "Le montant total devise ht"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__total_amount_devise_rs
+msgid "Total Amount Devise RS"
+msgstr "Le montant total de la conception Rs"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__total_amount_devise_ttc
+msgid "Total Amount Devise TVA"
+msgstr "Montant total Direvis TVA"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__total_amount_ht
+msgid "Total Amount HT"
+msgstr "Montant total ht"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__total_amount_rs
+msgid "Total Amount RS"
+msgstr "Montant total Rs"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__total_amount_amount_servi
+msgid "Total Amount Servi"
+msgstr "Montant total Servi"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__total_amount_ttc
+msgid "Total Amount TTC"
+msgstr "Montant total TTC"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__total_amount_tva
+msgid "Total Amount TVA"
+msgstr "Montant total TVA"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__total_taxes
+msgid "Total Taxes"
+msgstr "Total des taxes"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,help:ics_withholding_declaration.field_tax_additional_code__activity_exception_decoration
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration__activity_exception_decoration
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_line__activity_exception_decoration
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_operation_line__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Type de l'activité d'exception enregistrée."
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_unread
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_unread
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_unread
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_unread
+msgid "Unread Messages"
+msgstr "Messages non lus"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__message_unread_counter
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__message_unread_counter
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__message_unread_counter
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Counter des messages non lus"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__user_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__user_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__user_id
+msgid "User"
+msgstr "Utilisateur"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__res_partner__tax_id_type__vat
+msgid "VAT"
+msgstr "M.F."
+
+#. module: ics_withholding_declaration
+#: code:addons/ics_withholding_declaration/models/account_move.py:0
+#: code:addons/ics_withholding_declaration/models/withholding_declaration.py:0
+#, python-format
+msgid "VAT Tax ID must be either 8 or 13 characters long"
+msgstr "L'ID de taxe TVA doit comporter 8 ou 13 caractères"
+
+#. module: ics_withholding_declaration
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_view_form
+msgid "Validate"
+msgstr "Valider"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields.selection,name:ics_withholding_declaration.selection__withholding_declaration__state__validated
+msgid "Validated"
+msgstr "Validé"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_tax_additional_code__website_message_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__website_message_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__website_message_ids
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__website_message_ids
+msgid "Website Messages"
+msgstr "Messages du site Web"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,help:ics_withholding_declaration.field_tax_additional_code__website_message_ids
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration__website_message_ids
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_line__website_message_ids
+#: model:ir.model.fields,help:ics_withholding_declaration.field_withholding_declaration_operation_line__website_message_ids
+msgid "Website communication history"
+msgstr "Historique de communication du site Web"
+
+#. module: ics_withholding_declaration
+#: model:ir.actions.act_window,name:ics_withholding_declaration.withholding_declaration_act_window
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__declaration_id
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__declaration_id_delete
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__declaration_id_edit
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_line__withholding_id
+#: model:ir.ui.menu,name:ics_withholding_declaration.menu_ics_withholding__declaration
+#: model:ir.ui.menu,name:ics_withholding_declaration.menu_ics_withholding__root
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_tree_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_view_form
+msgid "Withholding Declaration"
+msgstr "Déclaration de retenue"
+
+#. module: ics_withholding_declaration
+#: model:ir.model,name:ics_withholding_declaration.model_withholding_declaration_country
+msgid "Withholding Declaration Country"
+msgstr "Counter de déclaration de retenue"
+
+#. module: ics_withholding_declaration
+#: model:ir.actions.act_window,name:ics_withholding_declaration.withholding_declaration_line_act_window
+#: model:ir.model,name:ics_withholding_declaration.model_withholding_declaration_line
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration_operation_line__declaration_line_id
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_line_form_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_line_search_view
+msgid "Withholding Declaration Line"
+msgstr "Ligne de déclaration de retenue"
+
+#. module: ics_withholding_declaration
+#: model:res.groups,name:ics_withholding_declaration.group_withholding_declaration_manager
+msgid "Withholding Declaration Manager"
+msgstr "Gestionnaire de déclaration de retenue"
+
+#. module: ics_withholding_declaration
+#: model:ir.model,name:ics_withholding_declaration.model_withholding_declaration_operation_line
+msgid "Withholding Declaration Operation Line"
+msgstr "Ligne d'opération de déclaration de retenue"
+
+#. module: ics_withholding_declaration
+#: model:ir.model,name:ics_withholding_declaration.model_withholding_declaration_operation_type
+msgid "Withholding Declaration Operation Type"
+msgstr "Type d'opération de déclaration de retenue"
+
+#. module: ics_withholding_declaration
+#: model:ir.model,name:ics_withholding_declaration.model_withholding_declaration_operation_type_category
+msgid "Withholding Declaration Operation Type Category"
+msgstr "Catégorie de type opération de déclaration de retenue"
+
+#. module: ics_withholding_declaration
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_line_tree_view
+#: model_terms:ir.ui.view,arch_db:ics_withholding_declaration.withholding_declaration_view_form
+msgid "Withholding Declaration line"
+msgstr "Ligne de déclaration de retenue"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__year
+msgid "Year"
+msgstr "Année"
+
+#. module: ics_withholding_declaration
+#: model:ir.model.fields,field_description:ics_withholding_declaration.field_withholding_declaration__period
+msgid "period"
+msgstr "période"
+
+#. module: ics_withholding_declaration
+#: model:ir.model,name:ics_withholding_declaration.model_withholding_declaration
+msgid "withholding declaration"
+msgstr "Déclaration de retenue"

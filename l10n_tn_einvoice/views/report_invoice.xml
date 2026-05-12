@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="report_invoice_document_ttn" inherit_id="account.report_invoice_document">
+        <xpath expr="//t[@t-set='layout_document_title']" position="before">
+			<img t-if="o.teif_qr_code" t-attf-src="data:image/png;base64,{{o.teif_qr_code}}"
+				 alt="QR Code TTN"
+				 t-attf-style="
+          max-width: 120px;
+          max-height: 120px;
+          padding: 0;
+          margin: 0;
+          position: absolute;
+          top: {{o.company_id.teif_qr_position_x}}px;
+          left: {{o.company_id.teif_qr_position_y}}px;
+        "
+      />
+        </xpath>
+        <xpath expr="//t[@t-set='layout_document_title']" position="after">
+            <div t-if="o.teif_ttn_reference">
+                <smal t-if="o.teif_ttn_reference">Copie de la facture électronique enregistrée chez TTN sous la référence :</smal>
+                <small class="text-muted" t-esc="o.teif_ttn_reference"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

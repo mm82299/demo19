@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="stock_picking_view_form_reception_sav" model="ir.ui.view">
+        <field name="name">stock.picking.view.form.reception.sav.inherit</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+<!--            <xpath expr="//page[@name='detailed_operations']//list//field[@name='lot_id']"-->
+<!--                   position="after">-->
+<!--                <field name="customs_file_ref"-->
+<!--                       optional="show"-->
+<!--                       string="Réf. douanière"-->
+<!--                       invisible="parent.picking_type_code != 'incoming'"/>-->
+<!--            </xpath>-->
+            <xpath expr="//field[@name='origin']" position="after">
+                <field name="customs_file_ref" invisible="not company_id.ics_sav_management_enabled"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="stock_lot_view_form_sav" model="ir.ui.view">
+        <field name="name">stock.lot.view.form.sav.inherit</field>
+        <field name="model">stock.lot</field>
+        <field name="inherit_id" ref="stock.view_production_lot_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='location_id']" position="after">
+                <field name="customs_file_ref"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

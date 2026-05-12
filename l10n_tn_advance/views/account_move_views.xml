@@ -1,0 +1,34 @@
+<odoo>
+    <data>
+        <record id="custom_withholding_advance_account_move_form" model="ir.ui.view">
+            <field name="name">account.move.form.withholding.advance</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='payment_reference']" position="after">
+                    <field name="has_withholding_advance" invisible="1"/>
+                    <field name="withholding_advance_id" invisible="not has_withholding_advance" readonly="1"/>
+                </xpath>
+                <xpath expr="//header" position="inside">
+                    <field name="is_state" invisible="1"/>
+                    <button name="action_open_withholding_advance" 
+                            type="object" 
+                            class="oe_highlight" 
+                            string="Créer Retenue" 
+                            invisible="move_type != 'out_invoice' or state != 'posted' or has_withholding_advance or not is_state"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_tax_group_form_inherit_l10n_tn_advance" model="ir.ui.view">
+            <field name="name">account.tax.group.form.inherit.l10n_tn_advance</field>
+            <field name="model">account.tax.group</field>
+            <field name="inherit_id" ref="account.view_tax_group_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="is_tva"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

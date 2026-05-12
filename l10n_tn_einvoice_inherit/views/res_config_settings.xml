@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Inherit Form View -->
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.module</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="l10n_tn_einvoice.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <!-- Add fields to an existing group -->
+            <xpath expr="//block[@id='l10n_tn_einvoice']/setting[1]" position="inside">
+                <div class="row mt16">
+                    <label for="ttn_vat_number_type" class="col-lg-3 o_light_label"/>
+                    <field name="ttn_vat_number_type"/>
+                </div>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

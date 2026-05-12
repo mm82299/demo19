@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="withholding_declaration_country_dataAF" model="withholding.declaration.country">
+            <field name="name">AFGHANTAN</field>
+            <field name="code">AF</field>
+        </record>
+        <record id="withholding_declaration_country_dataAX" model="withholding.declaration.country">
+            <field name="name">ALAND ISLANDS</field>
+            <field name="code">AX</field>
+        </record>
+        <record id="withholding_declaration_country_dataAL" model="withholding.declaration.country">
+            <field name="name">ALBANIA</field>
+            <field name="code">AL</field>
+        </record>
+        <record id="withholding_declaration_country_dataDZ" model="withholding.declaration.country">
+            <field name="name">ALGERIA</field>
+            <field name="code">DZ</field>
+        </record>
+        <record id="withholding_declaration_country_dataAS" model="withholding.declaration.country">
+            <field name="name">AMERICAN SAMOA</field>
+            <field name="code">AS</field>
+        </record>
+        <record id="withholding_declaration_country_dataAD" model="withholding.declaration.country">
+            <field name="name">ANDORRA</field>
+            <field name="code">AD</field>
+        </record>
+        <record id="withholding_declaration_country_dataAO" model="withholding.declaration.country">
+            <field name="name">ANGOLA</field>
+            <field name="code">AO</field>
+        </record>
+        <record id="withholding_declaration_country_dataAI" model="withholding.declaration.country">
+            <field name="name">ANGUILLA</field>
+            <field name="code">AI</field>
+        </record>
+        <record id="withholding_declaration_country_dataAQ" model="withholding.declaration.country">
+            <field name="name">ANTARCTICA</field>
+            <field name="code">AQ</field>
+        </record>
+        <record id="withholding_declaration_country_dataAG" model="withholding.declaration.country">
+            <field name="name">ANTIGUA AND BARBUDA</field>
+            <field name="code">AG</field>
+        </record>
+        <record id="withholding_declaration_country_dataAW" model="withholding.declaration.country">
+            <field name="name">ARUBA</field>
+            <field name="code">AW</field>
+        </record>
+        <record id="withholding_declaration_country_dataAU" model="withholding.declaration.country">
+            <field name="name">AUSTRALIA</field>
+            <field name="code">AU</field>
+        </record>
+        <record id="withholding_declaration_country_dataAZ" model="withholding.declaration.country">
+            <field name="name">AZERBAIJAN</field>
+            <field name="code">AZ</field>
+        </record>
+        <record id="withholding_declaration_country_dataBSBS" model="withholding.declaration.country">
+            <field name="name">BAHAMAS</field>
+            <field name="code">BS</field>
+        </record>
+        <record id="withholding_declaration_country_dataBHBH" model="withholding.declaration.country">
+            <field name="name">BAHRAIN</field>
+            <field name="code">BH</field>
+        </record>
+        <record id="withholding_declaration_country_data1BD" model="withholding.declaration.country">
+            <field name="name">BANGLADESH</field>
+            <field name="code">BD</field>
+        </record>
+        <record id="withholding_declaration_country_data1BB" model="withholding.declaration.country">
+            <field name="name">BARBADOS</field>
+            <field name="code">BB</field>
+        </record>
+        <record id="withholding_declaration_country_data1BY" model="withholding.declaration.country">
+            <field name="name">BELARUS</field>
+            <field name="code">BY</field>
+        </record>
+        <record id="withholding_declaration_country_data1BE" model="withholding.declaration.country">
+            <field name="name">BELGIUM</field>
+            <field name="code">BE</field>
+        </record>
+        <record id="withholding_declaration_country_data1BZ" model="withholding.declaration.country">
+            <field name="name">BELIZE</field>
+            <field name="code">BZ</field>
+        </record>
+        <record id="withholding_declaration_country_data1BJ" model="withholding.declaration.country">
+            <field name="name">BENIN</field>
+            <field name="code">BJ</field>
+        </record>
+        <record id="withholding_declaration_country_data1BM" model="withholding.declaration.country">
+            <field name="name">BERMUDA</field>
+            <field name="code">BM</field>
+        </record>
+        <record id="withholding_declaration_country_data1BT" model="withholding.declaration.country">
+            <field name="name">BHUTAN</field>
+            <field name="code">BT</field>
+        </record>
+        <record id="withholding_declaration_country_data1BO" model="withholding.declaration.country">
+            <field name="name">BOLIVIA, PLURINATIONAL STATE OF</field>
+            <field name="code">BO</field>
+        </record>
+        <record id="withholding_declaration_country_data1BQ" model="withholding.declaration.country">
+            <field name="name">BONAIRE, SINT EUSTATIUS AND SABA</field>
+            <field name="code">BQ</field>
+        </record>
+        <record id="withholding_declaration_country_data1BA" model="withholding.declaration.country">
+            <field name="name">BOSNIA AND HERZEGOVINA</field>
+            <field name="code">BA</field>
+        </record>
+        <record id="withholding_declaration_country_data1BW" model="withholding.declaration.country">
+            <field name="name">BOTSWANA</field>
+            <field name="code">BW</field>
+        </record>
+        <record id="withholding_declaration_country_data1BV" model="withholding.declaration.country">
+            <field name="name">BOUVET ISLAND</field>
+            <field name="code">BV</field>
+        </record>
+        <record id="withholding_declaration_country_data1BR" model="withholding.declaration.country">
+            <field name="name">BRAZIL</field>
+            <field name="code">BR</field>
+        </record>
+        <record id="withholding_declaration_country_data1IO" model="withholding.declaration.country">
+            <field name="name">BRITISH INDIAN OCEAN TERRITORY</field>
+            <field name="code">IO</field>
+        </record>
+        <record id="withholding_declaration_country_data1BR" model="withholding.declaration.country">
+            <field name="name">BRAZIL</field>
+            <field name="code">BR</field>
+        </record>
+        <record id="withholding_declaration_country_data1BN" model="withholding.declaration.country">
+            <field name="name">BRUNEI DARUSSALAM</field>
+            <field name="code">BN</field>
+        </record>
+        <record id="withholding_declaration_country_data1BG" model="withholding.declaration.country">
+            <field name="name">BULGARIA</field>
+            <field name="code">BG</field>
+        </record>
+        <record id="withholding_declaration_country_data1BF" model="withholding.declaration.country">
+            <field name="name">BURKINA FASO</field>
+            <field name="code">BF</field>
+        </record>
+        <record id="withholding_declaration_country_data1BI" model="withholding.declaration.country">
+            <field name="name">BURUNDI</field>
+            <field name="code">BI</field>
+        </record>
+        <record id="withholding_declaration_country_data1KH" model="withholding.declaration.country">
+            <field name="name">CAMBODIA</field>
+            <field name="code">KH</field>
+        </record>
+        <record id="withholding_declaration_country_data1CM" model="withholding.declaration.country">
+            <field name="name">CAMEROON</field>
+            <field name="code">CM</field>
+        </record>
+        <record id="withholding_declaration_country_data1CA" model="withholding.declaration.country">
+            <field name="name">CANADA</field>
+            <field name="code">CA</field>
+        </record>
+        <record id="withholding_declaration_country_data1CV" model="withholding.declaration.country">
+            <field name="name">CAPE VERDE</field>
+            <field name="code">CV</field>
+        </record>
+        <record id="withholding_declaration_country_data1KY" model="withholding.declaration.country">
+            <field name="name">CAYMAN ISLANDS</field>
+            <field name="code">KY</field>
+        </record>
+        <record id="withholding_declaration_country_data1CF" model="withholding.declaration.country">
+            <field name="name">CENTRAL AFRICAN REPUBLIC</field>
+            <field name="code">CF</field>
+        </record>
+        <record id="withholding_declaration_country_data1TD" model="withholding.declaration.country">
+            <field name="name">CHAD</field>
+            <field name="code">TD</field>
+        </record>
+        <record id="withholding_declaration_country_data1CL" model="withholding.declaration.country">
+            <field name="name">CHILE</field>
+            <field name="code">CL</field>
+        </record>
+        <record id="withholding_declaration_country_data1CN" model="withholding.declaration.country">
+            <field name="name">CHINA</field>
+            <field name="code">CN</field>
+        </record>
+        <record id="withholding_declaration_country_data1CX" model="withholding.declaration.country">
+            <field name="name">CHRISTMAS ISLAND</field>
+            <field name="code">CX</field>
+        </record>
+        <record id="withholding_declaration_country_data1CC" model="withholding.declaration.country">
+            <field name="name">COCOS (KEELING) ISLANDS</field>
+            <field name="code">CC</field>
+        </record>
+        <record id="withholding_declaration_country_data1CO" model="withholding.declaration.country">
+            <field name="name">COLOMBIA</field>
+            <field name="code">CO</field>
+        </record>
+        <record id="withholding_declaration_country_data1KM" model="withholding.declaration.country">
+            <field name="name">COMOROS</field>
+            <field name="code">KM</field>
+        </record>
+        <record id="withholding_declaration_country_data1CG" model="withholding.declaration.country">
+            <field name="name">CONGO</field>
+            <field name="code">CG</field>
+        </record>
+        <record id="withholding_declaration_country_data1CD" model="withholding.declaration.country">
+            <field name="name">CONGO, THE DEMOCRATIC REPUBLIC OF THE</field>
+            <field name="code">CD</field>
+        </record>
+        <record id="withholding_declaration_country_data1CK" model="withholding.declaration.country">
+            <field name="name">COOK ISLANDS</field>
+            <field name="code">CK</field>
+        </record>
+        <record id="withholding_declaration_country_data1CR" model="withholding.declaration.country">
+            <field name="name">COSTA RICA</field>
+            <field name="code">CR</field>
+        </record>
+        <record id="withholding_declaration_country_data1CI" model="withholding.declaration.country">
+            <field name="name">COTE D'IVOIRE</field>
+            <field name="code">CI</field>
+        </record>
+        <record id="withholding_declaration_country_data1HR" model="withholding.declaration.country">
+            <field name="name">CROATIA</field>
+            <field name="code">HR</field>
+        </record>
+        <record id="withholding_declaration_country_data1CU" model="withholding.declaration.country">
+            <field name="name">CUBA</field>
+            <field name="code">CU</field>
+        </record>
+        <record id="withholding_declaration_country_data1CW" model="withholding.declaration.country">
+            <field name="name">CURACAO</field>
+            <field name="code">CW</field>
+        </record>
+        <record id="withholding_declaration_country_data1CY" model="withholding.declaration.country">
+            <field name="name">CYPRUS</field>
+            <field name="code">CY</field>
+        </record>
+        <record id="withholding_declaration_country_data1CZ" model="withholding.declaration.country">
+            <field name="name">CZECH REPUBLIC</field>
+            <field name="code">CZ</field>
+        </record>
+        <record id="withholding_declaration_country_data1DK" model="withholding.declaration.country">
+            <field name="name">DENMARK</field>
+            <field name="code">DK</field>
+        </record>
+        <record id="withholding_declaration_country_data1DJ" model="withholding.declaration.country">
+            <field name="name">DJIBOUTI</field>
+            <field name="code">DJ</field>
+        </record>
+        <record id="withholding_declaration_country_data1DM" model="withholding.declaration.country">
+            <field name="name">DOMINICA</field>
+            <field name="code">DM</field>
+        </record>
+        <record id="withholding_declaration_country_data1DO" model="withholding.declaration.country">
+            <field name="name">DOMINICAN REPUBLIC</field>
+            <field name="code">DO</field>
+        </record>
+        <record id="withholding_declaration_country_data1EC" model="withholding.declaration.country">
+            <field name="name">ECUADOR</field>
+            <field name="code">EC</field>
+        </record>
+        <record id="withholding_declaration_country_data1EG" model="withholding.declaration.country">
+            <field name="name">EGYPT</field>
+            <field name="code">EG</field>
+        </record>
+        <record id="withholding_declaration_country_data1SV" model="withholding.declaration.country">
+            <field name="name">EL SALVADOR</field>
+            <field name="code">SV</field>
+        </record>
+        <record id="withholding_declaration_country_data1GQ" model="withholding.declaration.country">
+            <field name="name">EQUATORIAL GUINEA</field>
+            <field name="code">GQ</field>
+        </record>
+        <record id="withholding_declaration_country_data1ER" model="withholding.declaration.country">
+            <field name="name">ERITREA</field>
+            <field name="code">ER</field>
+        </record>
+        <record id="withholding_declaration_country_data1EE" model="withholding.declaration.country">
+            <field name="name">ESTONIA</field>
+            <field name="code">EE</field>
+        </record>
+        <record id="withholding_declaration_country_data1ET" model="withholding.declaration.country">
+            <field name="name">ETHIOPIA</field>
+            <field name="code">ET</field>
+        </record>
+        <record id="withholding_declaration_country_data1FK" model="withholding.declaration.country">
+            <field name="name">FALKLAND ISLANDS (MALVINAS)</field>
+            <field name="code">FK</field>
+        </record>
+        <record id="withholding_declaration_country_data1FO" model="withholding.declaration.country">
+            <field name="name">FAROE ISLANDS</field>
+            <field name="code">FO</field>
+        </record>
+        <record id="withholding_declaration_country_data1FJ" model="withholding.declaration.country">
+            <field name="name">FIJI</field>
+            <field name="code">FJ</field>
+        </record>
+        <record id="withholding_declaration_country_data1FI" model="withholding.declaration.country">
+            <field name="name">FINLAND</field>
+            <field name="code">FI</field>
+        </record>
+        <record id="withholding_declaration_country_data1FR" model="withholding.declaration.country">
+            <field name="name">FRANCE</field>
+            <field name="code">FR</field>
+        </record>
+        <record id="withholding_declaration_country_data1GF" model="withholding.declaration.country">
+            <field name="name">FRENCH GUIANA</field>
+            <field name="code">GF</field>
+        </record>
+        <record id="withholding_declaration_country_data1PF" model="withholding.declaration.country">
+            <field name="name">FRENCH POLYNESIA</field>
+            <field name="code">PF</field>
+        </record>
+        <record id="withholding_declaration_country_data1TF" model="withholding.declaration.country">
+            <field name="name">FRENCH SOUTHERN TERRITORIES</field>
+            <field name="code">TF</field>
+        </record>
+        <record id="withholding_declaration_country_data1GA" model="withholding.declaration.country">
+            <field name="name">GABON</field>
+            <field name="code">GA</field>
+        </record>
+        <record id="withholding_declaration_country_data1GM" model="withholding.declaration.country">
+            <field name="name">GAMBIA</field>
+            <field name="code">GM</field>
+        </record>
+        <record id="withholding_declaration_country_data1GE" model="withholding.declaration.country">
+            <field name="name">GEORGIA</field>
+            <field name="code">GE</field>
+        </record>
+        <record id="withholding_declaration_country_data1DE" model="withholding.declaration.country">
+            <field name="name">GERMANY</field>
+            <field name="code">DE</field>
+        </record>
+        <record id="withholding_declaration_country_data1GH" model="withholding.declaration.country">
+            <field name="name">GHANA</field>
+            <field name="code">GH</field>
+        </record>
+        <record id="withholding_declaration_country_data1GI" model="withholding.declaration.country">
+            <field name="name">GIBRALTAR</field>
+            <field name="code">GI</field>
+        </record>
+        <record id="withholding_declaration_country_data1GR" model="withholding.declaration.country">
+            <field name="name">GREENLAND</field>
+            <field name="code">GR</field>
+        </record>
+        <record id="withholding_declaration_country_data1GD" model="withholding.declaration.country">
+            <field name="name">GRENADA</field>
+            <field name="code">GD</field>
+        </record>
+        <record id="withholding_declaration_country_data1GP" model="withholding.declaration.country">
+            <field name="name">GUADELOUPE</field>
+            <field name="code">GP</field>
+        </record>
+        <record id="withholding_declaration_country_data1GU" model="withholding.declaration.country">
+            <field name="name">GUAM</field>
+            <field name="code">GU</field>
+        </record>
+        <record id="withholding_declaration_country_data1GT" model="withholding.declaration.country">
+            <field name="name">GUATEMALA</field>
+            <field name="code">GT</field>
+        </record>
+        <record id="withholding_declaration_country_data1GG" model="withholding.declaration.country">
+            <field name="name">GUERNSEY</field>
+            <field name="code">GG</field>
+        </record>
+        <record id="withholding_declaration_country_data1GN" model="withholding.declaration.country">
+            <field name="name">GUINEA</field>
+            <field name="code">GN</field>
+        </record>
+        <record id="withholding_declaration_country_data1GW" model="withholding.declaration.country">
+            <field name="name">GUINEA-BISSAU</field>
+            <field name="code">GW</field>
+        </record>
+        <record id="withholding_declaration_country_data1GUYANA" model="withholding.declaration.country">
+            <field name="name">GUYANA</field>
+            <field name="code">GY</field>
+        </record>
+        <record id="withholding_declaration_country_data1HAITI" model="withholding.declaration.country">
+            <field name="name">HAITI</field>
+            <field name="code">HT</field>
+        </record>
+        <record id="withholding_declaration_country_data1HM" model="withholding.declaration.country">
+            <field name="name">HEARD ISLAND AND MCDONALD ISLANDS</field>
+            <field name="code">HM</field>
+        </record>
+        <record id="withholding_declaration_country_data1VA" model="withholding.declaration.country">
+            <field name="name">HOLY SEE (VATICAN CITY STATE)</field>
+            <field name="code">VA</field>
+        </record>
+        <record id="withholding_declaration_country_data1HN" model="withholding.declaration.country">
+            <field name="name">HONDURAS</field>
+            <field name="code">HN</field>
+        </record>
+        <record id="withholding_declaration_country_data1HK" model="withholding.declaration.country">
+            <field name="name">HONG KONG</field>
+            <field name="code">HK</field>
+        </record>
+        <record id="withholding_declaration_country_data1HU" model="withholding.declaration.country">
+            <field name="name">HUNGARY</field>
+            <field name="code">HU</field>
+        </record>
+        <record id="withholding_declaration_country_data1IS" model="withholding.declaration.country">
+            <field name="name">ICELAND</field>
+            <field name="code">IS</field>
+        </record>
+        <record id="withholding_declaration_country_data1IN" model="withholding.declaration.country">
+            <field name="name">INDIA</field>
+            <field name="code">IN</field>
+        </record>
+        <record id="withholding_declaration_country_data1ID" model="withholding.declaration.country">
+            <field name="name">INDONESIA</field>
+            <field name="code">ID</field>
+        </record>
+        <record id="withholding_declaration_country_data1IR" model="withholding.declaration.country">
+            <field name="name">IRAN, ISLAMIC REPUBLIC OF</field>
+            <field name="code">IR</field>
+        </record>
+        <record id="withholding_declaration_country_data1ID" model="withholding.declaration.country">
+            <field name="name">INDONESIA</field>
+            <field name="code">ID</field>
+        </record>
+        <record id="withholding_declaration_country_data1IQ" model="withholding.declaration.country">
+            <field name="name">IRAQ</field>
+            <field name="code">IQ</field>
+        </record>
+        <record id="withholding_declaration_country_data1IE" model="withholding.declaration.country">
+            <field name="name">IRELAND</field>
+            <field name="code">IE</field>
+        </record>
+        <record id="withholding_declaration_country_data1IM" model="withholding.declaration.country">
+            <field name="name">ISLE OF MAN</field>
+            <field name="code">IM</field>
+        </record>
+        <record id="withholding_declaration_country_data1IL" model="withholding.declaration.country">
+            <field name="name">ISRAEL</field>
+            <field name="code">IL</field>
+        </record>
+        <record id="withholding_declaration_country_data1IT" model="withholding.declaration.country">
+            <field name="name">ITALY</field>
+            <field name="code">IT</field>
+        </record>
+        <record id="withholding_declaration_country_data1JM" model="withholding.declaration.country">
+            <field name="name">JAMAICA</field>
+            <field name="code">JM</field>
+        </record>
+        <record id="withholding_declaration_country_data1JP" model="withholding.declaration.country">
+            <field name="name">JAPAN</field>
+            <field name="code">JP</field>
+        </record>
+        <record id="withholding_declaration_country_data1JE" model="withholding.declaration.country">
+            <field name="name">JERSEY</field>
+            <field name="code">JE</field>
+        </record>
+        <record id="withholding_declaration_country_data1JO" model="withholding.declaration.country">
+            <field name="name">JORDAN</field>
+            <field name="code">JO</field>
+        </record>
+        <record id="withholding_declaration_country_data1KZ" model="withholding.declaration.country">
+            <field name="name">KAZAKHSTAN</field>
+            <field name="code">KZ</field>
+        </record>
+        <record id="withholding_declaration_country_data1KE" model="withholding.declaration.country">
+            <field name="name">KENYA</field>
+            <field name="code">KE</field>
+        </record>
+        <record id="withholding_declaration_country_data1KI" model="withholding.declaration.country">
+            <field name="name">KIRIBATI</field>
+            <field name="code">KI</field>
+        </record>
+        <record id="withholding_declaration_country_data1KP" model="withholding.declaration.country">
+            <field name="name">KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF</field>
+            <field name="code">KP</field>
+        </record>
+        <record id="withholding_declaration_country_data1KR" model="withholding.declaration.country">
+            <field name="name">KOREA, REPUBLIC OF</field>
+            <field name="code">KR</field>
+        </record>
+        <record id="withholding_declaration_country_data1KW" model="withholding.declaration.country">
+            <field name="name">KUWAIT</field>
+            <field name="code">KW</field>
+        </record>
+        <record id="withholding_declaration_country_data1KG" model="withholding.declaration.country">
+            <field name="name">KYRGYZSTAN</field>
+            <field name="code">KG</field>
+        </record>
+        <record id="withholding_declaration_country_data1LA" model="withholding.declaration.country">
+            <field name="name">LAO PEOPLE'S DEMOCRATIC REPUBLIC</field>
+            <field name="code">LA</field>
+        </record>
+        <record id="withholding_declaration_country_data1LV" model="withholding.declaration.country">
+            <field name="name">LATVIA</field>
+            <field name="code">LV</field>
+        </record>
+        <record id="withholding_declaration_country_data1LB" model="withholding.declaration.country">
+            <field name="name">LEBANON</field>
+            <field name="code">LB</field>
+        </record>
+        <record id="withholding_declaration_country_data1LS" model="withholding.declaration.country">
+            <field name="name">LESOTHO</field>
+            <field name="code">LS</field>
+        </record>
+        <record id="withholding_declaration_country_data1LR" model="withholding.declaration.country">
+            <field name="name">LIBERIA</field>
+            <field name="code">LR</field>
+        </record>
+        <record id="withholding_declaration_country_data1LY" model="withholding.declaration.country">
+            <field name="name">LIBYA</field>
+            <field name="code">LY</field>
+        </record>
+        <record id="withholding_declaration_country_data1LI" model="withholding.declaration.country">
+            <field name="name">LIECHTENSTEIN</field>
+            <field name="code">LI</field>
+        </record>
+        <record id="withholding_declaration_country_data1LT" model="withholding.declaration.country">
+            <field name="name">LITHUANIA</field>
+            <field name="code">LT</field>
+        </record>
+        <record id="withholding_declaration_country_data1LU" model="withholding.declaration.country">
+            <field name="name">LUXEMBOURG</field>
+            <field name="code">LU</field>
+        </record>
+        <record id="withholding_declaration_country_data1MO" model="withholding.declaration.country">
+            <field name="name">MACAO</field>
+            <field name="code">MO</field>
+        </record>
+        <record id="withholding_declaration_country_data1MK" model="withholding.declaration.country">
+            <field name="name">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</field>
+            <field name="code">MK</field>
+        </record>
+        <record id="withholding_declaration_country_data1MG" model="withholding.declaration.country">
+            <field name="name">MADAGASCAR</field>
+            <field name="code">MG</field>
+        </record>
+        <record id="withholding_declaration_country_data1MW" model="withholding.declaration.country">
+            <field name="name">MALAWI</field>
+            <field name="code">MW</field>
+        </record>
+        <record id="withholding_declaration_country_data1MY" model="withholding.declaration.country">
+            <field name="name">MALAYSIA</field>
+            <field name="code">MY</field>
+        </record>
+        <record id="withholding_declaration_country_data1MV" model="withholding.declaration.country">
+            <field name="name">MALDIVES</field>
+            <field name="code">MV</field>
+        </record>
+        <record id="withholding_declaration_country_data1ML" model="withholding.declaration.country">
+            <field name="name">MALI</field>
+            <field name="code">ML</field>
+        </record>
+        <record id="withholding_declaration_country_data1MT" model="withholding.declaration.country">
+            <field name="name">MALTA</field>
+            <field name="code">MT</field>
+        </record>
+        <record id="withholding_declaration_country_data1MH" model="withholding.declaration.country">
+            <field name="name">MARSHALL ISLANDS</field>
+            <field name="code">MH</field>
+        </record>
+        <record id="withholding_declaration_country_data1MQ" model="withholding.declaration.country">
+            <field name="name">MARTINIQUE</field>
+            <field name="code">MQ</field>
+        </record>
+        <record id="withholding_declaration_country_data1" model="withholding.declaration.country">
+            <field name="name">MAURITANIA</field>
+            <field name="code">MR</field>
+        </record>
+        <record id="withholding_declaration_country_data1MU" model="withholding.declaration.country">
+            <field name="name">MAURITIUS</field>
+            <field name="code">MU</field>
+        </record>
+        <record id="withholding_declaration_country_data1YT" model="withholding.declaration.country">
+            <field name="name">MAYOTTE</field>
+            <field name="code">YT</field>
+        </record>
+        <record id="withholding_declaration_country_data1MX" model="withholding.declaration.country">
+            <field name="name">MEXICO</field>
+            <field name="code">MX</field>
+        </record>
+        <record id="withholding_declaration_country_data1FM" model="withholding.declaration.country">
+            <field name="name">MICRONESIA, FEDERATED STATES OF</field>
+            <field name="code">FM</field>
+        </record>
+        <record id="withholding_declaration_country_data1MD" model="withholding.declaration.country">
+            <field name="name">MOLDOVA, REPUBLIC OF</field>
+            <field name="code">MD</field>
+        </record>
+        <record id="withholding_declaration_country_data1MC" model="withholding.declaration.country">
+            <field name="name">MONACO</field>
+            <field name="code">MC</field>
+        </record>
+        <record id="withholding_declaration_country_data1MN" model="withholding.declaration.country">
+            <field name="name">MONGOLIA</field>
+            <field name="code">MN</field>
+        </record>
+        <record id="withholding_declaration_country_data1ME" model="withholding.declaration.country">
+            <field name="name">MONTENEGRO</field>
+            <field name="code">ME</field>
+        </record>
+        <record id="withholding_declaration_country_data1MS" model="withholding.declaration.country">
+            <field name="name">MONTSERRAT</field>
+            <field name="code">MS</field>
+        </record>
+        <record id="withholding_declaration_country_data1MA" model="withholding.declaration.country">
+            <field name="name">MOROCCO</field>
+            <field name="code">MA</field>
+        </record>
+        <record id="withholding_declaration_country_data1MZ" model="withholding.declaration.country">
+            <field name="name">MOZAMBIQUE</field>
+            <field name="code">MZ</field>
+        </record>
+        <record id="withholding_declaration_country_data1MM" model="withholding.declaration.country">
+            <field name="name">MYANMAR</field>
+            <field name="code">MM</field>
+        </record>
+        <record id="withholding_declaration_country_data1NA" model="withholding.declaration.country">
+            <field name="name">NAMIBIA</field>
+            <field name="code">NA</field>
+        </record>
+        <record id="withholding_declaration_country_data1NR" model="withholding.declaration.country">
+            <field name="name">NAURU</field>
+            <field name="code">NR</field>
+        </record>
+        <record id="withholding_declaration_country_data1NP" model="withholding.declaration.country">
+            <field name="name">NEPAL</field>
+            <field name="code">NP</field>
+        </record>
+        <record id="withholding_declaration_country_data1NL" model="withholding.declaration.country">
+            <field name="name">NETHERLANDS</field>
+            <field name="code">NL</field>
+        </record>
+        <record id="withholding_declaration_country_data1NC" model="withholding.declaration.country">
+            <field name="name">NEW CALEDONIA</field>
+            <field name="code">NC</field>
+        </record>
+        <record id="withholding_declaration_country_data1NZ" model="withholding.declaration.country">
+            <field name="name">NEW ZEALAND</field>
+            <field name="code">NZ</field>
+        </record>
+        <record id="withholding_declaration_country_data1NI" model="withholding.declaration.country">
+            <field name="name">NICARAGUA</field>
+            <field name="code">NI</field>
+        </record>
+        <record id="withholding_declaration_country_data1NE" model="withholding.declaration.country">
+            <field name="name">NIGER</field>
+            <field name="code">NE</field>
+        </record>
+        <record id="withholding_declaration_country_data1NG" model="withholding.declaration.country">
+            <field name="name">NIGERIA</field>
+            <field name="code">NG</field>
+        </record>
+        <record id="withholding_declaration_country_data1NU" model="withholding.declaration.country">
+            <field name="name">NIUE</field>
+            <field name="code">NU</field>
+        </record>
+        <record id="withholding_declaration_country_data1NF" model="withholding.declaration.country">
+            <field name="name">NORFOLK ISLAND</field>
+            <field name="code">NF</field>
+        </record>
+        <record id="withholding_declaration_country_data1MP" model="withholding.declaration.country">
+            <field name="name">NORTHERN MARIANA ISLANDS</field>
+            <field name="code">MP</field>
+        </record>
+        <record id="withholding_declaration_country_data1NO" model="withholding.declaration.country">
+            <field name="name">NORWAY</field>
+            <field name="code">NO</field>
+        </record>
+        <record id="withholding_declaration_country_data1OM" model="withholding.declaration.country">
+            <field name="name">OMAN</field>
+            <field name="code">OM</field>
+        </record>
+        <record id="withholding_declaration_country_data1PK" model="withholding.declaration.country">
+            <field name="name">PAKISTAN</field>
+            <field name="code">PK</field>
+        </record>
+        <record id="withholding_declaration_country_data1PW" model="withholding.declaration.country">
+            <field name="name">PALAU</field>
+            <field name="code">PW</field>
+        </record>
+        <record id="withholding_declaration_country_data1PS" model="withholding.declaration.country">
+            <field name="name">PALESTINE, STATE OF</field>
+            <field name="code">PS</field>
+        </record>
+        <record id="withholding_declaration_country_data1PA" model="withholding.declaration.country">
+            <field name="name">PANAMA</field>
+            <field name="code">PA</field>
+        </record>
+        <record id="withholding_declaration_country_data1PG" model="withholding.declaration.country">
+            <field name="name">PAPUA NEW GUINEA</field>
+            <field name="code">PG</field>
+        </record>
+        <record id="withholding_declaration_country_data1PY" model="withholding.declaration.country">
+            <field name="name">PARAGUAY</field>
+            <field name="code">PY</field>
+        </record>
+        <record id="withholding_declaration_country_data1PE" model="withholding.declaration.country">
+            <field name="name">PERU</field>
+            <field name="code">PE</field>
+        </record>
+        <record id="withholding_declaration_country_data1PH" model="withholding.declaration.country">
+            <field name="name">PHILIPPINES</field>
+            <field name="code">PH</field>
+        </record>
+        <record id="withholding_declaration_country_data1PN" model="withholding.declaration.country">
+            <field name="name">PITCAIRN</field>
+            <field name="code">PN</field>
+        </record>
+        <record id="withholding_declaration_country_data1PL" model="withholding.declaration.country">
+            <field name="name">POLAND</field>
+            <field name="code">PL</field>
+        </record>
+        <record id="withholding_declaration_country_data1PT" model="withholding.declaration.country">
+            <field name="name">PORTUGAL</field>
+            <field name="code">PT</field>
+        </record>
+        <record id="withholding_declaration_country_data1PR" model="withholding.declaration.country">
+            <field name="name">PUERTO RICO</field>
+            <field name="code">PR</field>
+        </record>
+        <record id="withholding_declaration_country_data1QA" model="withholding.declaration.country">
+            <field name="name">QATAR</field>
+            <field name="code">QA</field>
+        </record>
+        <record id="withholding_declaration_country_data1RE" model="withholding.declaration.country">
+            <field name="name">REUNION</field>
+            <field name="code">RE</field>
+        </record>
+        <record id="withholding_declaration_country_data1RO" model="withholding.declaration.country">
+            <field name="name">ROMANIA</field>
+            <field name="code">RO</field>
+        </record>
+        <record id="withholding_declaration_country_data1RU" model="withholding.declaration.country">
+            <field name="name">RUSSIAN FEDERATION</field>
+            <field name="code">RU</field>
+        </record>
+        <record id="withholding_declaration_country_data1RW" model="withholding.declaration.country">
+            <field name="name">RWANDA</field>
+            <field name="code">RW</field>
+        </record>
+        <record id="withholding_declaration_country_data1BL" model="withholding.declaration.country">
+            <field name="name">SAINT BARTHELEMY</field>
+            <field name="code">BL</field>
+        </record>
+        <record id="withholding_declaration_country_data1SH" model="withholding.declaration.country">
+            <field name="name">SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</field>
+            <field name="code">SH</field>
+        </record>
+        <record id="withholding_declaration_country_data1KN" model="withholding.declaration.country">
+            <field name="name">SAINT KITTS AND NEVIS</field>
+            <field name="code">KN</field>
+        </record>
+        <record id="withholding_declaration_country_data1LC" model="withholding.declaration.country">
+            <field name="name">SAINT LUCIA</field>
+            <field name="code">LC</field>
+        </record>
+        <record id="withholding_declaration_country_data1MF" model="withholding.declaration.country">
+            <field name="name">SAINT MARTIN (FRENCH PART)</field>
+            <field name="code">MF</field>
+        </record>
+        <record id="withholding_declaration_country_data1PM" model="withholding.declaration.country">
+            <field name="name">SAINT PIERRE AND MIQUELON</field>
+            <field name="code">PM</field>
+        </record>
+        <record id="withholding_declaration_country_data1VC" model="withholding.declaration.country">
+            <field name="name">SAINT VINCENT AND THE GRENADINES</field>
+            <field name="code">VC</field>
+        </record>
+        <record id="withholding_declaration_country_data1WS" model="withholding.declaration.country">
+            <field name="name">SAMOA</field>
+            <field name="code">WS</field>
+        </record>
+        <record id="withholding_declaration_country_data1SM" model="withholding.declaration.country">
+            <field name="name">SAN MARINO</field>
+            <field name="code">SM</field>
+        </record>
+        <record id="withholding_declaration_country_data1ST" model="withholding.declaration.country">
+            <field name="name">SAO TOME AND PRINCIPE</field>
+            <field name="code">ST</field>
+        </record>
+        <record id="withholding_declaration_country_data1SA" model="withholding.declaration.country">
+            <field name="name">SAUDI ARABIA</field>
+            <field name="code">SA</field>
+        </record>
+        <record id="withholding_declaration_country_data1SN" model="withholding.declaration.country">
+            <field name="name">SENEGAL</field>
+            <field name="code">SN</field>
+        </record>
+        <record id="withholding_declaration_country_data1RS" model="withholding.declaration.country">
+            <field name="name">SERBIA</field>
+            <field name="code">RS</field>
+        </record>
+        <record id="withholding_declaration_country_data1SC" model="withholding.declaration.country">
+            <field name="name">SEYCHELLES</field>
+            <field name="code">SC</field>
+        </record>
+        <record id="withholding_declaration_country_data1SL" model="withholding.declaration.country">
+            <field name="name">SIERRA LEONE</field>
+            <field name="code">SL</field>
+        </record>
+        <record id="withholding_declaration_country_data1SG" model="withholding.declaration.country">
+            <field name="name">SINGAPORE</field>
+            <field name="code">SG</field>
+        </record>
+        <record id="withholding_declaration_country_data1SX" model="withholding.declaration.country">
+            <field name="name">SINT MAARTEN (DUTCH PART)</field>
+            <field name="code">SX</field>
+        </record>
+        <record id="withholding_declaration_country_data1SK" model="withholding.declaration.country">
+            <field name="name">SLOVAKIA</field>
+            <field name="code">SK</field>
+        </record>
+        <record id="withholding_declaration_country_data1SI" model="withholding.declaration.country">
+            <field name="name">SLOVENIA</field>
+            <field name="code">SI</field>
+        </record>
+        <record id="withholding_declaration_country_data1SB" model="withholding.declaration.country">
+            <field name="name">SOLOMON ISLANDS</field>
+            <field name="code">SB</field>
+        </record>
+        <record id="withholding_declaration_country_data1SO" model="withholding.declaration.country">
+            <field name="name">SOMALIA</field>
+            <field name="code">SO</field>
+        </record>
+        <record id="withholding_declaration_country_data1ZA" model="withholding.declaration.country">
+            <field name="name">SOUTH AFRICA</field>
+            <field name="code">ZA</field>
+        </record>
+        <record id="withholding_declaration_country_data1GS" model="withholding.declaration.country">
+            <field name="name">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</field>
+            <field name="code">GS</field>
+        </record>
+        <record id="withholding_declaration_country_data1SS" model="withholding.declaration.country">
+            <field name="name">SOUTH SUDAN</field>
+            <field name="code">SS</field>
+        </record>
+        <record id="withholding_declaration_country_data1ES" model="withholding.declaration.country">
+            <field name="name">SPAIN</field>
+            <field name="code">ES</field>
+        </record>
+        <record id="withholding_declaration_country_data1LK" model="withholding.declaration.country">
+            <field name="name">SRI LANKA</field>
+            <field name="code">LK</field>
+        </record>
+        <record id="withholding_declaration_country_data1SD" model="withholding.declaration.country">
+            <field name="name">SUDAN</field>
+            <field name="code">SD</field>
+        </record>
+        <record id="withholding_declaration_country_data1SR" model="withholding.declaration.country">
+            <field name="name">SURINAME</field>
+            <field name="code">SR</field>
+        </record>
+        <record id="withholding_declaration_country_data1SJ" model="withholding.declaration.country">
+            <field name="name">SVALBARD AND JAN MAYEN</field>
+            <field name="code">SJ</field>
+        </record>
+        <record id="withholding_declaration_country_data1SZ" model="withholding.declaration.country">
+            <field name="name">SWAZILAND</field>
+            <field name="code">SZ</field>
+        </record>
+        <record id="withholding_declaration_country_data1SE" model="withholding.declaration.country">
+            <field name="name">SWEDEN</field>
+            <field name="code">SE</field>
+        </record>
+        <record id="withholding_declaration_country_data1CH" model="withholding.declaration.country">
+            <field name="name">SWITZERLAND</field>
+            <field name="code">CH</field>
+        </record>
+        <record id="withholding_declaration_country_data1SY" model="withholding.declaration.country">
+            <field name="name">SYRIAN ARAB REPUBLIC</field>
+            <field name="code">SY</field>
+        </record>
+        <record id="withholding_declaration_country_data1TW" model="withholding.declaration.country">
+            <field name="name">TAIWAN</field>
+            <field name="code">TW</field>
+        </record>
+        <record id="withholding_declaration_country_data1TJ" model="withholding.declaration.country">
+            <field name="name">TAJIKISTAN</field>
+            <field name="code">TJ</field>
+        </record>
+        <record id="withholding_declaration_country_data1TZ" model="withholding.declaration.country">
+            <field name="name">TANZANIA, UNITED REPUBLIC OF</field>
+            <field name="code">TZ</field>
+        </record>
+        <record id="withholding_declaration_country_data1TH" model="withholding.declaration.country">
+            <field name="name">THAILAND</field>
+            <field name="code">TH</field>
+        </record>
+        <record id="withholding_declaration_country_data1TL" model="withholding.declaration.country">
+            <field name="name">TIMOR-LESTE</field>
+            <field name="code">TL</field>
+        </record>
+        <record id="withholding_declaration_country_data1TG" model="withholding.declaration.country">
+            <field name="name">TOGO</field>
+            <field name="code">TG</field>
+        </record>
+        <record id="withholding_declaration_country_data1TK" model="withholding.declaration.country">
+            <field name="name">TOKELAU</field>
+            <field name="code">TK</field>
+        </record>
+        <record id="withholding_declaration_country_data1TO" model="withholding.declaration.country">
+            <field name="name">TONGA</field>
+            <field name="code">TO</field>
+        </record>
+        <record id="withholding_declaration_country_data1TT" model="withholding.declaration.country">
+            <field name="name">TRINIDAD AND TOBAGO</field>
+            <field name="code">TT</field>
+        </record>
+        <record id="withholding_declaration_country_data1TR" model="withholding.declaration.country">
+            <field name="name">TURKEY</field>
+            <field name="code">TR</field>
+        </record>
+        <record id="withholding_declaration_country_data1TM" model="withholding.declaration.country">
+            <field name="name">TURKMENISTAN</field>
+            <field name="code">TM</field>
+        </record>
+        <record id="withholding_declaration_country_data1TC" model="withholding.declaration.country">
+            <field name="name">TURKS AND CAICOS ISLANDS</field>
+            <field name="code">TC</field>
+        </record>
+        <record id="withholding_declaration_country_data1TV" model="withholding.declaration.country">
+            <field name="name">TUVALU</field>
+            <field name="code">TV</field>
+        </record>
+        <record id="withholding_declaration_country_data1UG" model="withholding.declaration.country">
+            <field name="name">UGANDA</field>
+            <field name="code">UG</field>
+        </record>
+        <record id="withholding_declaration_country_data1UA" model="withholding.declaration.country">
+            <field name="name">UKRAINE</field>
+            <field name="code">UA</field>
+        </record>
+        <record id="withholding_declaration_country_data1AE" model="withholding.declaration.country">
+            <field name="name">UNITED ARAB EMIRATES</field>
+            <field name="code">AE</field>
+        </record>
+        <record id="withholding_declaration_country_data1GB" model="withholding.declaration.country">
+            <field name="name">UNITED KINGDOM</field>
+            <field name="code">GB</field>
+        </record>
+        <record id="withholding_declaration_country_data1US" model="withholding.declaration.country">
+            <field name="name">UNITED STATES</field>
+            <field name="code">US</field>
+        </record>
+        <record id="withholding_declaration_country_data1UM" model="withholding.declaration.country">
+            <field name="name">UNITED STATES MINOR OUTLYING ISLANDS</field>
+            <field name="code">UM</field>
+        </record>
+        <record id="withholding_declaration_country_data1UY" model="withholding.declaration.country">
+            <field name="name">URUGUAY</field>
+            <field name="code">UY</field>
+        </record>
+        <record id="withholding_declaration_country_data1UZ" model="withholding.declaration.country">
+            <field name="name">UZBEKISTAN</field>
+            <field name="code">UZ</field>
+        </record>
+        <record id="withholding_declaration_country_data1VU" model="withholding.declaration.country">
+            <field name="name">VANUATU</field>
+            <field name="code">VU</field>
+        </record>
+        <record id="withholding_declaration_country_data1VE" model="withholding.declaration.country">
+            <field name="name">VENEZUELA, BOLIVARIAN REPUBLIC OF</field>
+            <field name="code">VE</field>
+        </record>
+        <record id="withholding_declaration_country_data1VN" model="withholding.declaration.country">
+            <field name="name">VIET NAM</field>
+            <field name="code">VN</field>
+        </record>
+        <record id="withholding_declaration_country_data1VG" model="withholding.declaration.country">
+            <field name="name">VIRGIN ISLANDS, BRITISH</field>
+            <field name="code">VG</field>
+        </record>
+        <record id="withholding_declaration_country_data1VI" model="withholding.declaration.country">
+            <field name="name">VIRGIN ISLANDS, U.S.</field>
+            <field name="code">VI</field>
+        </record>
+        <record id="withholding_declaration_country_data1WF" model="withholding.declaration.country">
+            <field name="name">WALLIS AND FUTUNA</field>
+            <field name="code">WF</field>
+        </record>
+        <record id="withholding_declaration_country_data1EH" model="withholding.declaration.country">
+            <field name="name">WESTERN SAHARA</field>
+            <field name="code">EH</field>
+        </record>
+        <record id="withholding_declaration_country_data1YE" model="withholding.declaration.country">
+            <field name="name">YEMEN</field>
+            <field name="code">YE</field>
+        </record>
+        <record id="withholding_declaration_country_data1ZM" model="withholding.declaration.country">
+            <field name="name">ZAMBIA</field>
+            <field name="code">ZM</field>
+        </record>
+        <record id="withholding_declaration_country_data1ZW" model="withholding.declaration.country">
+            <field name="name">ZIMBABWE</field>
+            <field name="code">ZW</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_location_floor_type_manager,location.floor.type,model_location_floor_type,group_navale_manager,1,1,1,1
+access_location_zone_user,location.zone,model_location_zone,group_navale_user,1,0,0,0
+access_location_zone_user_all,location.zone,model_location_zone,group_navale_user_all,1,1,1,1
+access_location_zone_manager,location.zone,model_location_zone,group_navale_manager,1,1,1,1
+access_res_boat_user,res.boat,model_res_boat,group_navale_user,1,1,1,0
+access_res_boat_user_all,res.boat,model_res_boat,group_navale_user_all,1,1,1,1
+access_res_boat_manager,res.boat,model_res_boat,group_navale_manager,1,1,1,1
+access_location_rental_user,location.rental,model_location_rental,group_navale_user,1,1,1,0
+access_location_rental_user_all,location.rental,model_location_rental,group_navale_user_all,1,1,1,1
+access_location_rental_manager,location.rental,model_location_rental,group_navale_manager,1,1,1,1
+access_rental_service_user,rental.service,model_rental_service,group_navale_user,1,1,1,0
+access_rental_service_user_all,rental.service,model_rental_service,group_navale_user_all,1,1,1,1
+access_rental_service_manager,rental.service,model_rental_service,group_navale_manager,1,1,1,1

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Inherit Payment Terms Form View -->
+    <record id="view_payment_term_form_ttn" model="ir.ui.view">
+        <field name="name">account.payment.term.form.ttn</field>
+        <field name="model">account.payment.term</field>
+        <field name="inherit_id" ref="account.view_payment_term_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="inside">
+                <group name="ttn_config" string="Configuration TEIF/TTN" col="4">
+                    <field name="ttn_payment_terms_code" />
+                    <field name="ttn_payment_means_code" />
+                    <field name="ttn_payment_condition_code" />
+                    <field name="ttn_financial_institution" />
+                    <field name="ttn_payment_institution_code" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+    <!-- Inherit Payment Terms Tree View -->
+    <record id="view_payment_term_tree_ttn" model="ir.ui.view">
+        <field name="name">account.payment.term.tree.ttn</field>
+        <field name="model">account.payment.term</field>
+        <field name="inherit_id" ref="account.view_payment_term_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="ttn_payment_terms_code" optional="show" />
+                <field name="ttn_payment_means_code" optional="hide" />
+            </xpath>
+        </field>
+    </record>
+    <!-- Search View for Payment Terms with TTN Code -->
+    <record id="view_payment_term_search_ttn" model="ir.ui.view">
+        <field name="name">account.payment.term.search.ttn</field>
+        <field name="model">account.payment.term</field>
+        <field name="inherit_id" ref="account.view_payment_term_search" />
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <filter name="filter_ttn_terms" string="Termes TTN" domain="[('ttn_payment_terms_code', '!=', False)]" />
+                <group>
+                    <filter name="group_ttn_payment_code" string="Code TTN" context="{'group_by': 'ttn_payment_terms_code'}" />
+                    <filter name="group_ttn_means" string="Moyen de Paiement" context="{'group_by': 'ttn_payment_means_code'}" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

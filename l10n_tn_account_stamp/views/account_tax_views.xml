@@ -1,0 +1,30 @@
+<odoo>
+    <data>
+
+        <record id="account_tax_form_inherit" model="ir.ui.view">
+            <field name="name">account.tax.form</field>
+            <field name="model">account.tax</field>
+            <field name="inherit_id" ref="account.view_tax_form"/>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='type_tax_use']" position="after">
+                    <field name="is_stamp_sale"/>
+                    <field name="is_stamp_purchase"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="account_fiscal_position_form_inherit" model="ir.ui.view">
+            <field name="name">account.fiscal.position.form</field>
+            <field name="model">account.fiscal.position</field>
+            <field name="inherit_id" ref="account.view_account_position_form"/>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='auto_apply']" position="before">
+                    <field name="stamp_sale"/>
+                    <field name="stamp_purchase"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

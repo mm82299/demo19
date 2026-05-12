@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <xpath expr="//form" position="inside">
+            <app data-string="Debranding" string="Debranding" name="ics_debranding">
+                <block title="General Branding" name="general_branding">
+                    <setting string="Brand Name" help="The name that will replace Odoo in titles and footers.">
+                        <field name="debranding_brand_name"/>
+                    </setting>
+                </block>
+            </app>
+        </xpath>
+    </record>
+
+    <record id="action_ics_debranding_config" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'ics_debranding'}</field>
+    </record>
+
+    <menuitem id="menu_ics_debranding_config"
+        name="Debranding"
+        parent="base.menu_administration"
+        sequence="100"
+        action="action_ics_debranding_config"/>
+</odoo>

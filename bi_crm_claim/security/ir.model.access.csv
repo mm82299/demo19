@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_crm_claim_stage_user,crm.claim.stage.user,model_crm_claim_stage,sales_team.group_sale_salesman,1,1,1,1
+access_crm_claim_user,crm.claim.user,model_crm_claim,sales_team.group_sale_salesman,1,1,1,1
+access_crm_claim_category_user,crm.claim.category.user,model_crm_claim_category,sales_team.group_sale_salesman,1,1,1,1
+access_crm_claim_resolution_action_user,crm.claim.resolution.action.user,model_crm_claim_resolution_action,sales_team.group_sale_salesman,1,1,1,1
+access_crm_claim_root_cause_user,crm.claim.root.cause.user,model_crm_claim_root_cause,sales_team.group_sale_salesman,1,1,1,1

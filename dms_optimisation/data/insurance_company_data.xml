@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="company_star" model="dms.insurance.company">
+            <field name="name">STAR</field>
+            <field name="code">STAR</field>
+        </record>
+        <record id="company_comar" model="dms.insurance.company">
+            <field name="name">COMAR</field>
+            <field name="code">COMAR</field>
+        </record>
+        <record id="company_lloyd" model="dms.insurance.company">
+            <field name="name">LLOYD</field>
+            <field name="code">LLOYD</field>
+        </record>
+        <record id="company_mae" model="dms.insurance.company">
+            <field name="name">MAE</field>
+            <field name="code">MAE</field>
+        </record>
+        <record id="company_maghrebia" model="dms.insurance.company">
+            <field name="name">MAGHREBIA</field>
+            <field name="code">MAGHREBIA</field>
+        </record>
+        <record id="company_gat" model="dms.insurance.company">
+            <field name="name">GAT</field>
+            <field name="code">GAT</field>
+        </record>
+        <record id="company_el_baraka" model="dms.insurance.company">
+            <field name="name">EL BARAKA</field>
+            <field name="code">ELBARAKA</field>
+        </record>
+        <record id="company_bna" model="dms.insurance.company">
+            <field name="name">BNA ASSURANCES</field>
+            <field name="code">BNA</field>
+        </record>
+        <record id="company_al_takafulia" model="dms.insurance.company">
+            <field name="name">AL-TAKAFULIA</field>
+            <field name="code">TAKAFULIA</field>
+        </record>
+        <record id="company_astree" model="dms.insurance.company">
+            <field name="name">ASTREE</field>
+            <field name="code">ASTREE</field>
+        </record>
+        <record id="company_zitouna" model="dms.insurance.company">
+            <field name="name">ZITOUNA TAKAFUL</field>
+            <field name="code">ZITOUNA</field>
+        </record>
+        <record id="company_biat" model="dms.insurance.company">
+            <field name="name">BIAT ASSURANCES</field>
+            <field name="code">BIAT</field>
+        </record>
+        <record id="company_carte" model="dms.insurance.company">
+            <field name="name">CARTE</field>
+            <field name="code">CARTE</field>
+        </record>
+        <record id="company_bh" model="dms.insurance.company">
+            <field name="name">BH</field>
+            <field name="code">BH</field>
+        </record>
+        <record id="company_ge" model="dms.insurance.company">
+            <field name="name">GE</field>
+            <field name="code">GE</field>
+        </record>
+
+    </data>
+</odoo>

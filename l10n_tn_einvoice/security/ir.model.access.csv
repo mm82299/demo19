@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_teif_generator,access_teif_generator,model_teif_generator,account.group_account_invoice,1,1,1,0
+access_ttn_connector,access_ttn_connector,model_ttn_connector,account.group_account_invoice,1,1,1,0

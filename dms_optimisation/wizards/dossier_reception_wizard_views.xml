@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_dossier_reception_wizard_form" model="ir.ui.view">
+        <field name="name">dms.dossier.reception.wizard.form</field>
+        <field name="model">dms.dossier.reception.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Réception de Courrier">
+                <group>
+                    <group string="Type de Réception">
+                        <field name="is_new_dossier" widget="boolean_toggle"/>
+                        <field name="existing_dossier_id"
+                               invisible="is_new_dossier"/>
+                    </group>
+                    <group string="Classification">
+                        <field name="workflow_model"/>
+                        <field name="type_sinistre"/>
+                        <field name="nature_fonds_perdus"
+                               invisible="workflow_model not in ('C', 'D')"/>
+                    </group>
+                </group>
+                <group>
+                    <group string="Parties">
+                        <field name="partner_id"/>
+                        <field name="company_adverse_id"
+                               invisible="workflow_model not in ('A', 'B', 'D', 'E')"/>
+                    </group>
+                    <group string="Assignation">
+                        <field name="gestionnaire_id"/>
+                        <field name="amount"/>
+                    </group>
+                </group>
+                <group string="Documents">
+                    <field name="document_type_ids" widget="many2many_tags"/>
+                </group>
+                <group>
+                    <field name="notes" placeholder="Notes de réception..."/>
+                </group>
+                <footer>
+                    <button name="action_create_or_resume_dossier"
+                            string="Créer / Reprendre le Dossier"
+                            type="object"
+                            class="btn-primary"/>
+                    <button string="Annuler" class="btn-secondary"
+                            special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_dossier_reception_wizard" model="ir.actions.act_window">
+        <field name="name">Réception de Courrier</field>
+        <field name="res_model">dms.dossier.reception.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

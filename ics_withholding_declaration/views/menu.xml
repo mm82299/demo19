@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem
+        id="menu_ics_withholding__root"
+        name="Withholding Declaration"
+        web_icon="ics_withholding_declaration,static/description/icon.png"
+        sequence="90"
+        groups="ics_withholding_declaration.group_withholding_declaration_manager"/>
+
+        <menuitem id="menu_ics_withholding__declaration"
+        name="Withholding Declaration"
+        parent="menu_ics_withholding__root"
+        action="withholding_declaration_act_window"
+        sequence="1"
+        groups="ics_withholding_declaration.group_withholding_declaration_manager"/>
+
+        <menuitem id="menu_ics_withholding__declaration_data_root"
+        name="Data"
+        parent="menu_ics_withholding__root"
+        sequence="2"
+        groups="ics_withholding_declaration.group_withholding_declaration_manager"/>
+        <menuitem id="menu_ics_withholding__declaration_data_declaration_line"
+        name="Declaration Line"
+        parent="menu_ics_withholding__declaration_data_root"
+        action="withholding_declaration_line_act_window"
+        sequence="1"
+        groups="ics_withholding_declaration.group_withholding_declaration_manager"/>
+
+        <menuitem id="menu_ics_withholding__declaration_data_declaration_operation_line"
+        name="Operation Line"
+        parent="menu_ics_withholding__declaration_data_root"
+        action="withholding_declaration_operation_line_act_window"
+        sequence="2"
+        groups="ics_withholding_declaration.group_withholding_declaration_manager"/>
+
+
+        <menuitem id="menu_ics_withholding__declaration_config_root"
+        name="Configuration"
+        parent="menu_ics_withholding__root"
+        sequence="3"
+        groups="ics_withholding_declaration.group_withholding_declaration_manager"/>
+
+        <menuitem id="menu_ics_withholding__declaration_config_country"
+        name="Country"
+        parent="menu_ics_withholding__declaration_config_root"
+        action="withholding_declaration_country_act_window"
+        sequence="1"
+        groups="ics_withholding_declaration.group_withholding_declaration_manager"/>
+        <menuitem id="menu_ics_withholding__declaration_config_operation_type"
+        name="Operation Type"
+        parent="menu_ics_withholding__declaration_config_root"
+        action="withholding_declaration_operation_type_act_window"
+        sequence="2"
+        groups="ics_withholding_declaration.group_withholding_declaration_manager"/>
+         <menuitem id="menu_ics_withholding__declaration_config_operation_category"
+        name="Operation Type Category"
+        parent="menu_ics_withholding__declaration_config_root"
+        action="withholding_declaration_operation_type_category_act_window"
+        sequence="3"
+        groups="ics_withholding_declaration.group_withholding_declaration_manager"/>
+    </data>
+</odoo>

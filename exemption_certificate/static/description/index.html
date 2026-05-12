@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Exemption Certificate Management - Odoo</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #27ae60;
+            --accent: #f39c12;
+            --text-dark: #34495e;
+            --text-light: #fff;
+            --bg-light: #ecf0f1;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('banner.png') center/cover;
+            color: var(--text-light);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary);
+        }
+
+        .hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.25em;
+            opacity: 0.9;
+        }
+
+        .section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.2em;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background: var(--accent);
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eee;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            border-color: var(--secondary);
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: var(--secondary);
+        }
+
+        .feature-item h3 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.4em;
+        }
+
+        .benefits {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+
+        .benefits h4 {
+            color: var(--secondary);
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .benefit-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .benefit-list li {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        .benefit-list li::before {
+            content: '✓';
+            color: var(--secondary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .footer {
+            background: var(--primary);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Tax Exemption Certificates</h1>
+            <p>Automate your tax-free sales and handle partner exemptions with precision.</p>
+        </div>
+    </div>
+
+    <div class="section container">
+        <div class="section-title">
+            <h2>Effortless Compliance</h2>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="feature-icon">📁</div>
+                <h3>Certificate Tracking</h3>
+                <p>Keep a digital record of all partner tax exemption certificates with validity dates and references.
+                </p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⚙️</div>
+                <h3>Automatic Taxes</h3>
+                <p>Invoices automatically apply the correct tax rules based on active and valid exemption certificates.
+                </p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⚠️</div>
+                <h3>Expiry Alerts</h3>
+                <p>Never miss an expired certificate. Ensure your billing is always legally compliant and audit-ready.
+                </p>
+            </div>
+        </div>
+
+        <div class="benefits">
+            <h4>Why use this module?</h4>
+            <ul class="benefit-list">
+                <li><strong>Reduce Errors:</strong> Eliminate manual tax adjustments for tax-exempt customers.</li>
+                <li><strong>Time Saving:</strong> Set it once, and let Odoo handle the tax logic per partner.</li>
+                <li><strong>Audit Readiness:</strong> Centralize all fiscal documents in one place for easy retrieval.
+                </li>
+                <li><strong>Flexible Configuration:</strong> Supports multiple tax types and regional regulations.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Powered by Infotech Consulting Services (ICS)</p>
+        <p>Professional Odoo Solutions for Business Excellence</p>
+    </div>
+
+</body>
+
+</html>

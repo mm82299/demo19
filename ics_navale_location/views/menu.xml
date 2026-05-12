@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="navale_location_menu_root" name="Rentals" web_icon="ics_navale_location,static/description/icon.png" sequence="26"/>
+    <menuitem id="menu_navale_rental" name="Rentals" parent="navale_location_menu_root" action="action_rental" sequence="10"/>
+    <menuitem id="menu_navale_location" name="Locations" parent="navale_location_menu_root" action="action_location_zone" sequence="20"/>
+    <menuitem id="menu_navale_boat" name="Boats" parent="navale_location_menu_root" action="action_boat" sequence="30"/>
+    <menuitem id="menu_rental_configuration" name="Configuration" parent="navale_location_menu_root" sequence="99"/>
+    <menuitem id="menu_navale_floor_type" name="Floor Types" parent="menu_rental_configuration" action="action_location_floor_type" sequence="40"/>
+</odoo>

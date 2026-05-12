@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="withholding_declaration_operation_line_form_view" model="ir.ui.view">
+            <field name="name">withholding.declaration.operation.line.form</field>
+            <field name="model">withholding.declaration.operation.line</field>
+            <field name="arch" type="xml">
+                <form string="Operation">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name"/>
+                            <h1>
+                                <field name="name" placeholder="Title"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="declaration_line_id"/>
+                                <field name="invoice_date"/>
+                                <field name="cnpc"/>
+                                <field name="p_charge"/>
+                                <field name="amount_ht"/>
+                                <field name="rs_rate"/>
+                                <field name="tva_rate"/>
+                                <field name="tva_amount"/>
+                            </group>
+                            <group>
+                                <field name="tva_amount"/>
+                                <field name="amount_ttc"/>
+                                <field name="amount_rs"/>
+                                <field name="taxe_additionnelle_code"/>
+                                <field name="taxe_additionnelle_rate"/>
+                                <field name="amount_net_servi"/>
+                                <field name="devise_code"/>
+                                <field name="devise_rate"/>
+                                <field name="devise_rs"/>
+                                <field name="devise_ttc"/>
+                                <field name="devise_servi"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="withholding_declaration_operation_line_tree_view" model="ir.ui.view">
+            <field name="name">withholding.declaration.operation.line.tree</field>
+            <field name="model">withholding.declaration.operation.line</field>
+            <field name="arch" type="xml">
+                <list string="Operation Line">
+                    <field name="name"/>
+                    <field name="declaration_line_id"/>
+                    <field name="invoice_date"/>
+                    <field name="cnpc"/>
+                    <field name="p_charge"/>
+                    <field name="amount_ht"/>
+                    <field name="rs_rate"/>
+                    <field name="tva_rate"/>
+                    <field name="tva_amount"/>
+                    <field name="tva_amount"/>
+                    <field name="amount_ttc"/>
+                    <field name="amount_rs"/>
+                    <field name="taxe_additionnelle_code"/>
+                    <field name="taxe_additionnelle_rate"/>
+                    <field name="amount_net_servi"/>
+                    <field name="devise_code"/>
+                    <field name="devise_rate"/>
+                    <field name="devise_rs"/>
+                    <field name="devise_ttc"/>
+                    <field name="devise_servi"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="withholding_declaration_operation_line_search_view" model="ir.ui.view">
+            <field name="name">withholding.declaration.operation.line.search</field>
+            <field name="model">withholding.declaration.operation.line</field>
+            <field name="arch" type="xml">
+                <search string="Operation Line">
+                    <field name="name"/>
+                    <group>
+                        <filter string="Declaration Line" name="declaration_line_id"
+                                context="{'group_by':'declaration_line_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="withholding_declaration_operation_line_act_window" model="ir.actions.act_window">
+            <field name="name">Operation Line</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">withholding.declaration.operation.line</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

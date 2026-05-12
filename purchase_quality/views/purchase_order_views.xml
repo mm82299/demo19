@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="purchase_order_form_inherit_quality" model="ir.ui.view">
+        <field name="name">purchase.order.form.inherit.quality</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_approve']" position="after">
+                <field name="delay_creation_confirmation" readonly="1" force_save="1"/>
+            </xpath>
+            <xpath expr="//field[@name='effective_date']" position="after">
+                <field name="delay_expected_effective_receipt" readonly="1" force_save="1"/>
+                <field name="delivery_average_days" readonly="1" force_save="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="purchase_order_tree_inherit_quality" model="ir.ui.view">
+        <field name="name">purchase.order.tree.inherit.quality</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_approve']" position="after">
+                <field name="delay_creation_confirmation" optional="show"
+                       decoration-success="delay_creation_confirmation &lt; 5"
+                       decoration-warning="delay_creation_confirmation &gt;= 5 and delay_creation_confirmation &lt;= 20"
+                       decoration-danger="delay_creation_confirmation &gt; 25"/>
+                <field name="delay_expected_effective_receipt" optional="show"
+                       decoration-success="delay_expected_effective_receipt &lt; 5"
+                       decoration-warning="delay_expected_effective_receipt &gt;= 5 and delay_expected_effective_receipt &lt;= 20"
+                       decoration-danger="delay_expected_effective_receipt &gt; 25"/>
+                <field name="delivery_average_days" optional="show"
+                       decoration-success="delivery_average_days &lt; 5"
+                       decoration-warning="delivery_average_days &gt;= 5 and delivery_average_days &lt;= 20"
+                       decoration-danger="delivery_average_days &gt; 25"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- purchase_order_kpis_tree view inherit for better coverage -->
+    <record id="purchase_order_kpis_tree_inherit_quality" model="ir.ui.view">
+        <field name="name">purchase.order.kpis.tree.inherit.quality</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_kpis_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_approve']" position="after">
+                <field name="delay_creation_confirmation" optional="show"
+                       decoration-success="delay_creation_confirmation &lt; 5"
+                       decoration-warning="delay_creation_confirmation &gt;= 5 and delay_creation_confirmation &lt;= 20"
+                       decoration-danger="delay_creation_confirmation &gt; 25"/>
+                <field name="delay_expected_effective_receipt" optional="show"
+                       decoration-success="delay_expected_effective_receipt &lt; 5"
+                       decoration-warning="delay_expected_effective_receipt &gt;= 5 and delay_expected_effective_receipt &lt;= 20"
+                       decoration-danger="delay_expected_effective_receipt &gt; 25"/>
+                <field name="delivery_average_days" optional="show"
+                       decoration-success="delivery_average_days &lt; 5"
+                       decoration-warning="delivery_average_days &gt;= 5 and delivery_average_days &lt;= 20"
+                       decoration-danger="delivery_average_days &gt; 25"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

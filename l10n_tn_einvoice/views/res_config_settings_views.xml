@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.l10n.tn.einvoice</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='analytic']" position="after">
+                <block title="Tunisian e-Invoice" id="l10n_tn_einvoice">
+                    <setting string="Main Configuration">
+                        <div class="content-group">
+                            <div class="row mt16">
+                                <label for="require_einvoice" class="col-lg-3 o_light_label"/>
+                                <field name="require_einvoice"/>
+                            </div>
+                            <div class="row mt16" invisible="not require_einvoice">
+                                <label for="use_custom_product_description" class="col-lg-3 o_light_label"/>
+                                <field name="use_custom_product_description"/>
+                            </div>
+                            <div class="row mt16" invisible="not require_einvoice or not use_custom_product_description">
+                                <label for="custom_product_description_template" class="col-lg-3 o_light_label"/>
+                                <field name="custom_product_description_template" placeholder='Ex: Note d honoraires relative à "{product_name}"'/>
+                            </div>
+                        </div>
+                    </setting>
+
+                    <div invisible="not require_einvoice">
+                        <setting string="Company Information" help="Configure company details for e-invoicing">
+                            <div class="content-group">
+                                <div class="row mt16">
+                                    <label for="honoraire_use" class="col-lg-3 o_light_label"/>
+                                    <field name="honoraire_use"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="company_short_name" class="col-lg-3 o_light_label"/>
+                                    <field name="company_short_name"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="tn_fiscal_id_type" class="col-lg-3 o_light_label"/>
+                                    <field name="tn_fiscal_id_type"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="tn_vat_regime" class="col-lg-3 o_light_label"/>
+                                    <field name="tn_vat_regime"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="company_category" class="col-lg-3 o_light_label"/>
+                                    <field name="company_category"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="capital" class="col-lg-3 o_light_label"/>
+                                    <field name="capital"/>
+                                </div>
+                            </div>
+                        </setting>
+
+                        <setting string="ANCE API Configuration" help="Configure ANCE API for digital signature">
+                            <div class="content-group">
+                                <div class="row mt16">
+                                    <label for="ngsign_api_url" class="col-lg-3 o_light_label"/>
+                                    <field name="ngsign_api_url"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="ngsign_api_token" class="col-lg-3 o_light_label"/>
+                                    <field name="ngsign_api_token"/>
+                                </div>
+                                <div class="row mt16"  invisible="True">
+                                    <label for="ngsign_seal_passphrase" class="col-lg-3 o_light_label"/>
+                                    <field name="ngsign_seal_passphrase" password="True"/>
+                                </div>
+                                <div class="row mt16" invisible="True">
+                                    <field name="ngsign_use_seal"/>
+                                    <label for="ngsign_use_seal" class="o_light_label"/>
+                                </div>
+                            </div>
+                        </setting>
+
+                        <setting string="TTN SOAP API Configuration" help="Configure TTN SOAP API for validation">
+                            <div class="content-group">
+                                <div class="row mt16">
+                                    <label for="ttn_soap_url" class="col-lg-3 o_light_label"/>
+                                    <field name="ttn_soap_url"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="ttn_soap_username" class="col-lg-3 o_light_label"/>
+                                    <field name="ttn_soap_username"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="ttn_soap_password" class="col-lg-3 o_light_label"/>
+                                    <field name="ttn_soap_password" password="True"/>
+                                </div>
+                                <div class="row mt16">
+                                    <label for="ttn_soap_timeout" class="col-lg-3 o_light_label"/>
+                                    <field name="ttn_soap_timeout"/>
+                                </div>
+                                <div class="row mt16">
+                                    <field name="ttn_auto_submit"/>
+                                    <label for="ttn_auto_submit" class="o_light_label"/>
+                                </div>
+                            </div>
+                        </setting>
+                    </div>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

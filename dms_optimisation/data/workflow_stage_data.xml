@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="stage_bureau_ordre" model="dms.workflow.stage">
+            <field name="name">Bureau d'Ordre</field>
+            <field name="sequence">10</field>
+            <field name="state_mapping">reception</field>
+            <field name="description">Réception et tri du courrier entrant</field>
+        </record>
+
+        <record id="stage_pole_assistance" model="dms.workflow.stage">
+            <field name="name">Pôle Assistance</field>
+            <field name="sequence">20</field>
+            <field name="state_mapping">en_cours</field>
+            <field name="description">Identification et orientation du dossier</field>
+        </record>
+
+        <record id="stage_gestionnaire" model="dms.workflow.stage">
+            <field name="name">Gestionnaire</field>
+            <field name="sequence">30</field>
+            <field name="state_mapping">en_cours</field>
+            <field name="description">Traitement du dossier par le gestionnaire assigné</field>
+        </record>
+
+        <record id="stage_chef_pole" model="dms.workflow.stage">
+            <field name="name">Chef de Pôle Corporel</field>
+            <field name="sequence">40</field>
+            <field name="state_mapping">approbation</field>
+            <field name="description">Approbation Chef de Pôle (montants &gt; 20 000 DT)</field>
+        </record>
+
+        <record id="stage_direction_generale" model="dms.workflow.stage">
+            <field name="name">Direction Générale</field>
+            <field name="sequence">50</field>
+            <field name="state_mapping">approbation</field>
+            <field name="description">Approbation Direction Générale (montants &gt; 100 000 DT)</field>
+        </record>
+
+        <record id="stage_pole_convention" model="dms.workflow.stage">
+            <field name="name">Pôle Convention</field>
+            <field name="sequence">60</field>
+            <field name="state_mapping">en_cours</field>
+            <field name="description">Traitement des conventions et chèques</field>
+        </record>
+
+        <record id="stage_archive" model="dms.workflow.stage">
+            <field name="name">Archive</field>
+            <field name="sequence">70</field>
+            <field name="state_mapping">archive</field>
+            <field name="fold">True</field>
+            <field name="description">Dossier archivé physiquement</field>
+        </record>
+
+    </data>
+</odoo>

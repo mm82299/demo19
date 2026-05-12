@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_invoice_tree_teif" model="ir.ui.view">
+        <field name="name">account.move.form.teif</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_invoice_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="field[@name='move_type']" position="after">
+                <field name="teif_status" widget="badge"
+                   decoration-success="teif_status == 'ttn_validated'"
+                   decoration-info="teif_status in ['generated', 'signed', 'sent_ttn']"
+                   decoration-danger="teif_status in ['error', 'ttn_rejected']"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_move_form_teif" model="ir.ui.view">
+        <field name="name">account.move.form.teif</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//header/button[@name='action_post']" position="after">
+
+                <!-- Step 1: Generate TEIF XML -->
+                <button name="action_generate_teif_xml"
+                        string="1. Générer TEIF"
+                        type="object"
+                        class="oe_highlight"
+                        invisible="move_type not in ('out_invoice', 'out_refund') or state != 'posted' or teif_status != 'draft' or not company_id.require_einvoice"/>
+
+                <!-- Step 2: Sign with NGSign -->
+                <button name="action_sign_with_ngsign"
+                        string="2. Signer (NGSign)"
+                        type="object"
+                        class="oe_highlight"
+                        invisible="teif_status != 'generated' or not company_id.require_einvoice"/>
+
+                <!-- Download Signed XML -->
+                <button name="action_download_signed_xml_from_ngsign"
+                        string="↓ XML Signé"
+                        type="object"
+                        invisible="teif_status != 'sent_ngsign' or not company_id.require_einvoice"/>
+
+                <!-- Step 3: Submit to TTN -->
+                <button name="action_submit_to_ttn"
+                        string="3. Soumettre à TTN"
+                        type="object"
+                        class="oe_highlight"
+                        invisible="teif_status != 'signed' or not company_id.require_einvoice"/>
+
+                <!-- Step 4: Check TTN Status -->
+                <button name="action_check_ttn_status"
+                        string="4. Vérifier Statut TTN"
+                        type="object"
+                        invisible="teif_status != 'sent_ttn' or not company_id.require_einvoice"/>
+
+                <!-- Step 5: Download Sealed Invoice -->
+                <button name="action_download_sealed_invoice"
+                        string="5. Télécharger Scellé"
+                        type="object"
+                        invisible="(teif_status != 'ttn_validated' or teif_qr_code != False) or not company_id.require_einvoice"/>
+                <button name="action_transform_xml_to_html"
+                    string="Générer Aperçu Elfatoora"
+                    type="object"
+                    invisible="not teif_sealed_xml or not company_id.require_einvoice"/>
+            </xpath>
+
+            <xpath expr="//notebook" position="inside">
+                <page string="E-Facture TEIF" name="teif" invisible="not company_id.require_einvoice">
+                    <group>
+                        <group string="Informations TEIF">
+                            <field name="teif_status" widget="badge"
+                                   decoration-success="teif_status == 'ttn_validated'"
+                                   decoration-info="teif_status in ['generated', 'signed', 'sent_ttn']"
+                                   decoration-danger="teif_status in ['error', 'ttn_rejected']"/>
+                             <field name="is_decamp" widget="boolean_toggle"/>
+                            <field name="teif_document_type" readonly="True"/>
+                            <field name="ngsign_transaction_uuid" readonly="True" invisible="True"/>
+                            <field name="teif_ngsign_uuid" readonly="True" invisible="True"/>
+                            <field name="teif_ttn_reference" readonly="True" invisible="not teif_ttn_reference"/>
+                            <field name="teif_ttn_validation_date" readonly="True"  invisible="not teif_ttn_validation_date"/>
+
+                            <field name="teif_ttn_id_save" readonly="True" invisible="not teif_ttn_id_save"/>
+                            <field name="teif_ttn_message" readonly="True" invisible="not teif_ttn_message"/>
+                        </group>
+                        <group string="QR Code TTN">
+                                                        <!-- TEIF XML Original -->
+                            <label for="teif_xml_file" invisible="not teif_xml_file"/>
+                            <div invisible="not teif_xml_file">
+                                <field name="teif_xml_filename" invisible="True"/>
+                                <field name="teif_xml_file" filename="teif_xml_filename"
+                                       widget="binary"/>
+                            </div>
+
+                            <!-- TEIF XML Signé -->
+                            <label for="teif_signed_xml_file" invisible="not teif_signed_xml_file"/>
+                            <div  invisible="not teif_signed_xml_file">
+                                <field name="teif_signed_xml_filename" invisible="True"/>
+                                <field name="teif_signed_xml_file" filename="teif_signed_xml_filename"
+                                       widget="binary"/>
+                            </div>
+
+                            <!-- TEIF XML Scellé -->
+                            <label for="teif_sealed_xml_file" invisible="not teif_sealed_xml_file"/>
+                            <div invisible="not teif_sealed_xml_file">
+                                <field name="teif_sealed_xml_filename" invisible="True"/>
+                                <field name="teif_sealed_xml_file" filename="teif_sealed_xml_filename"
+                                       widget="binary"/>
+                            </div>
+                            <field name="teif_qr_code" invisible="not teif_qr_code" widget="image" options="{'size': [200, 200]}" readonly="True"/>
+                        </group>
+                    </group>
+
+                    <group string="Conditions Spéciales">
+                        <field name="teif_special_conditions" nolabel="1"/>
+                    </group>
+                    <group string="Erreurs" invisible="not teif_error_message">
+                        <field name="teif_error_message" nolabel="1"
+                               class="text-danger"/>
+                    </group>
+
+                    <notebook>
+                        <page string="XML TEIF">
+                            <field name="teif_xml" widget="ace" options="{'mode': 'xml'}" nolabel="1"/>
+                        </page>
+                        <page string="XML Signé" invisible="not teif_signed_xml">
+                            <field name="teif_signed_xml" widget="ace" options="{'mode': 'xml'}" nolabel="1"/>
+                        </page>
+                        <page string="XML Scellé TTN" invisible="not teif_sealed_xml">
+                            <field name="teif_sealed_xml" widget="ace" options="{'mode': 'xml'}" nolabel="1"/>
+                        </page>
+                        <page string="Expertise Elfatoora" name="elfatoora_tab">
+                            <separator string="Rendu Visuel (HTML)"/>
+                            <field name="elfatoora_html_preview" widget="html" options="{'safe': True}"/>
+                        </page>
+                    </notebook>
+
+                    <group string="Erreurs" invisible="not teif_error_message">
+                        <field name="teif_error_message" readonly="1" nolabel="1"/>
+                    </group>
+                </page>
+            </xpath>
+            <xpath expr="//group[@name='sale_info_group']" position="inside">
+                <field name="suspension_number" />
+                <field name="saleorder_number"/>
+                <field name="public_company" invisible="True"/>
+                <field name="decompte_number" invisible="not public_company"/>
+                <field name="public_procuerement_name" invisible="not public_company"/>
+                <field name="public_procuerement" invisible="not public_company"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

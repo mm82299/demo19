@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ══════════════════════════════════════════════════════════════
+         Deferred Revenue Report
+    ══════════════════════════════════════════════════════════════ -->
+
+    <!-- List view -->
+    <record id="view_deferred_revenue_report_list" model="ir.ui.view">
+        <field name="name">account.move.line.deferred.revenue.report.list</field>
+        <field name="model">account.move.line</field>
+        <field name="inherit_id" ref="account.view_move_line_tree"/>
+        <field name="mode">primary</field>
+        <field name="arch" type="xml">
+            <xpath expr="//list" position="attributes">
+                <attribute name="default_order">date desc</attribute>
+                <attribute name="create">false</attribute>
+                <attribute name="delete">false</attribute>
+            </xpath>
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="deferred_start_date" string="Start Date" optional="show"/>
+                <field name="deferred_end_date"   string="End Date"   optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Search view -->
+    <record id="view_deferred_revenue_report_search" model="ir.ui.view">
+        <field name="name">account.move.line.deferred.revenue.report.search</field>
+        <field name="model">account.move.line</field>
+        <field name="arch" type="xml">
+            <search string="Deferred Revenue Report">
+                <field name="move_id" string="Invoice"/>
+                <field name="partner_id" string="Customer"/>
+                <field name="account_id" string="Income Account"/>
+                <filter name="not_started" string="Not Started" domain="[('deferred_start_date', '&gt;', context_today())]"/>
+                <filter name="in_progress" string="In Progress" domain="[('deferred_start_date', '&lt;=', context_today()), ('deferred_end_date', '&gt;=', context_today())]"/>
+                <filter name="completed" string="Completed" domain="[('deferred_end_date', '&lt;', context_today())]"/>
+                <group>
+                    <filter name="group_account" string="Income Account" context="{'group_by': 'account_id'}"/>
+                    <filter name="group_partner" string="Customer"       context="{'group_by': 'partner_id'}"/>
+                    <filter name="group_move"    string="Invoice"        context="{'group_by': 'move_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Report action -->
+    <record id="action_account_deferred_revenue_report" model="ir.actions.act_window">
+        <field name="name">Deferred Revenue Report</field>
+        <field name="res_model">account.move.line</field>
+        <field name="view_mode">list</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'list', 'view_id': ref('view_deferred_revenue_report_list')})]"/>
+        <field name="search_view_id" ref="view_deferred_revenue_report_search"/>
+        <field name="domain">[
+            ('move_id.move_type', 'in', ['out_invoice', 'out_refund']),
+            ('move_id.state', '=', 'posted'),
+            ('deferred_start_date', '!=', False),
+            ('deferred_end_date', '!=', False),
+        ]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No deferred revenue lines yet!
+            </p>
+            <p>
+                Post a customer invoice with <b>Deferred Date</b> set on one or more
+                invoice lines to start seeing deferral schedules here.
+            </p>
+        </field>
+    </record>
+
+    <!-- Server action for manual entry generation (bound to list) -->
+    <record id="action_server_deferred_revenue_generate" model="ir.actions.server">
+        <field name="name">Generate Entries</field>
+        <field name="model_id" ref="account.model_account_move_line"/>
+        <field name="binding_model_id" ref="account.model_account_move_line"/>
+        <field name="binding_view_types">list</field>
+        <field name="state">code</field>
+        <field name="code">
+action = {
+    'name': 'Generate Grouped Deferred Revenue Entries',
+    'type': 'ir.actions.act_window',
+    'res_model': 'account.deferred.revenue.generate.wizard',
+    'view_mode': 'form',
+    'target': 'new',
+}
+        </field>
+    </record>
+
+</odoo>

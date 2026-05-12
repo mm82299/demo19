@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="withholding_declaration_operation_type_category_form_view" model="ir.ui.view">
+            <field name="name">withholding.declaration.operation.type.category.form</field>
+            <field name="model">withholding.declaration.operation.type.category</field>
+            <field name="arch" type="xml">
+                <form string="Operation Type">
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="name"/>
+                            <h1>
+                                <field name="name" placeholder="Name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="code"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="withholding_declaration_operation_type_category_tree_view" model="ir.ui.view">
+            <field name="name">withholding.declaration.operation.type.category.tree</field>
+            <field name="model">withholding.declaration.operation.type.category</field>
+            <field name="arch" type="xml">
+                <list string="Operation Type">
+                    <field name="name"/>
+                    <field name="code"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="withholding_declaration_operation_type_category_act_window" model="ir.actions.act_window">
+            <field name="name">Operation Type</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">withholding.declaration.operation.type.category</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

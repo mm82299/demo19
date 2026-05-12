@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_insurance_company_tree" model="ir.ui.view">
+        <field name="name">dms.insurance.company.tree</field>
+        <field name="model">dms.insurance.company</field>
+        <field name="arch" type="xml">
+            <list string="Compagnies d'Assurance" editable="bottom">
+                <field name="code"/>
+                <field name="name"/>
+                <field name="active" column_invisible="1"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_insurance_company_form" model="ir.ui.view">
+        <field name="name">dms.insurance.company.form</field>
+        <field name="model">dms.insurance.company</field>
+        <field name="arch" type="xml">
+            <form string="Compagnie d'Assurance">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="active"/>
+                    </group>
+                    <field name="note" placeholder="Notes..."/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_insurance_company" model="ir.actions.act_window">
+        <field name="name">Compagnies d'Assurance</field>
+        <field name="res_model">dms.insurance.company</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

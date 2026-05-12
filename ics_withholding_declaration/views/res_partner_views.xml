@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Inherit Form View -->
+    <record id="res_partner_view_form" model="ir.ui.view">
+        <field name="name">res.partner.view.form.inherit.module</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Add a new page to the notebook -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Tej Declaration">
+                    <group>
+                        <field name="operation_type_category"/>
+                        <field name="operation_type"/>
+                    </group>
+                    <group>
+                        <field name="tax_id_type"/>
+                        <field name="category_type"/>
+                        <field name="date_of_birth" invisible="company_type != 'person'"/>
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

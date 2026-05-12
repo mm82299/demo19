@@ -1,0 +1,38 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* custom_exemption_certificate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-28 13:21+0000\n"
+"PO-Revision-Date: 2023-09-28 13:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: custom_exemption_certificate
+#: model:ir.model.fields,field_description:custom_exemption_certificate.field_exemption_certificate__active
+#: model:ir.model.fields,field_description:custom_exemption_certificate.field_exemption_certificate__is_used
+msgid "Active"
+msgstr ""
+
+#. module: custom_exemption_certificate
+#: model:ir.model,name:custom_exemption_certificate.model_res_partner
+msgid "Add "
+msgstr "Ajouter"
+
+#. module: custom_exemption_certificate
+#: model:ir.model,name:custom_exemption_certificate.model_exemption_certificate
+#: model_terms:ir.ui.view,arch_db:custom_exemption_certificate.view_partner_form_inherited
+msgid "Exemption Certificate"
+msgstr "Certificat d'exonération"
+
+#. module: custom_exemption_certificate
+#: model:ir.model.fields,field_description:custom_exemption_certificate.field_exemption_certificate__fiscal_position_type
+msgid "Fiscal Position"
+msgstr "Position Fiscal"

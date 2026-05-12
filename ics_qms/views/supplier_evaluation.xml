@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="view_supplier_evaluation_tree" model="ir.ui.view">
+        <field name="name">supplier.evaluation.tree</field>
+        <field name="model">supplier.evaluation</field>
+        <field name="arch" type="xml">
+            <list string="Évaluation des fournisseurs">
+                <field name="date"/>
+                <field name="partner_id"/>
+                <field name="score" sum="Total Score"/>
+                <field name="user_id" widget="many2one_avatar_user"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_supplier_evaluation_form" model="ir.ui.view">
+        <field name="name">supplier.evaluation.form</field>
+        <field name="model">supplier.evaluation</field>
+        <field name="arch" type="xml">
+            <form string="Évaluation des fournisseurs">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="partner_id"/>
+                        </group>
+                        <group>
+                            <field name="user_id" widget="many2one_avatar_user"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+
+                    </group>
+                    <group>
+                        <field name="date"/>
+                    </group>
+                    <notebook>
+                        <page string="Evaluation" name="criteria">
+                            <group>
+                                <group string="Produit &amp; Prix">
+                                    <field name="product_conformity"/>
+                                    <field name="price_respect"/>
+                                </group>
+                                <group string="Livraison &amp; Paiement">
+                                    <field name="delivery_delay_respect"/>
+                                    <field name="delivery_mode_respect"/>
+                                    <field name="payment_respect"/>
+                                </group>
+                            </group>
+                            <group class="oe_subtotal_footer oe_right">
+                                <field name="score" class="oe_subtotal_footer_separator"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_supplier_evaluation" model="ir.actions.act_window">
+        <field name="name">Évaluation des fournisseurs</field>
+        <field name="res_model">supplier.evaluation</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new supplier evaluation
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu items -->
+    <menuitem id="menu_supplier_evaluation" name="Évaluation des fournisseurs" parent="purchase.menu_procurement_management" action="action_supplier_evaluation" sequence="99"/>
+</odoo>

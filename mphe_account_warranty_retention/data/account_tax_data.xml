@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- Tax Groups -->
+        <record id="tax_group_retention_ht" model="account.tax.group">
+            <field name="name">Retenue de garantie</field>
+            <field name="sequence">-10</field>
+        </record>
+
+        <record id="tax_group_retention_ttc" model="account.tax.group">
+            <field name="name">Retenue de garantie</field>
+            <field name="sequence">50</field>
+        </record>
+        <!-- Warranty Retention 10% HT -->
+        <record id="tax_warranty_retention_ht" model="account.tax">
+            <field name="name">Retenue de Garantie (10% HT)</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-10.0</field>
+            <field name="sequence">-10</field>
+            <field name="tax_group_id" ref="tax_group_retention_ht" />
+            <field name="include_base_amount" eval="False" />
+            <field name="is_base_affected" eval="False" />
+            <field name="description">RG 10% HT</field>
+        </record>
+        <!-- Warranty Retention 10% TTC (Python Code) -->
+        <record id="tax_warranty_retention_ttc" model="account.tax">
+            <field name="name">Retenue de Garantie (10% TTC)</field>
+            <field name="amount_type">code</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">0.0</field>
+            <field name="formula">-(price_unit * quantity * 1.19) * 0.1</field>
+            <field name="tax_group_id" ref="tax_group_retention_ttc" />
+            <field name="sequence">50</field>
+            <field name="include_base_amount" eval="False" />
+            <field name="is_base_affected" eval="False" />
+            <field name="description">RG 10% TTC</field>
+        </record>
+    </data>
+</odoo>

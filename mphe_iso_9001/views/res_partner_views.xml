@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_iso_inherit" model="ir.ui.view">
+        <field name="name">res.partner.form.iso.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="ISO Qualification" invisible="not is_company">
+                    <group>
+                        <group string="Status">
+                            <field name="is_qualified_vendor"/>
+                            <field name="vendor_type"/>
+                            <field name="vendor_rating" widget="priority" style="width: 100px;"/>
+                        </group>
+                        <group string="Planning">
+                            <field name="last_evaluation_date"/>
+                            <field name="next_evaluation_date"/>
+                        </group>
+                    </group>
+                    <group string="Observations">
+                        <field name="evaluation_comment" placeholder="Justification for rating, strengths/weaknesses..."/>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    <record id="action_iso_vendor" model="ir.actions.act_window">
+        <field name="name">Qualified Vendors Register</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('supplier_rank', '>', 0), ('is_qualified_vendor', '=', True)]</field>
+        <field name="context">{'default_supplier_rank': 1, 'default_is_qualified_vendor': True}</field>
+    </record>
+</odoo>

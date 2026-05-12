@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_purchase_request_form_inherit_quality" model="ir.ui.view">
+        <field name="name">purchase.request.form.inherit.quality</field>
+        <field name="model">purchase.request</field>
+        <field name="inherit_id" ref="purchase_request.view_purchase_request_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group/group/field[@name='date_start']" position="after">
+                <field name="delay_request_po" readonly="1" force_save="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_purchase_request_tree_inherit_quality" model="ir.ui.view">
+        <field name="name">purchase.request.tree.inherit.quality</field>
+        <field name="model">purchase.request</field>
+        <field name="inherit_id" ref="purchase_request.view_purchase_request_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='date_start']" position="after">
+                <field name="delay_request_po" optional="show"
+                       decoration-success="delay_request_po &lt; 5"
+                       decoration-warning="delay_request_po &gt;= 5 and delay_request_po &lt;= 20"
+                       decoration-danger="delay_request_po &gt; 25"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

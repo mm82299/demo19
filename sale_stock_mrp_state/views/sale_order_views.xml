@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_order_form_inherit_state" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.state</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <field name="partner_shipping_id" position="after">
+                <field name="state_id"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_order_tree_inherit_state" model="ir.ui.view">
+        <field name="name">sale.order.tree.inherit.state</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_tree"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="state_id" optional="show"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_quotation_tree_inherit_state" model="ir.ui.view">
+        <field name="name">sale.quotation.tree.inherit.state</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_quotation_tree"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="state_id" optional="show"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_sales_order_filter_inherit_state" model="ir.ui.view">
+        <field name="name">sale.order.search.inherit.state</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_sales_order_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="inside">
+                <filter string="State" name="group_by_state" domain="[]" context="{'group_by': 'state_id'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

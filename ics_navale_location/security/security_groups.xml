@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.module.category" id="module_category_navale">
+        <field name="name">Naval Location</field>
+        <field name="sequence">55</field>
+    </record>
+
+    <record model="res.groups.privilege" id="res_groups_privilege_navale">
+        <field name="name">Naval Location</field>
+        <field name="sequence">1</field>
+        <field name="category_id" ref="module_category_navale"/>
+    </record>
+
+    <record id="group_navale_user" model="res.groups">
+        <field name="name">User: Own Documents Only</field>
+        <field name="sequence">10</field>
+        <field name="privilege_id" ref="res_groups_privilege_navale"/>
+        <field name="comment">User has access to his own documents in the Naval Location application.</field>
+    </record>
+
+    <record id="group_navale_user_all" model="res.groups">
+        <field name="name">User: All Documents</field>
+        <field name="sequence">20</field>
+        <field name="privilege_id" ref="res_groups_privilege_navale"/>
+        <field name="comment">User has access to all documents in the Naval Location application.</field>
+        <field name="implied_ids" eval="[(4, ref('group_navale_user'))]"/>
+    </record>
+
+    <record id="group_navale_manager" model="res.groups">
+        <field name="name">Administrator</field>
+        <field name="sequence">30</field>
+        <field name="privilege_id" ref="res_groups_privilege_navale"/>
+        <field name="comment">User has full access to configuration and reports in the Naval Location application.</field>
+        <field name="implied_ids" eval="[(4, ref('group_navale_user_all'))]"/>
+    </record>
+
+    <record id="rule_rental_own_documents" model="ir.rule">
+        <field name="name">Rental: Own Documents Only</field>
+        <field name="model_id" ref="model_location_rental"/>
+        <field name="groups" eval="[(4, ref('group_navale_user'))]"/>
+        <field name="domain_force">[('user_id', '=', user.id)]</field>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+    <record id="rule_boat_own_documents" model="ir.rule">
+        <field name="name">Boat: Own Documents Only</field>
+        <field name="model_id" ref="model_res_boat"/>
+        <field name="groups" eval="[(4, ref('group_navale_user'))]"/>
+        <field name="domain_force">[('partner_id.user_ids', 'in', [user.id])]</field>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+    <record id="rule_multi_company_location_floor_type" model="ir.rule">
+        <field name="name">Floor Type: Multi-Company</field>
+        <field name="model_id" ref="model_location_floor_type"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <record id="rule_multi_company_location_zone" model="ir.rule">
+        <field name="name">Location Zone: Multi-Company</field>
+        <field name="model_id" ref="model_location_zone"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <record id="rule_multi_company_res_boat" model="ir.rule">
+        <field name="name">Boat: Multi-Company</field>
+        <field name="model_id" ref="model_res_boat"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <record id="rule_multi_company_location_rental" model="ir.rule">
+        <field name="name">Rental: Multi-Company</field>
+        <field name="model_id" ref="model_location_rental"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <record id="rule_multi_company_rental_service" model="ir.rule">
+        <field name="name">Rental Service: Multi-Company</field>
+        <field name="model_id" ref="model_rental_service"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+</odoo>

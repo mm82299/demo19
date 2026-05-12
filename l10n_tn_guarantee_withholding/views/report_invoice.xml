@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document_inherit_guarantee" inherit_id="account.report_invoice_document">
+        <xpath expr="//div[@id='total']" position="after">
+            <t t-if="o.has_guarantee_withholding and o.tax_totals.get('custom_guarantee_info')">
+                <t t-set="info" t-value="o.tax_totals['custom_guarantee_info']"/>
+                <div class="row justify-content-end" style="margin-top: 20px;">
+                    <div class="col-6">
+                        <table class="table table-sm table-bordered" style="width: 100%;">
+                            <tr>
+                                <td><strong>MONTANT HTVA</strong></td>
+                                <td class="text-end"><t t-esc="info['formatted_total_ht_original']"/></td>
+                            </tr>
+                            <tr>
+                                <td><strong>MONTANT TVA</strong></td>
+                                <td class="text-end"><t t-esc="info['formatted_total_vat_original']"/></td>
+                            </tr>
+                            <tr class="border-black">
+                                <td><strong>MONTANT TTC</strong></td>
+                                <td class="text-end"><t t-esc="info['formatted_total_ttc_before_rg']"/></td>
+                            </tr>
+                            <tr>
+                                <td><strong t-esc="info['rg_name']"/></td>
+                                <td class="text-end"><t t-esc="info['formatted_rg_amount']"/></td>
+                            </tr>
+                            <tr class="border-black o_total">
+                                <td><strong>MONTANT TOTAL TTC</strong></td>
+                                <td class="text-end"><strong><t t-esc="info['formatted_total_ttc_after_rg']"/></strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>MONTANT HTVA</strong></td>
+                                <td class="text-end"><t t-esc="info['formatted_remaining_ht']"/></td>
+                            </tr>
+                            <tr>
+                                <td><strong>MONTANT TVA</strong></td>
+                                <td class="text-end"><t t-esc="info['formatted_remaining_tva']"/></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- We hide the standard totals block if we show our custom one -->
+                <style>
+                    #total { display: none !important; }
+                </style>
+            </t>
+        </xpath>
+    </template>
+</odoo>

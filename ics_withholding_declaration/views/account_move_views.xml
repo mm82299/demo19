@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Inherit Form View -->
+    <record id="account_move_view_form" model="ir.ui.view">
+        <field name="name">account.move.view.form.inherit.module</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+
+            <header position="inside">
+                <button name="create_xml_file" string="Genrate Xml File" type="object" class="oe_highlight" invisible="move_type != 'in_invoice' or not withholding_id"/>
+            </header>
+            <!-- Add after a specific field -->
+            <xpath expr="//div[@name='journal_div']" position="after">
+
+                <field name="withholding_id" invisible="0"/>
+                <field name="declaration_file" filename="declaration_file_name"  readonly="1"/>
+                <field name="declaration_file_name" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

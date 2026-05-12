@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_employee_form_iso_inherit" model="ir.ui.view">
+        <field name="name">hr.employee.form.iso.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="ISO Competencies">
+                    <group>
+                        <group string="Profile &amp; Dates">
+                            <field name="is_internal_auditor"/>
+                            <field name="entry_date"/>
+                        </group>
+                        <group string="Review Planning">
+                            <field name="last_review_date"/>
+                            <field name="next_review_date"/>
+                        </group>
+                    </group>
+                    <group string="Skills Matrix (ENR-MRS-08)">
+                        <field name="skill_ids" nolabel="1">
+                            <tree editable="bottom">
+                                <field name="skill_name"/>
+                                <field name="level" widget="statusbar" statusbar_visible="none,basic,intermediate,expert"/>
+                                <field name="evidence"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <group string="Documents">
+                        <field name="cv_file" filename="filename"/>
+                        <field name="filename" invisible="1"/>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+    <record id="action_iso_employee" model="ir.actions.act_window">
+        <field name="name">Employee Competencies Map</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

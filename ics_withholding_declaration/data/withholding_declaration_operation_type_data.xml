@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="withholding_declaration_operation_type_dataRS1_000001" model="withholding.declaration.operation.type">
+            <field name="name">RS1_000001</field>
+            <field name="code">RS1_000001</field>
+            <field name="rate" eval="5.0"/>
+            <field name="description">Loyers d’hôtels servis aux personnes morales et aux personnes physiques soumises à l’impôt sur le revenu selon le régime réel</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000001"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS1_000002" model="withholding.declaration.operation.type">
+            <field name="name">RS1_000002</field>
+            <field name="code">RS1_000002</field>
+            <field name="rate" eval="10.0"/>
+            <field name="description">Loyers servis à des résidents établis</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000001"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS2_000001" model="withholding.declaration.operation.type">
+            <field name="name">RS2_000001</field>
+            <field name="code">RS2_000001</field>
+            <field name="rate" eval="5.0"/>
+            <field name="description">Honoraires servis aux BNC forfait d’assiette, commissions, courtages, rémunérations des activités non commerciales qu'elle qu'en soit l'appellation servis à des résidents établis.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000002"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS2_000002" model="withholding.declaration.operation.type">
+            <field name="name">RS2_000002</field>
+            <field name="code">RS2_000002</field>
+            <field name="rate" eval="5.0"/>
+            <field name="description">Honoraires servis aux BNC régime réel résidents établis.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000002"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS2_000003" model="withholding.declaration.operation.type">
+            <field name="name">RS2_000003</field>
+            <field name="code">RS2_000003</field>
+            <field name="rate" eval="10.0"/>
+            <field name="description">Rémunérations en contrepartie de la performance.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000002"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS2_000004" model="withholding.declaration.operation.type">
+            <field name="name">RS2_000004</field>
+            <field name="code">RS2_000004</field>
+            <field name="rate" eval="5.0"/>
+            <field name="description">Rémunérations servies aux artistes, aux créateurs soumis à l’impôt sur le revenu selon le régime réel et aux personnes morales au titre de la production, la diffusion et la présentation des œuvres théâtrales, scénique, musicale, littéraire et plastiques et cinématographique, et au titre des rémunérations servies aux titulaires des droits d'auteur et des droits voisins dans le cadre de la gestion collective des droits de la propriété littéraire et artistique</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000002"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS3_000001" model="withholding.declaration.operation.type">
+            <field name="name">RS3_000001</field>
+            <field name="code">RS3_000001</field>
+            <field name="rate" eval="20.0"/>
+            <field name="description">Revenus de capitaux mobiliers (autres que les dépôts en devise ou en dinars convertible) servis aux résidents soumi à l'impots (IS ou IRPP).</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000003"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS3_000003" model="withholding.declaration.operation.type">
+            <field name="name">RS3_000003</field>
+            <field name="code">RS3_000003</field>
+            <field name="rate" eval="20.0"/>
+            <field name="description">Revenus de capitaux mobiliers (autres que les dépôts en devise ou en dinars convertible) servis aux non-résidents autres que banques </field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000003"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS3_000004" model="withholding.declaration.operation.type">
+            <field name="name">RS3_000004</field>
+            <field name="code">RS3_000004</field>
+            <field name="rate" eval="2.5"/>
+            <field name="description">Revenus de capitaux mobiliers servis aux banques non établit </field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000003"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS3_000005" model="withholding.declaration.operation.type">
+            <field name="name">RS3_000005</field>
+            <field name="code">RS3_000005</field>
+            <field name="rate" eval="25.0"/>
+            <field name="description">Revenus de capitaux mobiliers servis aux non établit (autres que les banques) et résidents dans un Etat ou un territoire dont le régime fiscal est privilégié</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000003"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS4_000001" model="withholding.declaration.operation.type">
+            <field name="name">RS4_000001</field>
+            <field name="code">RS4_000001</field>
+            <field name="rate" eval="25.0"/>
+            <field name="description">Revenus de valeurs mobilières(cession d’actions, parts sociales et parts des fonds) servis à des personnes morales non résidentes non établis.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000004"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS4_000002" model="withholding.declaration.operation.type">
+            <field name="name">RS4_000002</field>
+            <field name="code">RS4_000002</field>
+            <field name="rate" eval="20.0"/>
+            <field name="description">Revenus de valeurs mobilières(cession d’actions, parts sociales et parts des fonds) servis à des personnes physiques non résidentes non établis.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000004"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS5_000001" model="withholding.declaration.operation.type">
+            <field name="name">RS5_000001</field>
+            <field name="code">RS5_000001</field>
+            <field name="rate" eval="10.0"/>
+            <field name="description">Dividendes servies à des personnes physiques résidentes</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000005"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS5_000002" model="withholding.declaration.operation.type">
+            <field name="name">RS5_000002</field>
+            <field name="code">RS5_000002</field>
+            <field name="rate" eval="20.0"/>
+            <field name="description">Dividendes servis à des personnes physiques et personnes morales non résidentes.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000005"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS5_000003" model="withholding.declaration.operation.type">
+            <field name="name">RS5_000003</field>
+            <field name="code">RS5_000003</field>
+            <field name="rate" eval="25.0"/>
+            <field name="description">Dividendes servis à des personnes physiques et personnes morales résidentes dans un Etat ou un territoire dont le régime fiscal est privilégié</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000005"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS6_000001" model="withholding.declaration.operation.type">
+            <field name="name">RS6_000001</field>
+            <field name="code">RS6_000001</field>
+            <field name="rate" eval="2.5"/>
+            <field name="description">Cession de fonds de commerce par les personnes morales et les personnes physiques résidentes</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000006"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS6_000002" model="withholding.declaration.operation.type">
+            <field name="name">RS6_000002</field>
+            <field name="code">RS6_000002</field>
+            <field name="rate" eval="2.5"/>
+            <field name="description">Cession d’immeubles et des droits sociaux dans les sociétés immobilières par les personnes morales et les personnes physiques résidentes</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000006"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS6_000003" model="withholding.declaration.operation.type">
+            <field name="name">RS6_000003</field>
+            <field name="code">RS6_000003</field>
+            <field name="rate" eval="10.0"/>
+            <field name="description">Cession d’immeubles et des droits sociaux dans les sociétés immobilières par les personnes physiques non residentes</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000006"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS6_000005" model="withholding.declaration.operation.type">
+            <field name="name">RS6_000005</field>
+            <field name="code">RS6_000005</field>
+            <field name="rate" eval="2.5"/>
+            <field name="description">Cession d'immeubles et des droits sociaux dans les sociétés immobilières par les personnes morales non résidentes et non établies en Tunisie.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000006"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS7_000001" model="withholding.declaration.operation.type">
+            <field name="name">RS7_000001</field>
+            <field name="code">RS7_000001</field>
+            <field name="rate" eval="1.5"/>
+            <field name="description">Montants égaux ou supérieurs à 1.000 D y compris la TVA au titre des acquisitions des marchandises, matériel équipements et de services, auprés des personnes physiques et des peronnes morales soumis à l'IS au taux autres que 15% et 10%</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000007"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS7_000002" model="withholding.declaration.operation.type">
+            <field name="name">RS7_000002</field>
+            <field name="code">RS7_000002</field>
+            <field name="rate" eval="1.0"/>
+            <field name="description">Montants égaux ou supérieurs à 1.000 D y compris la TVA au titre des acquisitions des marchandises, matériel équipements et de services, auprés des personnes physiques et des peronnes morales soumis à l'IS au taux de 15%</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000007"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS7_000003" model="withholding.declaration.operation.type">
+            <field name="name">RS7_000003</field>
+            <field name="code">RS7_000003</field>
+            <field name="rate" eval="0.5"/>
+            <field name="description">Montants égaux ou supérieurs à 1.000 D y compris la TVA au titre des acquisitions des marchandises, matériel équipements et de servicesauprés des personnes physiques bénéfiçiant de la déduction de 2/3 et des peronnes morales soumois à l'IS au taux de 10%</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000007"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS7_000004" model="withholding.declaration.operation.type">
+            <field name="name">RS7_000004</field>
+            <field name="code">RS7_000004</field>
+            <field name="rate" eval="1.5"/>
+            <field name="description">Le montant de la commission revenant aux distributeurs agréés des opérateurs de réseaux des télécommunications(personne physique). </field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000007"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS7_000005" model="withholding.declaration.operation.type">
+            <field name="name">RS7_000005</field>
+            <field name="code">RS7_000005</field>
+            <field name="rate" eval="1.0"/>
+            <field name="description">Le montant de la commission revenant aux distributeurs agréés des opérateurs de réseaux des télécommunications( personne morale) </field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000007"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS8_000001" model="withholding.declaration.operation.type">
+            <field name="name">RS8_000001</field>
+            <field name="code">RS8_000001</field>
+            <field name="rate" eval="20.0"/>
+            <field name="description">Rémunérations et primes servies aux membres des conseils, des directoires et des comités des sociétés anonymes payes aux résidents.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000008"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS8_000002" model="withholding.declaration.operation.type">
+            <field name="name">RS8_000002</field>
+            <field name="code">RS8_000002</field>
+            <field name="rate" eval="25.0"/>
+            <field name="description">Rémunérations et primes servies aux membres des conseils, des directoires et des comités des sociétés anonymes payes aux non résidents.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000008"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS8_000003" model="withholding.declaration.operation.type">
+            <field name="name">RS8_000003</field>
+            <field name="code">RS8_000003</field>
+            <field name="rate" eval="25.0"/>
+            <field name="description">Rémunérations et primes servies aux membres des conseils, des directoires et des comités des sociétés anonymes payes aux résidents dans ans un Etat ou un territoire dont le régime fiscal est privilégié.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000008"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS9_000001" model="withholding.declaration.operation.type">
+            <field name="name">RS9_000001</field>
+            <field name="code">RS9_000001</field>
+            <field name="rate" eval="15.0"/>
+            <field name="description">Rémunérations servies à des non-résidents non établis en Tunisie.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000009"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS9_000002" model="withholding.declaration.operation.type">
+            <field name="name">RS9_000002</field>
+            <field name="code">RS9_000002</field>
+            <field name="rate" eval="15.0"/>
+            <field name="description">Redevances (Rémunérations servies à des non-résidents non établis en Tunisie.)</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000009"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS9_000003" model="withholding.declaration.operation.type">
+            <field name="name">RS9_000003</field>
+            <field name="code">RS9_000003</field>
+            <field name="rate" eval="25.0"/>
+            <field name="description">Rémunérations payées aux nresidents dans un Etat ou un territoire dont le régime fiscal est privilégié</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000009"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS9_000004" model="withholding.declaration.operation.type">
+            <field name="name">RS9_000004</field>
+            <field name="code">RS9_000004</field>
+            <field name="rate" eval="15.0"/>
+            <field name="description">Rémunérations payées aux non-résidents et établis en Tunisie pour une période n’excédant pas 6 mois au titre : des travaux de construction.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000009"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS9_000005" model="withholding.declaration.operation.type">
+            <field name="name">RS9_000005</field>
+            <field name="code">RS9_000005</field>
+            <field name="rate" eval="15.0"/>
+            <field name="description">Rémunérations payées aux non-résidents et établis en Tunisie pour une période n’excédant pas 6 mois au titre : des opérations de montage.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000009"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS9_000006" model="withholding.declaration.operation.type">
+            <field name="name">RS9_000006</field>
+            <field name="code">RS9_000006</field>
+            <field name="rate" eval="15.0"/>
+            <field name="description">Rémunérations payées aux non-résidents et établis en Tunisie pour une période n’excédant pas 6 mois au titre : des autres services.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000009"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS9_000007" model="withholding.declaration.operation.type">
+            <field name="name">RS9_000007</field>
+            <field name="code">RS9_000007</field>
+            <field name="rate" eval="25.0"/>
+            <field name="description">Les rémunérations payées aux non résidents établis en Tunisie qui ne procèdent pas au dépôt de la déclaration d'existence autre qu’établissement stable d'une spersonne physique ou morale residente dans un Etat ou un territoire dont le régime fiscal est privilégié.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000009"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS9_000008" model="withholding.declaration.operation.type">
+            <field name="name">RS9_000008</field>
+            <field name="code">RS9_000008</field>
+            <field name="rate" eval="25.0"/>
+            <field name="description">Les rémunérations payées aux non résidents établis en Tunisie et residents dans un Etat ou un territoire dont le régime fiscal est privilégié qui ne procèdent pas au dépôt de la déclaration d'existence.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000009"/>
+        </record>
+
+        <record id="withholding_declaration_operation_type_dataRS9_000009" model="withholding.declaration.operation.type">
+            <field name="name">RS9_000009</field>
+            <field name="code">RS9_000009</field>
+            <field name="rate" eval="25.0"/>
+            <field name="description">Jeux de pari et loterie autres que les paris mutuels sur les courses de chevaux et des concours de pronostics sportifs et les gains en nature des jeux de pari, de hasard et de loterie.</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_000009"/>
+        </record>
+        <record id="withholding_declaration_operation_type_dataRS11_000001" model="withholding.declaration.operation.type">
+            <field name="name">RS11_000001</field>
+            <field name="code">RS11_000001</field>
+            <field name="rate" eval="25.0"/>
+            <field name="description">Jeux de pari et loterie</field>
+            <field name="category_id" ref="withholding_declaration_operation_type_category_0000011"/>
+        </record>
+
+    </data>
+</odoo>

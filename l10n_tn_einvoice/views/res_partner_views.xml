@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_teif" model="ir.ui.view">
+        <field name="name">res.partner.form.teif</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Add help text to standard VAT field -->
+            <xpath expr="//field[@name='vat']" position="attributes">
+                <attribute name="placeholder">Matricule Fiscal / CIN / Carte de Séjour</attribute>
+            </xpath>
+
+            <xpath expr="//page[@name='sales_purchases']" position="after">
+                <page string="E-Facture TEIF" name="teif">
+                    <group>
+                        <group string="Identification Fiscale">
+                            <field name="public_company"/>
+                            <field name="tn_fiscal_id_type" widget="radio"/>
+                            <field name="tn_partner_name_type"/>
+                            <div class="alert alert-info" role="alert">
+                                <strong>Formats acceptés:</strong><br/>
+                                • <strong>Matricule Fiscal:</strong> 13 caractères (ex: 0736202XAM000)<br/>
+                                • <strong>CIN:</strong> 8 chiffres<br/>
+                                • <strong>Carte Séjour:</strong> 9 chiffres<br/>
+                                Entrez l'identifiant dans le champ <strong>NIF/TVA</strong> ci-dessus.
+                            </div>
+                        </group>
+                        <group string="Contact TEIF">
+                            <field name="tn_contact_person"/>
+                            <field name="tn_contact_phone"/>
+                            <field name="tn_contact_fax"/>
+                            <field name="tn_contact_email"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

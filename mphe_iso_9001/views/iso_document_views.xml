@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_iso_document_form" model="ir.ui.view">
+        <field name="name">iso.document.form</field>
+        <field name="model">iso.document</field>
+        <field name="arch" type="xml">
+            <form string="Quality Document">
+                <header>
+                    <button name="action_request_approval" string="Request Approval" type="object" invisible="state != 'draft'" class="oe_highlight"/>
+                    <button name="action_release" string="Release Document" type="object" invisible="state != 'approval'" class="oe_highlight"/>
+                    <button name="action_obsolete" string="Mark Obsolete" type="object" invisible="state != 'active'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,approval,active,obsolete"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="reference"/>
+                            <field name="name"/>
+                            <field name="type"/>
+                            <field name="process_id"/>
+                        </group>
+                        <group>
+                            <field name="version"/>
+                            <field name="issue_date"/>
+                            <field name="approved_by_id"/>
+                            <field name="next_review_date"/>
+                        </group>
+                    </group>
+                    <group string="File Attachment">
+                        <field name="file" filename="filename"/>
+                        <field name="filename" invisible="1"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_iso_document_tree" model="ir.ui.view">
+        <field name="name">iso.document.tree</field>
+        <field name="model">iso.document</field>
+        <field name="arch" type="xml">
+            <tree string="Quality Documents" decoration-info="state == 'approval'" decoration-success="state == 'active'" decoration-muted="state == 'obsolete'">
+                <field name="reference"/>
+                <field name="name"/>
+                <field name="type"/>
+                <field name="version"/>
+                <field name="issue_date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_iso_document" model="ir.actions.act_window">
+        <field name="name">Controlled Documents</field>
+        <field name="res_model">iso.document</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

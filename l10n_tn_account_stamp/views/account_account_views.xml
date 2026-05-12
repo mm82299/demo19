@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+
+        <record id="account_account_stamp_form_inherit" model="ir.ui.view">
+            <field name="name">account.account.form</field>
+            <field name="model">account.account</field>
+            <field name="inherit_id" ref="account.view_account_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='group_id']" position="before">
+                    <field name="is_stamp_account"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

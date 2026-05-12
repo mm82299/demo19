@@ -1,0 +1,519 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_deferred_expense
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-08 09:16+0000\n"
+"PO-Revision-Date: 2026-05-08 09:16+0000\n"
+"Last-Translator: Auto-Translator Script (DeepTranslator)\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_account_deferred_generate_wizard_form
+msgid "A <b>deferral entry</b> dated on the last day of the period."
+msgstr "Une <b>entrée de report</b> datée du dernier jour de la période."
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_account_deferred_generate_wizard_form
+msgid "A <b>reversal entry</b> dated on the first day of the next month."
+msgstr ""
+"Une <b>écriture de contrepassation</b> datée du premier jour du mois "
+"suivant."
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,help:account_deferred_expense.field_res_config_settings__deferred_expense_account_id
+msgid "Account used for deferred expenses."
+msgstr "Compte utilisé pour les dépenses reportées."
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_account_deferred_generate_wizard_form
+msgid ""
+"All posted vendor bills with deferred dates overlapping this period will be "
+"included."
+msgstr ""
+"Toutes les factures des fournisseurs publiées avec des dates différées "
+"chevauchant cette période seront incluses."
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.res_config_settings_view_form_deferred_expense
+msgid "Based on"
+msgstr "Basé sur"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_deferred_expense_report_search
+msgid "Bill"
+msgstr "Facture"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_account_deferred_generate_wizard_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: account_deferred_expense
+#: model:ir.model,name:account_deferred_expense.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_deferred_generate_wizard__company_id
+msgid "Company"
+msgstr "Entreprise"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_deferred_expense_report_search
+msgid "Completed"
+msgstr "Complété"
+
+#. module: account_deferred_expense
+#: model:ir.model,name:account_deferred_expense.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_deferred_generate_wizard__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_deferred_generate_wizard__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,help:account_deferred_expense.field_account_move_line__deferred_end_date
+msgid "Date at which the deferred expense ends."
+msgstr "Date à laquelle prend fin la charge reportée."
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,help:account_deferred_expense.field_account_move_line__deferred_start_date
+msgid "Date at which the deferred expense starts."
+msgstr "Date à laquelle commence la charge reportée."
+
+#. module: account_deferred_expense
+#: model:ir.model.fields.selection,name:account_deferred_expense.selection__res_company__deferred_expense_amount_computation_method__day
+msgid "Days"
+msgstr "Jours"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_move_form_deferred_expense
+msgid "Deferral Entries"
+msgstr "Entrées de report"
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/models/account_move.py:0
+msgid "Deferral of %s"
+msgstr "Report de %s"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_move_form_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_move_line_tree_deferred_expense
+msgid "Deferred Date"
+msgstr "Date de report"
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/models/account_move.py:0
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_bank_statement_line__deferred_move_ids
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_move__deferred_move_ids
+msgid "Deferred Entries"
+msgstr "Écritures à reporter"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_bank_statement_line__deferred_entry_type
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_move__deferred_entry_type
+msgid "Deferred Entry Type"
+msgstr "Type d'écritures à reporter"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields.selection,name:account_deferred_expense.selection__account_move__deferred_entry_type__expense
+msgid "Deferred Expense"
+msgstr "Charge reportée"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_res_company__deferred_expense_account_id
+#: model:ir.model.fields,field_description:account_deferred_expense.field_res_config_settings__deferred_expense_account_id
+msgid "Deferred Expense Account"
+msgstr "Charges constatées d'avance"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_res_company__deferred_expense_amount_computation_method
+#: model:ir.model.fields,field_description:account_deferred_expense.field_res_config_settings__deferred_expense_amount_computation_method
+msgid "Deferred Expense Based on"
+msgstr "Charges constatées d'avance basée sur"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_res_company__deferred_expense_journal_id
+#: model:ir.model.fields,field_description:account_deferred_expense.field_res_config_settings__deferred_expense_journal_id
+msgid "Deferred Expense Journal"
+msgstr "Journal des charges constatées d'avance"
+
+#. module: account_deferred_expense
+#: model:ir.actions.act_window,name:account_deferred_expense.action_account_deferred_expense_report
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_deferred_expense_report_search
+msgid "Deferred Expense Report"
+msgstr "Rapport de charges constatées d'avance"
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/wizard/account_deferred_generate_wizard.py:0
+msgid "Deferred Expense – Cancellation"
+msgstr "Frais reportés – Annulation"
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/wizard/account_deferred_generate_wizard.py:0
+msgid "Deferred Expense – Deferred Balance"
+msgstr "Charges constatées d'avance – Solde reporté"
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/wizard/account_deferred_generate_wizard.py:0
+msgid "Deferred Expense – Recognition"
+msgstr "Charges constatées d'avance – Reconnaissance"
+
+#. module: account_deferred_expense
+#: model:ir.ui.menu,name:account_deferred_expense.menu_account_deferred_expense_report
+msgid "Deferred Expenses"
+msgstr "Charges constatées d'avance"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.res_config_settings_view_form_deferred_expense
+msgid "Deferred expense account"
+msgstr "Compte de dépenses reportées"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.res_config_settings_view_form_deferred_expense
+msgid "Deferred expense entries:"
+msgstr "Écritures de charges constatées d'avance:"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_deferred_generate_wizard__display_name
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_move__display_name
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:account_deferred_expense.field_res_company__display_name
+#: model:ir.model.fields,field_description:account_deferred_expense.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_move_line__deferred_end_date
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_deferred_expense_report_list
+msgid "End Date"
+msgstr "Date de fin"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_deferred_generate_wizard__date_end
+msgid "End of Period"
+msgstr "Fin de période"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_account_deferred_generate_wizard_form
+msgid "End of Period (Last Day of Month)"
+msgstr "Fin de période (dernier jour du mois)"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_deferred_expense_report_search
+msgid "Expense Account"
+msgstr "Compte de dépenses"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields.selection,name:account_deferred_expense.selection__res_company__deferred_expense_amount_computation_method__full_months
+msgid "Full Months"
+msgstr "Mois complets"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_res_company__generate_deferred_expense_entries_method
+#: model:ir.model.fields,field_description:account_deferred_expense.field_res_config_settings__generate_deferred_expense_entries_method
+msgid "Generate Deferred Expense Entries"
+msgstr "Générer des entrées de charges constatées d'avance"
+
+#. module: account_deferred_expense
+#: model:ir.actions.server,name:account_deferred_expense.action_server_deferred_expense_generate
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.res_config_settings_view_form_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_account_deferred_generate_wizard_form
+msgid "Generate Entries"
+msgstr "Générer des entrées"
+
+#. module: account_deferred_expense
+#: model:ir.actions.act_window,name:account_deferred_expense.action_account_deferred_generate_wizard
+#: model:ir.model,name:account_deferred_expense.model_account_deferred_generate_wizard
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_account_deferred_generate_wizard_form
+msgid "Generate Grouped Deferred Expense Entries"
+msgstr "Générer des entrées de charges constatées d'avance groupées"
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/wizard/account_deferred_generate_wizard.py:0
+msgid "Generated Deferred Entries"
+msgstr "Écritures charges constatées d'avance générées"
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/wizard/account_deferred_generate_wizard.py:0
+msgid "Grouped Deferred Expenses – %s"
+msgstr "Charges constatées d'avance groupées – %s"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_move_line__has_abnormal_deferred_dates
+msgid "Has Abnormal Deferred Dates"
+msgstr "A des dates différées anormales"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_move_line__has_deferred_moves
+msgid "Has Deferred Moves"
+msgstr "A des mouvements différés"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_deferred_generate_wizard__id
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_move__id
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_move_line__id
+#: model:ir.model.fields,field_description:account_deferred_expense.field_res_company__id
+#: model:ir.model.fields,field_description:account_deferred_expense.field_res_config_settings__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_deferred_expense_report_search
+msgid "In Progress"
+msgstr "En cours"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.res_config_settings_view_form_deferred_expense
+msgid "Journal"
+msgstr "Journal"
+
+#. module: account_deferred_expense
+#: model:ir.model,name:account_deferred_expense.model_account_move
+msgid "Journal Entry"
+msgstr "Écriture comptable"
+
+#. module: account_deferred_expense
+#: model:ir.model,name:account_deferred_expense.model_account_move_line
+msgid "Journal Item"
+msgstr "Écriture comptable"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,help:account_deferred_expense.field_res_config_settings__deferred_expense_journal_id
+msgid "Journal used for deferred entries."
+msgstr "Journal"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_deferred_generate_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_deferred_generate_wizard__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields.selection,name:account_deferred_expense.selection__res_company__generate_deferred_expense_entries_method__manual
+msgid "Manually & Grouped"
+msgstr "Manuellement et groupé"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,help:account_deferred_expense.field_res_config_settings__deferred_expense_amount_computation_method
+msgid "Method used to compute the amount of deferred entries."
+msgstr "Méthode utilisée pour calculer le montant des écritures différées."
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,help:account_deferred_expense.field_res_config_settings__generate_deferred_expense_entries_method
+msgid "Method used to generate deferred entries."
+msgstr "Méthode utilisée pour générer des écritures charges constatées d'avance."
+
+#. module: account_deferred_expense
+#: model:ir.model.fields.selection,name:account_deferred_expense.selection__res_company__deferred_expense_amount_computation_method__month
+msgid "Months"
+msgstr "Mois"
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/wizard/account_deferred_generate_wizard.py:0
+msgid "No deferred expense lines found for the period ending %s."
+msgstr ""
+"Aucune ligne de charges constatées d'avance trouvée pour la période se terminant en "
+"%s."
+
+#. module: account_deferred_expense
+#: model_terms:ir.actions.act_window,help:account_deferred_expense.action_account_deferred_expense_report
+msgid "No deferred expense lines yet!"
+msgstr "Pas encore de lignes de charges constatées d'avance !"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_deferred_expense_report_search
+msgid "Not Started"
+msgstr "Non démarré"
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/wizard/account_deferred_generate_wizard.py:0
+msgid "Nothing to process for this period."
+msgstr "Rien à traiter pour cette période."
+
+#. module: account_deferred_expense
+#: model:ir.model.fields.selection,name:account_deferred_expense.selection__res_company__generate_deferred_expense_entries_method__on_validation
+msgid "On bill validation"
+msgstr "Sur validation de facture"
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/models/account_move.py:0
+msgid "Original Invoice"
+msgstr "Facture originale"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_bank_statement_line__deferred_original_move_ids
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_move__deferred_original_move_ids
+msgid "Original Invoices"
+msgstr "Factures originales"
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/wizard/account_deferred_generate_wizard.py:0
+msgid "Please configure a Deferred Expense Account in Accounting Settings."
+msgstr ""
+"Veuillez configurer un compte de charges constatées d'avance dans les paramètres "
+"comptables."
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/wizard/account_deferred_generate_wizard.py:0
+msgid "Please configure a Deferred Expense Journal in Accounting Settings."
+msgstr ""
+"Veuillez configurer un journal des charges constatées d'avance dans les paramètres "
+"comptables."
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/models/account_move.py:0
+msgid "Please set the Deferred Expense Account in Accounting Settings."
+msgstr ""
+"Veuillez définir le compte de charges constatées d'avance dans les paramètres "
+"comptables."
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/models/account_move.py:0
+msgid "Please set the Deferred Expense Journal in Accounting Settings."
+msgstr ""
+"Veuillez définir le journal des charges constatées d'avance dans les paramètres "
+"comptables."
+
+#. module: account_deferred_expense
+#: model_terms:ir.actions.act_window,help:account_deferred_expense.action_account_deferred_expense_report
+msgid ""
+"Post a vendor bill with <b>Deferred Date</b> set on one or more\n"
+"                invoice lines to start seeing deferral schedules here."
+msgstr ""
+"Valider une facture fournisseur avec une <b>Date de report</b> définie sur un ou plusieurs\n"
+"                lignes de facture pour commencer à voir les calendriers de report ici."
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_move_form_deferred_expense
+msgid "Related Purchase(s)"
+msgstr "Achat(s) associé(s)"
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/wizard/account_deferred_generate_wizard.py:0
+msgid "Reversal – Grouped Deferred Expenses – %s"
+msgstr "Renversement – Charges constatées d'avance groupées – %s"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,field_description:account_deferred_expense.field_account_move_line__deferred_start_date
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_deferred_expense_report_list
+msgid "Start Date"
+msgstr "Date de début"
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,help:account_deferred_expense.field_account_bank_statement_line__deferred_move_ids
+#: model:ir.model.fields,help:account_deferred_expense.field_account_move__deferred_move_ids
+msgid "The deferred entries created by this invoice."
+msgstr "Les écritures des charges constatées d'avance créées par cette facture."
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,help:account_deferred_expense.field_account_deferred_generate_wizard__date_end
+msgid "The last day of the month to generate entries for."
+msgstr "Le dernier jour du mois pour lequel générer des entrées."
+
+#. module: account_deferred_expense
+#: model:ir.model.fields,help:account_deferred_expense.field_account_bank_statement_line__deferred_original_move_ids
+#: model:ir.model.fields,help:account_deferred_expense.field_account_move__deferred_original_move_ids
+msgid "The original invoices that created these deferred entries."
+msgstr "Les factures originales qui ont créé ces écritures des charges constatées d'avance."
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/wizard/account_deferred_generate_wizard.py:0
+msgid "This wizard is only available in 'Manually & Grouped' mode."
+msgstr ""
+"Cet assistant est uniquement disponible en mode «Manuellement et groupé»."
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_account_deferred_generate_wizard_form
+msgid ""
+"Two grouped journal entries will be created for the period ending on the "
+"selected date:"
+msgstr ""
+"Deux écritures de journal groupées seront créées pour la période se "
+"terminant à la date sélectionnée :"
+
+#. module: account_deferred_expense
+#: model_terms:ir.ui.view,arch_db:account_deferred_expense.view_deferred_expense_report_search
+msgid "Vendor"
+msgstr "Fournisseur"
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/models/account_move.py:0
+msgid ""
+"You cannot change the account for a deferred line in %(move_name)s if it has"
+" already been deferred."
+msgstr ""
+"Vous ne pouvez pas modifier le compte d'une ligne différée dans "
+"%(move_name)s si elle a déjà été reportée."
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/models/account_move.py:0
+msgid "You cannot create a deferred entry with a start date but no end date."
+msgstr ""
+"Vous ne pouvez pas créer une écriture de charges constatées d'avance avec une date de début mais "
+"pas de date de fin."
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/models/account_move.py:0
+msgid ""
+"You cannot create a deferred entry with a start date later than the end "
+"date."
+msgstr ""
+"Vous ne pouvez pas créer une écriture charges constatées d'avance avec une date de début "
+"postérieure à la date de fin."
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/models/account_move.py:0
+msgid ""
+"You cannot reset to draft an invoice that is grouped in a deferral entry. "
+"Create a credit note instead."
+msgstr ""
+"Vous ne pouvez pas réinitialiser pour rédiger une facture regroupée dans une"
+" écriture de report. Créez plutôt une note de crédit."
+
+#. module: account_deferred_expense
+#. odoo-python
+#: code:addons/account_deferred_expense/models/account_move.py:0
+#: code:addons/account_deferred_expense/wizard/account_deferred_generate_wizard.py:0
+msgid "id"
+msgstr "id"

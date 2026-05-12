@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_iso_risk_form" model="ir.ui.view">
+        <field name="name">iso.risk.form</field>
+        <field name="model">iso.risk</field>
+        <field name="arch" type="xml">
+            <form string="Risk Assessment">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Risk Scenario Title..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="process_id"/>
+                            <field name="category"/>
+                            <field name="active" widget="boolean_toggle"/>
+                        </group>
+                        <group>
+                            <field name="probability"/>
+                            <field name="impact"/>
+                            <field name="score" decoration-danger="score >= 12" decoration-warning="score >= 6 and score &lt; 12" decoration-success="score &lt; 6"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Analysis &amp; Strategy">
+                            <group>
+                                <field name="description"/>
+                                <field name="treatment_strategy"/>
+                                <field name="treatment_plan"/>
+                                <field name="action_id"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_iso_risk_tree" model="ir.ui.view">
+        <field name="name">iso.risk.tree</field>
+        <field name="model">iso.risk</field>
+        <field name="arch" type="xml">
+            <tree string="Risk Register">
+                <field name="process_id"/>
+                <field name="name"/>
+                <field name="category"/>
+                <field name="probability"/>
+                <field name="impact"/>
+                <field name="score" decoration-danger="score >= 12" decoration-warning="score >= 6 and score &lt; 12" decoration-success="score &lt; 6"/>
+                <field name="treatment_strategy"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_iso_risk" model="ir.actions.act_window">
+        <field name="name">Risk &amp; Opportunities Assessment</field>
+        <field name="res_model">iso.risk</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Interested Parties -->
+    <record id="view_iso_interested_party_tree" model="ir.ui.view">
+        <field name="name">iso.interested.party.tree</field>
+        <field name="model">iso.interested.party</field>
+        <field name="arch" type="xml">
+            <tree string="Interested Parties" editable="bottom">
+                <field name="name"/>
+                <field name="influence"/>
+                <field name="expectations"/>
+                <field name="treatment"/>
+                <field name="active" widget="boolean_toggle"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_iso_interested_party" model="ir.actions.act_window">
+        <field name="name">Parties Intéressées Pertinentes</field>
+        <field name="res_model">iso.interested.party</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

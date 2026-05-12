@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="withholding_declaration_operation_type_category_000001" model="withholding.declaration.operation.type.category">
+            <field name="name">Loyers</field>
+            <field name="code">RS1</field>
+        </record>
+
+        <record id="withholding_declaration_operation_type_category_000002" model="withholding.declaration.operation.type.category">
+            <field name="name">Rémunération des activités non commerciales</field>
+            <field name="code">RS2</field>
+        </record>
+        <record id="withholding_declaration_operation_type_category_000003" model="withholding.declaration.operation.type.category">
+            <field name="name">Revenus des capitaux mobiliers</field>
+            <field name="code">RS3</field>
+        </record>
+        <record id="withholding_declaration_operation_type_category_000004" model="withholding.declaration.operation.type.category">
+            <field name="name">Cession de valeurs mobilières</field>
+            <field name="code">RS4</field>
+        </record>
+        <record id="withholding_declaration_operation_type_category_000005" model="withholding.declaration.operation.type.category">
+            <field name="name">Dividendes</field>
+            <field name="code">RS5</field>
+        </record>
+        <record id="withholding_declaration_operation_type_category_000006" model="withholding.declaration.operation.type.category">
+            <field name="name">Cessions FC et immeubles</field>
+            <field name="code">RS6</field>
+        </record>
+        <record id="withholding_declaration_operation_type_category_000007" model="withholding.declaration.operation.type.category">
+            <field name="name">Acquisitions des marchandises, matériel équipements et de services</field>
+            <field name="code">RS7</field>
+        </record>
+        <record id="withholding_declaration_operation_type_category_000008" model="withholding.declaration.operation.type.category">
+            <field name="name">Jetons de présences et tantièmes</field>
+            <field name="code">RS8</field>
+        </record>
+        <record id="withholding_declaration_operation_type_category_000009" model="withholding.declaration.operation.type.category">
+            <field name="name">Autres Rémunérations servies à des nonrésidents </field>
+            <field name="code">RS9</field>
+        </record>
+        <record id="withholding_declaration_operation_type_category_0000011" model="withholding.declaration.operation.type.category">
+            <field name="name">Jeux de pari et loterie</field>
+            <field name="code">RS11</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,171 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_tn_account_stamp
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-08 10:37+0000\n"
+"PO-Revision-Date: 2026-05-08 10:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_tn_account_stamp
+#. odoo-python
+#: code:addons/l10n_tn_account_stamp/models/account_tax.py:0
+msgid "A stamp purchase tax already exists for this company!"
+msgstr "Une taxe sur l'achat de timbres existe déjà pour cette entreprise !"
+
+#. module: l10n_tn_account_stamp
+#. odoo-python
+#: code:addons/l10n_tn_account_stamp/models/account_tax.py:0
+msgid "A stamp sale tax already exists for this company!"
+msgstr "Une taxe sur les ventes de timbres existe déjà pour cette entreprise !"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model,name:l10n_tn_account_stamp.model_account_account
+msgid "Account"
+msgstr "Compte"
+
+#. module: l10n_tn_account_stamp
+#: model_terms:ir.ui.view,arch_db:l10n_tn_account_stamp.account_move_form_stamp
+msgid "Add tax stamp line"
+msgstr "Ajouter Timbre Fiscale"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_bank_statement_line__amount_stamp_tax
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_move__amount_stamp_tax
+msgid "Amount Stamp Tax"
+msgstr "Montant de timbre"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_bank_statement_line__manually_apply_tax_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_move__manually_apply_tax_stamp
+msgid "Apply tax stamp"
+msgstr "Appliquer le timbre fiscal"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_bank_statement_line__auto_compute_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_move__auto_compute_stamp
+msgid "Auto Compute Stamp"
+msgstr "Calcul automatique du tampon"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_account__display_name
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_fiscal_position__display_name
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_move__display_name
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_tax__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model,name:l10n_tn_account_stamp.model_account_fiscal_position
+msgid "Fiscal Position"
+msgstr "Position fiscale"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_account__id
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_fiscal_position__id
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_move__id
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_move_line__id
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_tax__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_tax__is_stamp_purchase
+msgid "Is Stam Purchase"
+msgstr "Timbre Fiscale Achat"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_tax__is_stamp_sale
+msgid "Is Stam Sale"
+msgstr "Timbre Fiscale Vente"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_account__is_stamp_account
+msgid "Is Stamp Account"
+msgstr "Compte du Timbre Fiscale"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_move_line__is_stamp_line
+msgid "Is Stamp Line"
+msgstr "Ligne de Timbre Fiscale"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model,name:l10n_tn_account_stamp.model_account_move
+msgid "Journal Entry"
+msgstr "Écriture comptable"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model,name:l10n_tn_account_stamp.model_account_move_line
+msgid "Journal Item"
+msgstr "Écriture comptable"
+
+#. module: l10n_tn_account_stamp
+#. odoo-python
+#: code:addons/l10n_tn_account_stamp/models/account_move.py:0
+msgid "Missing account income configuration for %s"
+msgstr "Configuration de revenu de compte manquante pour %s"
+
+#. module: l10n_tn_account_stamp
+#. odoo-python
+#: code:addons/l10n_tn_account_stamp/models/account_move.py:0
+msgid "Product %s must have income and expense accounts"
+msgstr "Le produit %s doit avoir des comptes de revenus et de dépenses"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_fiscal_position__stamp_purchase
+msgid "Stam Purchase"
+msgstr "Timbre Fiscale Achat"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_fiscal_position__stamp_sale
+msgid "Stam Sale"
+msgstr "Timbre Fiscale Vente"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model,name:l10n_tn_account_stamp.model_account_tax
+msgid "Tax"
+msgstr "Taxe"
+
+#. module: l10n_tn_account_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_bank_statement_line__tax_stamp
+#: model:ir.model.fields,field_description:l10n_tn_account_stamp.field_account_move__tax_stamp
+msgid "Tax Stamp"
+msgstr "Timbre Fiscale"
+
+#. module: l10n_tn_account_stamp
+#. odoo-python
+#: code:addons/l10n_tn_account_stamp/models/account_move.py:0
+msgid "Tax Stamp Income"
+msgstr "Revenus de timbre fiscal"
+
+#. module: l10n_tn_account_stamp
+#: model_terms:ir.ui.view,arch_db:l10n_tn_account_stamp.account_move_form_stamp
+msgid "Tax stamp"
+msgstr "Timbre Fiscal"
+
+#. module: l10n_tn_account_stamp
+#. odoo-python
+#: code:addons/l10n_tn_account_stamp/models/account_move.py:0
+msgid ""
+"You cannot delete a payable/receivable line as it would not be consistent "
+"with the payment terms"
+msgstr ""
+"Vous ne pouvez pas supprimer une ligne payable/recevable car cela ne serait "
+"pas cohérentavec les conditions de paiement"
+
+#. module: l10n_tn_account_stamp
+#. odoo-python
+#: code:addons/l10n_tn_account_stamp/models/account_move.py:0
+msgid "You cannot delete a tax line as it would impact the tax report"
+msgstr ""
+"Vous ne pouvez pas supprimer une ligne de taxe car cela aurait un impact sur"
+" le rapport fiscal"

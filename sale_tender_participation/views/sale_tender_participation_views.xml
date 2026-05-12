@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_sale_tender_participation_tree" model="ir.ui.view">
+            <field name="name">sale.tender.participation.tree</field>
+            <field name="model">sale.tender.participation</field>
+            <field name="arch" type="xml">
+                <list string="Appels d'offres">
+                    <field name="name" />
+                    <field name="partner_id" />
+                    <field name="date" />
+                    <field name="user_id" />
+                    <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-warning="state == 'submitted'" decoration-success="state == 'won'" decoration-danger="state in ('lost', 'cancelled')" />
+                </list>
+            </field>
+        </record>
+
+        <record id="view_sale_tender_participation_form" model="ir.ui.view">
+            <field name="name">sale.tender.participation.form</field>
+            <field name="model">sale.tender.participation</field>
+            <field name="arch" type="xml">
+                <form string="Appel d'offres">
+                    <header>
+                        <button name="action_submit" string="Soumettre" type="object" invisible="state != 'draft'" class="oe_highlight" />
+                        <button name="action_won" string="Gagné" type="object" invisible="state != 'submitted'" class="oe_highlight" />
+                        <button name="action_lost" string="Perdu" type="object" invisible="state != 'submitted'" />
+                        <button name="action_cancel" string="Annuler" type="object" invisible="state not in ('draft', 'submitted')" />
+                        <button name="action_draft" string="Remettre en brouillon" type="object" invisible="state not in ('lost', 'cancelled')" />
+                        <field name="state" widget="statusbar" statusbar_visible="draft,submitted,won" />
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="action_view_sale_orders" type="object" class="oe_stat_button" icon="fa-usd">
+                                <field name="sale_order_count" widget="statinfo" string="Devis / Commandes"/>
+                            </button>
+                        </div>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Référence de l'appel d'offres..." />
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="partner_id" />
+                                <field name="date" />
+                            </group>
+                            <group>
+                                <field name="user_id" />
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Devis et Commandes" name="sale_orders">
+                                <field name="sale_order_ids" context="{'default_partner_id': partner_id}" widget="many2many">
+                                    <list string="Devis">
+                                        <field name="name" readonly="1"/>
+                                        <field name="date_order" readonly="1"/>
+                                        <field name="partner_id"/>
+                                        <field name="user_id"/>
+                                        <field name="amount_total" sum="Total" readonly="1"/>
+                                        <field name="state" widget="badge" decoration-info="state in ('draft', 'sent')" decoration-success="state == 'sale'" readonly="1"/>
+                                    </list>
+                                </field>
+                            </page>
+                            <page string="Description" name="description">
+                                <field name="description" placeholder="Ajouter une description ou des remarques..." />
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <chatter/>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_sale_tender_participation" model="ir.actions.act_window">
+            <field name="name">Appels d'offres / Consultations</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.tender.participation</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Créer un nouveau dossier d'appel d'offres ou de consultation</p>
+                <p>Gérez ici toutes vos participations aux appels d'offres.</p>
+            </field>
+        </record>
+
+        <menuitem id="menu_sale_tender_participation" name="Etat de participation au appel d'offres/Consultation" parent="sale.sale_order_menu" action="action_sale_tender_participation" sequence="80" />
+    </data>
+</odoo>

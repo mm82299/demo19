@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ir_rule_product_lifecycle_rule_multi_company" model="ir.rule">
+            <field name="name">Product Lifecycle Rule: Multi Company</field>
+            <field name="model_id" ref="model_product_lifecycle_rule"/>
+            <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+        </record>
+.
+    <record id="ir_rule_sav_lifecycle_rule_multi_company" model="ir.rule">
+            <field name="name">Sav Lifecycle Rule: Multi Company</field>
+            <field name="model_id" ref="model_sav_lifecycle_rule"/>
+            <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+    <record id="ir_rule_sav_record_multi_company" model="ir.rule">
+            <field name="name">Sav Record: Multi Company</field>
+            <field name="model_id" ref="model_sav_record"/>
+            <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+    </record>
+
+    <record id="ir_rule_warranty_type_multi_company" model="ir.rule">
+            <field name="name">Warranty Type: Multi Company</field>
+            <field name="model_id" ref="model_warranty_type"/>
+            <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+        </record>
+</odoo>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_iso_regulation_form" model="ir.ui.view">
+        <field name="name">iso.regulation.form</field>
+        <field name="model">iso.regulation</field>
+        <field name="arch" type="xml">
+            <form string="Regulatory Watch">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Regulation name..."/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="reference"/>
+                            <field name="source"/>
+                            <field name="date_published"/>
+                        </group>
+                        <group>
+                            <field name="compliance_status"/>
+                            <field name="last_check_date"/>
+                            <field name="next_check_date"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Impact &amp; Applicability">
+                            <group>
+                                <field name="applicability"/>
+                                <field name="action_id"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_iso_regulation_tree" model="ir.ui.view">
+        <field name="name">iso.regulation.tree</field>
+        <field name="model">iso.regulation</field>
+        <field name="arch" type="xml">
+            <tree string="Regulatory Watch">
+                <field name="reference"/>
+                <field name="name"/>
+                <field name="source"/>
+                <field name="compliance_status"/>
+                <field name="next_check_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_iso_regulation" model="ir.actions.act_window">
+        <field name="name">Regulatory Watch (Veille)</field>
+        <field name="res_model">iso.regulation</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

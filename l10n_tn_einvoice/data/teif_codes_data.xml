@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Cron pour télécharger XML signé depuis NGSign -->
+    <record id="ir_cron_download_signed_xml" model="ir.cron">
+        <field name="name">TEIF: Télécharger XML Signés depuis NGSign</field>
+        <field name="model_id" ref="account.model_account_move"/>
+        <field name="state">code</field>
+        <field name="code">model.search([('teif_ngsign_uuid', '!=', False), ('teif_signed_xml', '=', False)]).action_download_signed_xml_from_ngsign()</field>
+        <field name="interval_number">5</field>
+        <field name="interval_type">minutes</field>
+        <field name="active" eval="False"/>
+    </record>
+    <record id="ir_cron_check_ttn_status" model="ir.cron">
+        <field name="name">TEIF: Action Check TTn Status</field>
+        <field name="model_id" ref="account.model_account_move"/>
+        <field name="state">code</field>
+        <field name="code">
+moves_ids = model.search([('teif_status', '=', 'sent_ttn')])
+for rec in moves_ids:
+    rec.sudo().action_check_ttn_status()
+        </field>
+        <field name="interval_number">5</field>
+        <field name="interval_type">minutes</field>
+        <field name="active" eval="False"/>
+    </record>
+    <record id="ir_cron_get_ttn_qr_code" model="ir.cron">
+        <field name="name">TEIF: Action Get TTn QrCode</field>
+        <field name="model_id" ref="account.model_account_move"/>
+        <field name="state">code</field>
+        <field name="code">
+moves_ids = model.search([('teif_status', '=', 'ttn_validated'), ('teif_qr_code', '=', False)])
+for rec in moves_ids:
+    rec.sudo().action_download_sealed_invoice()
+        </field>
+        <field name="interval_number">5</field>
+        <field name="interval_type">minutes</field>
+        <field name="active" eval="False"/>
+    </record>
+</odoo>

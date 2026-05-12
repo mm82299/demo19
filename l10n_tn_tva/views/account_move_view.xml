@@ -1,0 +1,30 @@
+<odoo>
+    <data>
+        <record id="custom_withholding_tva_account_move_form" model="ir.ui.view">
+            <field name="name">custom.account.move.form</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='payment_reference']" position="after">
+                    <field name="has_withholding_tva" invisible="1"/>
+                    <field name="withholding_tva_id" invisible="not has_withholding_tva" readonly="1"/>
+                </xpath>
+                <xpath expr="//header" position="inside">
+                    <field name="has_withholding_tva" invisible="1"/>
+                    <field name="is_state" invisible="1"/>
+                     <button name="action_rs_tva"  type="object" class="oe_highlight" string="RS de TVA" invisible="state not in ('posted', 'post') or has_withholding_tva or not is_state"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="custom_withholding_tva_view_tax_group_form_form" model="ir.ui.view">
+            <field name="name">custom.account.tax.group.form</field>
+            <field name="model">account.tax.group</field>
+            <field name="inherit_id" ref="account.view_tax_group_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="is_tva" invisible="0"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

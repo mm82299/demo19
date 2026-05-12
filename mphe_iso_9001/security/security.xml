@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="module_category_iso_quality" model="ir.module.category">
+        <field name="name">ISO 9001</field>
+        <field name="description">Quality Management System Support</field>
+        <field name="sequence">100</field>
+    </record>
+
+    <!-- ISO Privilege -->
+    <record id="res_groups_privilege_iso_quality" model="res.groups.privilege">
+        <field name="name">ISO 9001 Management</field>
+        <field name="category_id" ref="module_category_iso_quality"/>
+    </record>
+
+    <!-- ISO User -->
+    <record id="group_iso_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="privilege_id" ref="res_groups_privilege_iso_quality"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <!-- ISO Auditor -->
+    <record id="group_iso_auditor" model="res.groups">
+        <field name="name">Auditor</field>
+        <field name="privilege_id" ref="res_groups_privilege_iso_quality"/>
+        <field name="implied_ids" eval="[(4, ref('group_iso_user'))]"/>
+    </record>
+
+    <!-- ISO Manager -->
+    <record id="group_iso_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="privilege_id" ref="res_groups_privilege_iso_quality"/>
+        <field name="implied_ids" eval="[(4, ref('group_iso_auditor'))]"/>
+        <field name="users" eval="[(4, ref('base.user_admin'))]"/>
+    </record>
+
+    <!-- Record Rules -->
+    <record id="rule_iso_document_active" model="ir.rule">
+        <field name="name">Released Documents Visibility</field>
+        <field name="model_id" ref="model_iso_document"/>
+        <field name="domain_force">[('state', '=', 'active')]</field>
+        <field name="groups" eval="[(4, ref('group_iso_user'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+    <record id="rule_iso_document_manager" model="ir.rule">
+        <field name="name">Manager Document Full Access</field>
+        <field name="model_id" ref="model_iso_document"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_iso_manager'))]"/>
+    </record>
+</odoo>

@@ -1,0 +1,1598 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_tn_einvoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-30 12:43+0000\n"
+"PO-Revision-Date: 2026-04-30 12:43+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "1. Générer TEIF"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "2. Signer (NGSign)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "3. Soumettre à TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "4. Vérifier Statut TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "5. Télécharger Scellé"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_partner_form_teif
+msgid ""
+"<strong>Formats acceptés:</strong><br/>\n"
+"                                • <strong>Matricule Fiscal:</strong> 13 caractères (ex: 0736202XAM000)<br/>\n"
+"                                • <strong>CIN:</strong> 8 chiffres<br/>\n"
+"                                • <strong>Carte Séjour:</strong> 9 chiffres<br/>\n"
+"                                Entrez l'identifiant dans le champ <strong>NIF/TVA</strong> ci-dessus."
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_condition_code__i-122
+msgid "A travers une institution financière spécifique"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_terms_code__i-112
+msgid "A une date fixe"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.res_config_settings_view_form
+msgid "ANCE API Configuration"
+msgstr "Configuration de l'API NGsign"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__ngsign_api_token
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__ngsign_api_token
+msgid "ANCE API Token"
+msgstr "Jeton API NGsign"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__ngsign_api_url
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__ngsign_api_url
+msgid "ANCE API URL"
+msgstr "URL de l'API NGsign"
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid "Acquittements: %d"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__elfatoora_html_preview
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__elfatoora_html_preview
+msgid "Aperçu Facture Elfatoora"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__tn_vat_regime__f
+msgid "Assujetti Forfaitaire"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__tn_vat_regime__a
+msgid "Assujetti Obligatoire"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__tn_vat_regime__p
+msgid "Assujetti Partiel"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__tn_vat_regime__b
+msgid "Assujetti par Option"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid "Aucun numéro de facture disponible"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid "Aucune facture trouvée sur TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid "Aucune facture trouvée sur TTN pour le numéro: %s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid "Aucune référence TTN ou numéro de facture disponible"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_condition_code__i-124
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_institution_code__i-143
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_means_code__i-137
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_terms_code__i-116
+msgid "Autre"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_terms_code__i-113
+msgid "Avec une période de grâce"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_document_type__i-12
+msgid "Avoir"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_institution_code__i-142
+msgid "Banque"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_payment_term__ttn_financial_institution
+msgid "Banque ou institution pour le paiement"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_terms_code__i-111
+msgid "Basic"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_document_type__i-16
+msgid "Bon de commande"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__is_decamp
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__is_decamp
+msgid "C'est un décompt"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__capital
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__capital
+msgid "Capital"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_partner__tn_fiscal_id_type__i-02
+msgid "Carte d'Identité Nationale (CIN)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_partner__tn_fiscal_id_type__i-03
+msgid "Carte de Séjour"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_tax__ttn_tax_category
+msgid "Catégorie Taxe TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_means_code__i-132
+msgid "Chèque"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_means_code__i-133
+msgid "Chèque certifié"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__tn_bank_branch_code
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__tn_bank_branch_code
+msgid "Code Agence"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_payment_term__ttn_payment_condition_code
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_payment_term__ttn_payment_institution_code
+msgid "Code Condition de Paiement TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_payment_term__ttn_payment_terms_code
+msgid "Code Conditions de Paiement TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_payment_term__ttn_payment_means_code
+msgid "Code Moyen de Paiement TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_tax__ttn_code
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_account_tax_search_ttn
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_payment_term_search_ttn
+msgid "Code TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_tax__ttn_tax_category
+msgid "Code de catégorie pour la taxe (optionnel)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_tax__ttn_code
+msgid "Code de référence TTN pour la facture électronique TEIF"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_payment_term__ttn_payment_means_code
+msgid "Code de référence TTN pour le moyen de paiement"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_payment_term__ttn_payment_terms_code
+msgid "Code de référence TTN pour les conditions de paiement"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model,name:l10n_tn_einvoice.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.res_config_settings_view_form
+msgid "Company Information"
+msgstr "Informations sur l'entreprise"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__company_short_name
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__company_short_name
+msgid "Company Short Name"
+msgstr "Nom abrégé de l'entreprise"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_special_conditions
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_special_conditions
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "Conditions Spéciales"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model,name:l10n_tn_einvoice.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_company_form_teif
+msgid "Configuration ANCE API (Signature Uniquement)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_company_form_teif
+msgid "Configuration QR Code"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_account_tax_form_ttn
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_payment_term_form_ttn
+msgid "Configuration TEIF/TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_company_form_teif
+msgid "Configuration TTN SOAP API (Validation)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.res_config_settings_view_form
+msgid "Configure ANCE API for digital signature"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.res_config_settings_view_form
+msgid "Configure TTN SOAP API for validation"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.res_config_settings_view_form
+msgid "Configure company details for e-invoicing"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model,name:l10n_tn_einvoice.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_partner_form_teif
+msgid "Contact TEIF"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.report_invoice_document_ttn
+msgid ""
+"Copie de la facture électronique enregistrée chez TTN sous la référence :"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_ttn_validation_date
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_ttn_validation_date
+msgid "Date Validation TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__display_name
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_payment_term__display_name
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_tax__display_name
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__display_name
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_partner__display_name
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_teif_generator__display_name
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_ttn_connector__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid "Données vides retournées par TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_document_type__i-14
+msgid "Décompte (marché public)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_company_form_teif
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_partner_form_teif
+msgid "E-Facture TEIF"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_partner__tn_contact_email
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_users__tn_contact_email
+msgid "Email Contact"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__public_company
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__public_company
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_partner__public_company
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_users__public_company
+msgid "Entreprise public"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_status__sent_ngsign
+msgid "Envoyé à ANCE"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_status__sent_ttn
+msgid "Envoyé à TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_status__error
+msgid "Erreur"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Erreur ANCE:\n"
+"%s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Erreur TTN:\n"
+"%s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid ""
+"Erreur Zeep:\n"
+"%s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid "Erreur de communication avec Elfatoora : %s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid ""
+"Erreur de communication avec TTN:\n"
+"Status: %s\n"
+"Message: %s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid ""
+"Erreur de signature SOAP:\n"
+"%s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid ""
+"Erreur de signature SOAP:\n"
+"%s\n"
+"\n"
+"Vérifiez que les paramètres sont passés dans le bon ordre."
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid ""
+"Erreur de syntaxe XML:\n"
+"%s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid ""
+"Erreur lors de la consultation TTN:\n"
+"%s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Erreur lors de la génération du XML TEIF:\n"
+"%s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Erreur lors de la signature:\n"
+"%s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid ""
+"Erreur lors de la soumission à TTN:\n"
+"%s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid ""
+"Erreur lors de la vérification du QR code:\n"
+"%s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Erreur lors de la vérification du statut:\n"
+"%s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Erreur lors du téléchargement:\n"
+"%s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Erreur: Le système a généré du HTML au lieu d'un PDF. Vérifiez wkhtmltopdf."
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "Erreurs"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_means_code__i-131
+msgid "Espèces"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.res_config_settings_view_form
+msgid "Ex: Note d honoraires relative à \"{product_name}\""
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_company_form_teif
+msgid "Ex: TN0736202XAM000 ou 0736202XAM000"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_bank_statement_line__teif_special_conditions
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_move__teif_special_conditions
+msgid "Ex: Ventes en suspension de taxes, Ventes à l'exportation"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_terms_code__i-115
+msgid "Exclusivement aux bureaux postaux"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "Expertise Elfatoora"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_document_type__i-11
+msgid "Facture"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_document_type__i-15
+msgid "Facture Export"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_partner__tn_contact_fax
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_users__tn_contact_fax
+msgid "Fax Contact"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_xml_file
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_xml_file
+msgid "Fichier TEIF XML"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_sealed_xml_file
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_sealed_xml_file
+msgid "Fichier TEIF XML Scellé"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_signed_xml_file
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_signed_xml_file
+msgid "Fichier TEIF XML Signé"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/res_partner.py:0
+msgid ""
+"Format matricule fiscal invalide.\n"
+"Format attendu: 7 chiffres + lettre + code TVA + catégorie + 3 chiffres\n"
+"Exemple: 0736202XAM000"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__company_category
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__company_category
+msgid "Forme Juridique (Code)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__company_category__gie
+msgid "GIE : Groupement d’Intérêt Économique"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "Générer Aperçu Elfatoora"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__company_category__holding
+msgid "HOLDING : Société de Groupement"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__honoraire_use
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__honoraire_use
+msgid "Honoraire"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-160
+msgid "I-160 - Taxes RB )non soumis à la TVA)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-1601
+msgid "I-1601 - Droit de Timbre"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-1602
+msgid "I-1602 - TVA"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-1603
+msgid "I-1603 - Autres"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-1604
+msgid "I-1604 - Retenue à la Source"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-161
+msgid "I-161 - Droit de Consommation"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-162
+msgid "I-162 - Taxe professionnelle de compétitivité FODEC"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-163
+msgid "I-163 - Taxe sur les emballages métalliques"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-164
+msgid "I-164 - Taxe pour la protection de l’environnement TPE"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-165
+msgid ""
+"I-165 - TTaxe au profit du fonds de développement de la compétitivité dans "
+"le secteur du tourisme (FODET)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-166
+msgid "I-166 - Taxe sur les climatiseurs"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-167
+msgid "I-167 - Taxes sur les lampes et les tubes"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-168
+msgid "I-168 - Taxes sur fruit et légumes (TFL) non soumis à la TVA"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_tax__ttn_code__i-169
+msgid "I-169 - Taxes sur les produits de la pèche )non soumis à la TVA)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__id
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_payment_term__id
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_tax__id
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__id
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__id
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_partner__id
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_teif_generator__id
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_ttn_connector__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_company_form_teif
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_partner_form_teif
+msgid "Identification Fiscale"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__require_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__require_einvoice
+msgid "If checked, e-invoice features will be available."
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__use_custom_product_description
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__use_custom_product_description
+msgid ""
+"If checked, the product line in TEIF XML will use a custom description."
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid ""
+"Impossible de créer le client SOAP.\n"
+"Vérifiez l'URL et la disponibilité du WSDL:\n"
+"%s\n"
+"\n"
+"Erreur: %s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_company_form_teif
+msgid "Informations Bancaires"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "Informations TEIF"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_payment_term__ttn_financial_institution
+msgid "Institution Financière"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model,name:l10n_tn_einvoice.model_account_move
+msgid "Journal Entry"
+msgstr "Pièce comptable"
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid "L'API a retourné une erreur (Code %s)."
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid "L'URL SOAP doit commencer par http:// ou https://"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid "L'URL du serveur SOAP TTN n'est pas configurée"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/res_partner.py:0
+msgid "La CIN doit contenir exactement 8 chiffres"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/res_partner.py:0
+msgid "La Carte de Séjour doit contenir exactement 9 chiffres"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/teif_generator.py:0
+msgid "La facture doit contenir au moins une ligne"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid "La génération TEIF est disponible uniquement pour les factures clients"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/teif_generator.py:0
+msgid "La ligne '%s' doit avoir au moins une taxe configurée"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__teif_label_position_page
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__teif_label_position_page
+msgid "Label Page"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__teif_label_position_x
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__teif_label_position_x
+msgid "Label Position X"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__teif_label_position_y
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__teif_label_position_y
+msgid "Label Position Y"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Le XML scellé n'est pas encore disponible sur TTN. La facture est peut-être "
+"en cours de traitement."
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid "Le XML signé n'est pas disponible"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid "Le XML signé n'est pas disponible. Veuillez d'abord signer avec ANCE"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid "Le champ 'XML Scellé' est vide. Impossible de transformer le document."
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/teif_generator.py:0
+msgid "Le matricule fiscal de la société est requis (champ NIF/TVA)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Le matricule fiscal de la société n'est pas configuré dans le champ NIF/TVA"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/teif_generator.py:0
+msgid "Le matricule fiscal du client est requis (champ NIF/TVA)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Le matricule fiscal du client n'est pas configuré dans le champ NIF/TVA"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/res_company.py:0
+msgid ""
+"Le matricule fiscal tunisien doit respecter le format: 7 chiffres + lettre de contrôle + code TVA + catégorie + 3 chiffres d'établissement\n"
+"Exemple: 0736202XAM000"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/teif_generator.py:0
+msgid "Le montant total doit être supérieur à 0"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/teif_generator.py:0
+msgid "Le pays de la société doit être Tunisie"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid "Le token API ANCE n'est pas configuré"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/teif_generator.py:0
+msgid "Le type d'identifiant fiscal du client est requis"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid ""
+"Les identifiants TTN ne sont pas configurés.\n"
+"Vérifiez: login, password, matricule fiscal"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.res_config_settings_view_form
+msgid "Main Configuration"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__tn_fiscal_id_type__i-01
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_partner__tn_fiscal_id_type__i-01
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_company_form_teif
+msgid "Matricule Fiscal"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_partner_form_teif
+msgid "Matricule Fiscal / CIN / Carte de Séjour"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_partner__tn_fiscal_id_type__i-04
+msgid "Matricule Fiscal Non Tunisien"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_ttn_message
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_ttn_message
+msgid "Message TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_error_message
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_error_message
+msgid "Message d'Erreur"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_bank_statement_line__teif_ttn_message
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_move__teif_ttn_message
+msgid "Message de retour de TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__ttn_soap_password
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__ttn_soap_password
+msgid "Mot de passe pour authentification SOAP TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_payment_term_search_ttn
+msgid "Moyen de Paiement"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_xml_filename
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_xml_filename
+msgid "Nom Fichier TEIF XML"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_sealed_xml_filename
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_sealed_xml_filename
+msgid "Nom Fichier TEIF XML Scellé"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_signed_xml_filename
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_signed_xml_filename
+msgid "Nom Fichier TEIF XML Signé"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__ttn_soap_username
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__ttn_soap_username
+msgid "Nom d'utilisateur pour authentification SOAP TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__tn_bank_name
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__tn_bank_name
+msgid "Nom de la Banque"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_partner__tn_partner_name_type__physical
+msgid "Nom et Prénom"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__public_procuerement_name
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__public_procuerement_name
+msgid "Nom marché public"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__tn_vat_regime__n
+msgid "Non Assujetti"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_status__draft
+msgid "Non Signé"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_document_type__i-13
+msgid "Note d’honoraire"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__saleorder_number
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__saleorder_number
+msgid "Numéro de bon de commande"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__tn_bank_account_number
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__tn_bank_account_number
+msgid "Numéro de compte bancaire pour paiement"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__decompte_number
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__decompte_number
+msgid "Numéro de décompte"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__suspension_number
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__suspension_number
+msgid "Numéro de l’autorisation de suspension de la TVA"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__public_procuerement
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__public_procuerement
+msgid "Numéro de marché public"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_bank_statement_line__teif_ttn_id_save
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_move__teif_ttn_id_save
+msgid "Numéro unique généré par saveEfact avant traitement"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__teif_qr_position_page
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__teif_qr_position_page
+msgid "Page où insérer le QR code (0 = première page)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_condition_code__i-121
+msgid "Paiement directe"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_terms_code__i-117
+msgid "Par facilité"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_terms_code__i-114
+msgid "Par virement bancaire"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__ngsign_seal_passphrase
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__ngsign_seal_passphrase
+msgid "Passphrase pour déchiffrer le PIN du certificat SEAL"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model,name:l10n_tn_einvoice.model_account_payment_term
+msgid "Payment Terms"
+msgstr "Conditions de paiement"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_partner__tn_contact_person
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_users__tn_contact_person
+msgid "Personne de Contact"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__teif_qr_position_x
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__teif_qr_position_x
+msgid "Position X du QR code (0 = gauche de la page)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__teif_qr_position_y
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__teif_qr_position_y
+msgid "Position Y du QR code (0 = bas de la page)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_institution_code__i-141
+msgid "Poste"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__custom_product_description_template
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__custom_product_description_template
+msgid "Product Description Template"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_means_code__i-134
+msgid "Prélèvement bancaire"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_qr_code
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_qr_code
+msgid "QR Code"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.report_invoice_document_ttn
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "QR Code TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__teif_qr_position_page
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__teif_qr_position_page
+msgid "QR Page"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__teif_qr_position_x
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__teif_qr_position_x
+msgid "QR Position X"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__teif_qr_position_y
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__teif_qr_position_y
+msgid "QR Position Y"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_condition_code__i-123
+msgid "Quelle que soit la banque"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__tn_bank_account_number
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__tn_bank_account_number
+msgid "RIB/IBAN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_partner__tn_partner_name_type__qualification
+msgid "Raison Sociale"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_status__ttn_rejected
+msgid "Rejeté par TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "Rendu Visuel (HTML)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__require_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__require_einvoice
+msgid "Require E-Invoice"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_ttn_reference
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_ttn_reference
+msgid "Référence TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid "Référence TTN: %s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_bank_statement_line__teif_ttn_reference
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_move__teif_ttn_reference
+msgid "Référence unique générée par TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__tn_vat_regime
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__tn_vat_regime
+msgid "Régime TVA"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__company_category__sa
+msgid "SA : Société Anonyme"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__company_category__sarl
+msgid "SARL : Société à Responsabilité Limitée"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__company_category__sca
+msgid "SCA : Société en Commandite par Actions"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__company_category__scs
+msgid "SCS : Société en Commandite Simple"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__ngsign_seal_passphrase
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__ngsign_seal_passphrase
+msgid "SEAL Passphrase"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__company_category__sep
+msgid "SEP : Société en Participation"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__company_category__snc
+msgid "SNC : Société en Nom Collectif"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid "SOAP Fault: %s"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__res_company__company_category__suarl
+msgid "SUARL : Société Unipersonnelle à Responsabilité Limitée"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__ngsign_use_seal
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__ngsign_use_seal
+msgid "Signature automatique avec certificat SEAL (recommandé)"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_status__signed
+msgid "Signé par ANCE"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__ttn_auto_submit
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__ttn_auto_submit
+msgid "Soumettre automatiquement à TTN après signature"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__ttn_auto_submit
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__ttn_auto_submit
+msgid "Soumission Automatique à TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_status
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_status
+msgid "Statut TEIF"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_payment_term__ttn_payment_condition_code
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_payment_term__ttn_payment_institution_code
+msgid "Statut du paiement"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_means_code__i-136
+msgid "Swift"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__company_category
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__company_category
+msgid "Sélectionnez la catégorie selon le Code des Sociétés Commerciales"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_xml
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_xml
+msgid "TEIF XML"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model,name:l10n_tn_einvoice.model_teif_generator
+msgid "TEIF XML Generator v1.8.8"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_sealed_xml
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_sealed_xml
+msgid "TEIF XML Scellé TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_signed_xml
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_signed_xml
+msgid "TEIF XML Signé"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.actions.server,name:l10n_tn_einvoice.ir_cron_check_ttn_status_ir_actions_server
+msgid "TEIF: Action Check TTn Status"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.actions.server,name:l10n_tn_einvoice.ir_cron_get_ttn_qr_code_ir_actions_server
+msgid "TEIF: Action Get TTn QrCode"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.actions.server,name:l10n_tn_einvoice.ir_cron_download_signed_xml_ir_actions_server
+msgid "TEIF: Télécharger XML Signés depuis NGSign"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model,name:l10n_tn_einvoice.model_ttn_connector
+msgid "TTN El Fatoora SOAP API Connector"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_ttn_id_save
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_ttn_id_save
+msgid "TTN ID Save"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.res_config_settings_view_form
+msgid "TTN SOAP API Configuration"
+msgstr "Configuration de l'API SOAP TTN"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__ttn_soap_password
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__ttn_soap_password
+msgid "TTN SOAP Password"
+msgstr "Mot de passe SOAP TTN"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__ttn_soap_timeout
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__ttn_soap_timeout
+msgid "TTN SOAP Timeout (secondes)"
+msgstr "Délai d'expiration SOAP TTN (secondes)"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__ttn_soap_url
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__ttn_soap_url
+msgid "TTN SOAP URL"
+msgstr "URL SOAP TTN"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__ttn_soap_username
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__ttn_soap_username
+msgid "TTN SOAP Username"
+msgstr "Nom d'utilisateur TTN SOAP"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model,name:l10n_tn_einvoice.model_account_tax
+msgid "Tax"
+msgstr "Taxe"
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_account_tax_search_ttn
+msgid "Taxes TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__custom_product_description_template
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__custom_product_description_template
+msgid ""
+"Template for the product description in TEIF XML. Use {product_name} and "
+"{description} as placeholders."
+msgstr ""
+"Modèle pour la description du produit au format XML TEIF. Utilisez {product_name} et "
+"{description} comme espaces réservés."
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_payment_term_search_ttn
+msgid "Termes TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__ttn_soap_timeout
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__ttn_soap_timeout
+msgid "Timeout pour les appels SOAP vers TTN"
+msgstr "Timeout pour les appels SOAP vers TTN"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__ngsign_api_token
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__ngsign_api_token
+msgid "Token JWT généré depuis l'interface ANCE"
+msgstr "Token JWT généré depuis l'interface NGsign"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__ngsign_transaction_uuid
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__ngsign_transaction_uuid
+msgid "Transaction UUID ANCE"
+msgstr "UUID de transaction NGsign"
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.res_config_settings_view_form
+msgid "Tunisian e-Invoice"
+msgstr "Facture électronique tunisienne"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_document_type
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_document_type
+msgid "Type Document TEIF"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__tn_fiscal_id_type
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__tn_fiscal_id_type
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_partner__tn_fiscal_id_type
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_users__tn_fiscal_id_type
+msgid "Type Identifiant"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_partner__tn_fiscal_id_type
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_users__tn_fiscal_id_type
+msgid "Type d'identifiant fiscal utilisé dans le champ NIF/TVA"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_partner__tn_partner_name_type
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_users__tn_partner_name_type
+msgid "Type de Nom"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_partner__tn_contact_phone
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_users__tn_contact_phone
+msgid "Téléphone Contact"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__ngsign_api_url
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__ngsign_api_url
+msgid "URL de l'API ANCE pour signature uniquement"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__ttn_soap_url
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__ttn_soap_url
+msgid "URL de votre serveur SOAP pour validation TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_bank_statement_line__teif_ngsign_uuid
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_account_move__teif_ngsign_uuid
+msgid "UUID ANCE"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_bank_statement_line__ngsign_transaction_uuid
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_bank_statement_line__teif_ngsign_uuid
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_move__ngsign_transaction_uuid
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_account_move__teif_ngsign_uuid
+msgid "UUID de transaction ANCE"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/ttn_connector.py:0
+msgid "Unknown"
+msgstr "Inconnu"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__use_custom_product_description
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__use_custom_product_description
+msgid "Use custom description for product"
+msgstr "Utilisez une description personnalisée pour le produit"
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_company__ngsign_use_seal
+#: model:ir.model.fields,field_description:l10n_tn_einvoice.field_res_config_settings__ngsign_use_seal
+msgid "Utiliser SEAL"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_company__honoraire_use
+#: model:ir.model.fields,help:l10n_tn_einvoice.field_res_config_settings__honoraire_use
+msgid "Utiliser note d'honoraire au lieu du facture"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_status__ttn_validated
+msgid "Validé par TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_payment_term__ttn_payment_means_code__i-135
+msgid "Virement bancaire"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Vous ne pouvez pas annuler cette facture.\n"
+"La facture '%s' a le statut TEIF '%s'.\n"
+"Les factures signées ou envoyées à TTN ne peuvent pas être annulées."
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Vous ne pouvez pas modifier cette facture.\n"
+"La facture '%s' a été envoyée ou validée par TTN (statut: %s).\n"
+"Les modifications ne sont plus autorisées."
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Vous ne pouvez pas réinitialiser cette facture à l'état brouillon.\n"
+"La facture '%s' a le statut TEIF '%s'.\n"
+"Seules les factures avec le statut 'Non Signé' ou 'XML Généré' peuvent être réinitialisées."
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#. odoo-python
+#: code:addons/l10n_tn_einvoice/models/account_move.py:0
+msgid ""
+"Vous ne pouvez pas supprimer cette facture.\n"
+"La facture '%s' a le statut TEIF '%s'.\n"
+"Seules les factures avec le statut 'Non Signé' ou 'XML Généré' peuvent être supprimées."
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model:ir.model.fields.selection,name:l10n_tn_einvoice.selection__account_move__teif_status__generated
+msgid "XML Généré"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "XML Scellé TTN"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "XML Signé"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "XML TEIF"
+msgstr ""
+
+#. module: l10n_tn_einvoice
+#: model_terms:ir.ui.view,arch_db:l10n_tn_einvoice.view_move_form_teif
+msgid "↓ XML Signé"
+msgstr ""

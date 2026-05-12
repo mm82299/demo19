@@ -1,0 +1,153 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_tn_states
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-04 14:16+0000\n"
+"PO-Revision-Date: 2024-10-04 14:16+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_tn_states
+#: model:ir.model.fields,help:l10n_tn_states.field_res_country_state__name
+msgid ""
+"Administrative divisions of a country. E.g. Fed. State, Departement, Canton"
+msgstr ""
+"التقسيمات الإدارية للدولة، على سبيل المثال: الفيدرالية، الولاية، القسم، الكانتون"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_12
+msgid "Ariana"
+msgstr "أريانة"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_13
+msgid "Ben Arous"
+msgstr "بن عروس"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_23
+msgid "Bizerte"
+msgstr "بنزرت"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_31
+msgid "Béja"
+msgstr "باجة"
+
+#. module: l10n_tn_states
+#: model:ir.model,name:l10n_tn_states.model_res_country_state
+msgid "Country state"
+msgstr "الولاية "
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_81
+msgid "Gabés"
+msgstr "قابس"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_71
+msgid "Gafsa"
+msgstr "قفصة"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_32
+msgid "Jendouba"
+msgstr "جندوبة"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_41
+msgid "Kairouan"
+msgstr "القيروان"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_42
+msgid "Kasserine"
+msgstr "القصرين"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_73
+msgid "Kébili"
+msgstr "قبلي"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_14
+msgid "La Manouba"
+msgstr "منوبة"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_33
+msgid "Le Kef"
+msgstr "الكاف"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_53
+msgid "Mahdia"
+msgstr "المهدية"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_52
+msgid "Monastir"
+msgstr "المنستير"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_82
+msgid "Médenine"
+msgstr "مدنين"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_21
+msgid "Nabeul"
+msgstr "نابل"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_61
+msgid "Sfax"
+msgstr "صفاقس"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_43
+msgid "Sidi Bouzid"
+msgstr "سيدي بوزيد"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_34
+msgid "Siliana"
+msgstr "سليانة"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_51
+msgid "Sousse"
+msgstr "سوسة"
+
+#. module: l10n_tn_states
+#: model:ir.model.fields,field_description:l10n_tn_states.field_res_country_state__name
+msgid "State Name"
+msgstr "اسم الولاية"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_83
+msgid "Tataouine"
+msgstr "تطاوين"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_72
+msgid "Tozeur"
+msgstr "توزر"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_11
+msgid "Tunis"
+msgstr "تونس"
+
+#. module: l10n_tn_states
+#: model:res.country.state,name:l10n_tn_states.state_tn_22
+msgid "Zaghouan"
+msgstr "زغوان"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Accounting → Reporting → Deferred Revenue
+         Parent: account.menu_finance_reports (exists in Community) -->
+    <menuitem id="menu_account_deferred_revenue_report"
+              name="Deferred Revenue"
+              parent="account.menu_finance_reports"
+              action="action_account_deferred_revenue_report"
+              sequence="26"
+              groups="account.group_account_readonly"/>
+</odoo>

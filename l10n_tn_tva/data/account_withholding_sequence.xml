@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <!-- Sequence for account withholding vente -->
+        <record id="seq_account_withholding_tva" model="ir.sequence">
+            <field name="name">Account withholding</field>
+            <field name="code">account.withholding.tva.in</field>
+            <field name="prefix">RETENUE TVA/</field>
+            <field name="padding">3</field>
+        </record>
+
+    </data>
+</odoo>

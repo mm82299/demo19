@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_company_form_teif" model="ir.ui.view">
+        <field name="name">res.company.form.teif</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//notebook" position="inside">
+                <page string="Configuration QR Code" >
+
+                    <separator string="Configuration QR Code" />
+                    <group>
+                        <group>
+                            <field name="teif_qr_position_x"/>
+                            <field name="teif_qr_position_y"/>
+                            <field name="teif_qr_position_page"/>
+                        </group>
+                        <group>
+                            <field name="teif_label_position_x"/>
+                            <field name="teif_label_position_y"/>
+                            <field name="teif_label_position_page"/>
+                        </group>
+                    </group>
+
+                </page>
+                <page string="E-Facture TEIF" name="teif"  invisible="True">
+                    <group>
+                        <group string="Identification Fiscale">
+                            <field name="company_short_name"/>
+                            <label for="vat" string="Matricule Fiscal"/>
+                            <div class="o_row">
+                                <field name="vat" placeholder="Ex: TN0736202XAM000 ou 0736202XAM000" required="1"/>
+                            </div>
+                            <field name="tn_fiscal_id_type"/>
+                            <field name="tn_vat_regime" readonly="True"/>
+                            <field name="company_category" readonly="True"/>
+                        </group>
+                        <group string="Informations Bancaires">
+                            <field name="tn_bank_account_number" invisible="True"/>
+                            <field name="tn_bank_name" invisible="True"/>
+                            <field name="tn_bank_branch_code" invisible="True"/>
+                            <field name="capital"/>
+                            <field name="honoraire_use"/>
+                            <field name="require_einvoice"/>
+                            <field name="use_custom_product_description"/>
+                            <field name="custom_product_description_template" invisible="not use_custom_product_description"/>
+                        </group>
+                    </group>
+
+                    <separator string="Configuration ANCE API (Signature Uniquement)"/>
+                    <group>
+                        <group>
+                            <field name="ngsign_api_url"/>
+                            <field name="ngsign_api_token" password="True"/>
+                            <field name="ngsign_seal_passphrase" password="True"/>
+                            <field name="ngsign_use_seal"/>
+                        </group>
+                    </group>
+
+                    <separator string="Configuration TTN SOAP API (Validation)" invisible="False"/>
+                    <group  invisible="False">
+                        <group>
+                            <field name="ttn_soap_url"/>
+                            <field name="ttn_soap_username"/>
+                            <field name="ttn_soap_password" password="True"/>
+                            <field name="ttn_soap_timeout"/>
+                        </group>
+                        <group>
+                            <field name="ttn_auto_submit"/>
+                        </group>
+                    </group>
+
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

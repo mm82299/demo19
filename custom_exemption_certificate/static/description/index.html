@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Tax Exemption Customizations - Odoo</title>
+    <style>
+        :root {
+            --primary: #1a2a6c;
+            --secondary: #fdbb2d;
+            --accent: #b21f1f;
+            --text-dark: #2c3e50;
+            --text-light: #fff;
+            --bg-muted: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            color: var(--text-light);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        .content-section {
+            padding: 60px 0;
+        }
+
+        .feature-highlight {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .feature-text {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .feature-text h2 {
+            color: var(--primary);
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--secondary);
+            padding-left: 15px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: var(--bg-muted);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transform: scale(1.02);
+            background: white;
+        }
+
+        .feature-card h3 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+
+        .cta-section {
+            background: var(--bg-muted);
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 20px;
+            margin: 40px 0;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1>Exemption Certificate Custom</h1>
+            <p>Tailored Tax Management Extensions for Advanced Business Workflows</p>
+        </div>
+    </div>
+
+    <div class="content-section container">
+        <div class="feature-highlight">
+            <div class="feature-text">
+                <h2>Enhanced Document Management</h2>
+                <p>Go beyond simple records. This custom extension allows you to upload and manage the actual digital
+                    copies of tax exemption certificates directly within the partner profile.</p>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="feature-card">
+                <h3>Digital Archiving</h3>
+                <p>Store PDF or image copies of certificates using the integrated binary fields. Access the original
+                    documents with a single click during audits.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Smart Usage Toggles</h3>
+                <p>Explicitly enable or disable specific certificates with a user-friendly toggle. Perfect for managing
+                    overlapping or provisional certificates.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Fiscal Position Mapping</h3>
+                <p>Directly link certificates to specific fiscal positions, ensuring that complex tax mappings are
+                    handled automatically and without error.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Custom Partner Views</h3>
+                <p>Optimized partner form layout that prioritizes tax exemption status and certificate visibility for
+                    accounting teams.</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready for Professional Tax Management?</h2>
+            <p>This module provides the missing link between physical tax documents and your digital ERP workflows.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>Developed by Mourad Meziou & Infotech Consulting Services (ICS)</p>
+            <p>Website: <a href="https://www.ics-tunisie.com" style="color: var(--primary);">www.ics-tunisie.com</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

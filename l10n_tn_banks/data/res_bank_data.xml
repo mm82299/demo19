@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- AL BARAKA BANK TUNISIA -->
+    <record id="res_bank_al_baraka" model="res.bank">
+        <field name="name">AL BARAKA BANK TUNISIA</field>
+        <field name="bic">BEITTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- ALUBAF INTERNATIONAL BANK TUNIS -->
+    <record id="res_bank_alubaf" model="res.bank">
+        <field name="name">ALUBAF INTERNATIONAL BANK TUNIS</field>
+        <field name="bic">ALUBTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- AMEN BANK -->
+    <record id="res_bank_amen" model="res.bank">
+        <field name="name">AMEN BANK</field>
+        <field name="bic">CFCTTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- ARAB BANKING CORPORATION -->
+    <record id="res_bank_abc" model="res.bank">
+        <field name="name">ARAB BANKING CORPORATION</field>
+        <field name="bic">ABCOTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- ARAB TUNISIAN BANK -->
+    <record id="res_bank_atb" model="res.bank">
+        <field name="name">ARAB TUNISIAN BANK</field>
+        <field name="bic">ATBKTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- ATTIJARI BANK -->
+    <record id="res_bank_attijari" model="res.bank">
+        <field name="name">ATTIJARI BANK</field>
+        <field name="bic">BSTUTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- BANQUE CENTRALE DE TUNISIE -->
+    <record id="res_bank_bct" model="res.bank">
+        <field name="name">BANQUE CENTRALE DE TUNISIE</field>
+        <field name="bic">BCTNTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- BANQUE DE FINANCEMENT DES PME -->
+    <record id="res_bank_bfpme" model="res.bank">
+        <field name="name">BANQUE DE FINANCEMENT DES PME</field>
+        <field name="bic">BFPMTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- BANQUE DE TUNISIE -->
+    <record id="res_bank_bt" model="res.bank">
+        <field name="name">BANQUE DE TUNISIE</field>
+        <field name="bic">BTBKTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- BANQUE DE TUNISIE ET DES EMIRATS -->
+    <record id="res_bank_bte" model="res.bank">
+        <field name="name">BANQUE DE TUNISIE ET DES EMIRATS</field>
+        <field name="bic">BTEXTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- BANQUE FRANCO TUNISIENNE -->
+    <record id="res_bank_bft" model="res.bank">
+        <field name="name">BANQUE FRANCO TUNISIENNE</field>
+        <field name="bic">BFTNTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- BANQUE INTERNATIONALE ARABE DE TUNISIE -->
+    <record id="res_bank_biat" model="res.bank">
+        <field name="name">BANQUE INTERNATIONALE ARABE DE TUNISIE</field>
+        <field name="bic">BIATTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- BANQUE NATIONALE AGRICOLE -->
+    <record id="res_bank_bna" model="res.bank">
+        <field name="name">BANQUE NATIONALE AGRICOLE</field>
+        <field name="bic">BNTETNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- BANQUE TUNISIENNE DE SOLIDARITE -->
+    <record id="res_bank_bts" model="res.bank">
+        <field name="name">BANQUE TUNISIENNE DE SOLIDARITE</field>
+        <field name="bic">TUSOTNT1</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- BANQUE TUNISO-KOWEITIENNE -->
+    <record id="res_bank_btk" model="res.bank">
+        <field name="name">BANQUE TUNISO-KOWEITIENNE</field>
+        <field name="bic">BTKOTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- BANQUE TUNISO-LIBYENNE -->
+    <record id="res_bank_btl" model="res.bank">
+        <field name="name">BANQUE TUNISO-LIBYENNE</field>
+        <field name="bic">ATLDTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- BANQUE ZITOUNA -->
+    <record id="res_bank_zitouna" model="res.bank">
+        <field name="name">BANQUE ZITOUNA</field>
+        <field name="bic">BZITTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- BH BANK -->
+    <record id="res_bank_bh" model="res.bank">
+        <field name="name">BH BANK</field>
+        <field name="bic">BHBKTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- CITIBANK N.A. -->
+    <record id="res_bank_citibank" model="res.bank">
+        <field name="name">CITIBANK N.A.</field>
+        <field name="bic">CITITNTX</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- LA POSTE TUNISIENNE -->
+    <record id="res_bank_poste" model="res.bank">
+        <field name="name">LA POSTE TUNISIENNE</field>
+        <field name="bic">LPTNTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- QATAR NATIONAL BANK-TUNISIA -->
+    <record id="res_bank_qnb" model="res.bank">
+        <field name="name">QATAR NATIONAL BANK-TUNISIA</field>
+        <field name="bic">BTQITNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- SOCIETE TUNISIENNE DE BANQUE -->
+    <record id="res_bank_stb" model="res.bank">
+        <field name="name">SOCIETE TUNISIENNE DE BANQUE</field>
+        <field name="bic">STBKTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- TUNIS INTERNATIONAL BANK -->
+    <record id="res_bank_tib" model="res.bank">
+        <field name="name">TUNIS INTERNATIONAL BANK</field>
+        <field name="bic">TUIBTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- TUNISIAN FOREIGN BANK -->
+    <record id="res_bank_tfb" model="res.bank">
+        <field name="name">TUNISIAN FOREIGN BANK</field>
+        <field name="bic">UTUBTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- TUNISIAN SAUDI BANK -->
+    <record id="res_bank_tsb" model="res.bank">
+        <field name="name">TUNISIAN SAUDI BANK</field>
+        <field name="bic">TSIDTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- UNION BANCAIRE POUR LE COMMERCE ET L'INDUSTRIE -->
+    <record id="res_bank_ubci" model="res.bank">
+        <field name="name">UNION BANCAIRE POUR LE COMMERCE ET L'INDUSTRIE</field>
+        <field name="bic">UBCITNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- UNION INTERNATIONALE DE BANQUES -->
+    <record id="res_bank_uib" model="res.bank">
+        <field name="name">UNION INTERNATIONALE DE BANQUES</field>
+        <field name="bic">UIBKTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+
+    <!-- WIFACK INTERNATIONAL BANK -->
+    <record id="res_bank_wifack" model="res.bank">
+        <field name="name">WIFACK INTERNATIONAL BANK</field>
+        <field name="bic">WKIBTNTT</field>
+        <field name="country" ref="base.tn"/>
+        <field name="city">Tunis</field>
+        <field name="active" eval="1"/>
+    </record>
+</odoo>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="mail_notification_layout_debranding" inherit_id="mail.mail_notification_layout">
+        <!-- We use a very specific xpath to avoid matching the outer container -->
+        <xpath expr="//div[@t-if='show_footer' and contains(., 'Powered by')]" position="replace">
+            <div t-if="show_footer" style="color: #555555; font-size:11px;">
+                <span t-if="show_unfollow" id="mail_unfollow">
+                    <a href="/mail/unfollow" style="text-decoration:none; color:#555555;">Unfollow</a>
+                </span>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="mail_notification_light_debranding" inherit_id="mail.mail_notification_light">
+        <xpath expr="//tr[contains(., 'Powered by')]" position="replace">
+            <tr><td align="center" style="min-width: 590px;">
+                <span t-if="show_unfollow" id="mail_unfollow">
+                    <a href="/mail/unfollow" style="text-decoration:none; color:#555555;">Unfollow</a>
+                </span>
+            </td></tr>
+        </xpath>
+    </template>
+</odoo>

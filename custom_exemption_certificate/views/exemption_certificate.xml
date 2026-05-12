@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_partner_form_inherited" model="ir.ui.view">
+            <field name="name">stamp2.res.partner.form</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="exemption_certificate.view_partner_form"/>
+            <field name="arch" type="xml">
+                <page name="exemption_certificate" position="replace">
+                    <page string="Exemption Certificate" name="exemption_certificate" col="4"
+                          invisible="not is_company and parent_id"
+                          groups="account.group_account_user,account.group_account_manager">
+                        <group name="vat_exemption">
+                            <field name="vat_exemption"/>
+                        </group>
+                        <separator string="Exemption Certificate" />
+                        <field name="exemption_certificate_ids" >
+                            <list editable="top">
+                                <field name="is_used" widget="boolean_toggle"/>
+                                <field name="name"/>
+                                <field name="start_date"/>
+                                <field name="end_date"/>
+                                <field name="fiscal_position_type"/>
+                                <field name="partner_id" invisible="1"/>
+                                <field name="certificate" widget="binary" filename="file_name"/>
+                                <field name="file_name" invisible="1"/>
+
+                            </list>
+                        </field>
+                    </page>
+                </page>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_location_floor_type_list" model="ir.ui.view">
+        <field name="name">location.floor.type.list</field>
+        <field name="model">location.floor.type</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_location_floor_type_form" model="ir.ui.view">
+        <field name="name">location.floor.type.form</field>
+        <field name="model">location.floor.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Floor Type Name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="sequence"/>
+                        </group>
+                        <group>
+                            <field name="description"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="company_id" groups="base.group_multi_company"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_location_floor_type" model="ir.actions.act_window">
+        <field name="name">Floor Types</field>
+        <field name="res_model">location.floor.type</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

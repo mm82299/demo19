@@ -1,0 +1,122 @@
+<odoo noupdate="1">
+    <record id="state_tn_13" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Ben Arous</field>
+        <field name="code">13</field>
+    </record>
+    <record id="state_tn_23" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Bizerte</field>
+        <field name="code">23</field>
+    </record>
+    <record id="state_tn_31" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Béja</field>
+        <field name="code">31</field>
+    </record>
+    <record id="state_tn_81" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Gabés</field>
+        <field name="code">81</field>
+    </record>
+    <record id="state_tn_71" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Gafsa</field>
+        <field name="code">71</field>
+    </record>
+    <record id="state_tn_32" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Jendouba</field>
+        <field name="code">32</field>
+    </record>
+    <record id="state_tn_41" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Kairouan</field>
+        <field name="code">41</field>
+    </record>
+    <record id="state_tn_42" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Kasserine</field>
+        <field name="code">42</field>
+    </record>
+    <record id="state_tn_73" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Kébili</field>
+        <field name="code">73</field>
+    </record>
+    <record id="state_tn_12" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Ariana</field>
+        <field name="code">12</field>
+    </record>
+    <record id="state_tn_14" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">La Manouba</field>
+        <field name="code">14</field>
+    </record>
+    <record id="state_tn_33" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Le Kef</field>
+        <field name="code">33</field>
+    </record>
+    <record id="state_tn_53" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Mahdia</field>
+        <field name="code">53</field>
+    </record>
+    <record id="state_tn_52" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Monastir</field>
+        <field name="code">52</field>
+    </record>
+    <record id="state_tn_82" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Médenine</field>
+        <field name="code">82</field>
+    </record>
+    <record id="state_tn_21" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Nabeul</field>
+        <field name="code">21</field>
+    </record>
+    <record id="state_tn_61" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Sfax</field>
+        <field name="code">61</field>
+    </record>
+    <record id="state_tn_43" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Sidi Bouzid</field>
+        <field name="code">43</field>
+    </record>
+    <record id="state_tn_34" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Siliana</field>
+        <field name="code">34</field>
+    </record>
+    <record id="state_tn_51" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Sousse</field>
+        <field name="code">51</field>
+    </record>
+    <record id="state_tn_83" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Tataouine</field>
+        <field name="code">83</field>
+    </record>
+    <record id="state_tn_72" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Tozeur</field>
+        <field name="code">72</field>
+    </record>
+    <record id="state_tn_11" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Tunis</field>
+        <field name="code">11</field>
+    </record>
+    <record id="state_tn_22" model="res.country.state">
+        <field model="res.country" name="country_id" search="[('code','=','TN')]" />
+        <field name="name">Zaghouan</field>
+        <field name="code">22</field>
+    </record>
+</odoo>
