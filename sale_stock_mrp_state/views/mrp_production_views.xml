@@ -7,6 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='user_id']" position="after">
                 <field name="state_id"/>
+                <field name="total_weight"/>
             </xpath>
         </field>
     </record>
@@ -18,6 +19,7 @@
         <field name="arch" type="xml">
             <field name="product_id" position="after">
                 <field name="state_id" optional="show"/>
+                <field name="total_weight" sum="Total Weight" optional="show"/>
             </field>
         </field>
     </record>
@@ -31,5 +33,37 @@
                 <filter string="State" name="group_by_state" domain="[]" context="{'group_by': 'state_id'}"/>
             </xpath>
         </field>
+    </record>
+
+    <!-- Planning Pivot View -->
+    <record id="view_mrp_production_pivot_inherit_state" model="ir.ui.view">
+        <field name="name">mrp.production.pivot.inherit.state</field>
+        <field name="model">mrp.production</field>
+        <field name="arch" type="xml">
+            <pivot string="Planning by State" sample="1">
+                <field name="state_id" type="row"/>
+                <field name="date_start" interval="month" type="col"/>
+                <field name="product_qty" type="measure"/>
+                <field name="total_weight" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Planning Graph View -->
+    <record id="view_mrp_production_graph_inherit_state" model="ir.ui.view">
+        <field name="name">mrp.production.graph.inherit.state</field>
+        <field name="model">mrp.production</field>
+        <field name="arch" type="xml">
+            <graph string="Planning by State" type="bar" sample="1">
+                <field name="state_id"/>
+                <field name="total_weight" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Update Action to include Pivot and Graph -->
+    <record id="mrp.mrp_production_action" model="ir.actions.act_window">
+        <field name="view_mode">list,kanban,form,calendar,pivot,graph</field>
+        <field name="context">{'search_default_group_by_state': 1}</field>
     </record>
 </odoo>

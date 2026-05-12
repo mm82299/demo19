@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import models, fields, api
 
 class MrpProduction(models.Model):
     _inherit = 'mrp.production'
@@ -10,3 +10,11 @@ class MrpProduction(models.Model):
         store=True,
         readonly=True
     )
+
+    product_weight = fields.Float(related='product_id.weight', string='Product Weight', readonly=True)
+    total_weight = fields.Float(compute='_compute_total_weight', string='Total Weight', store=True)
+
+    @api.depends('product_qty', 'product_id.weight')
+    def _compute_total_weight(self):
+        for production in self:
+            production.total_weight = production.product_qty * production.product_id.weight

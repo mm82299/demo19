@@ -43,4 +43,35 @@
             </xpath>
         </field>
     </record>
+
+    <!-- Planning Pivot View -->
+    <record id="view_sale_order_pivot_inherit_state" model="ir.ui.view">
+        <field name="name">sale.order.pivot.inherit.state</field>
+        <field name="model">sale.order</field>
+        <field name="arch" type="xml">
+            <pivot string="Planning by State" sample="1">
+                <field name="state_id" type="row"/>
+                <field name="date_order" interval="month" type="col"/>
+                <field name="amount_total" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <!-- Planning Graph View -->
+    <record id="view_sale_order_graph_inherit_state" model="ir.ui.view">
+        <field name="name">sale.order.graph.inherit.state</field>
+        <field name="model">sale.order</field>
+        <field name="arch" type="xml">
+            <graph string="Planning by State" type="bar" sample="1">
+                <field name="state_id"/>
+                <field name="amount_total" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <!-- Update Action to include Pivot and Graph -->
+    <record id="sale.action_orders" model="ir.actions.act_window">
+        <field name="view_mode">list,kanban,form,calendar,pivot,graph</field>
+        <field name="context">{'search_default_group_by_state': 1}</field>
+    </record>
 </odoo>
